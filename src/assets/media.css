@@ -1,0 +1,1211 @@
+@media (max-width: 1400px) {
+    #connect-page .gybrid-pochta .timeline {
+        left: 40px !important;
+    }
+    #system-guide .main-stick-guide {
+        width: 991px;
+    }
+    .system-info .info-box {
+        width: 199px;
+        padding: 10px;
+    }
+    .system-info .info-box h3 {
+        font-size: 12px;
+    }
+    .system-info .info-box p {
+        font-size: 10px;
+    }
+    .invitePartner-b {
+        top: 456px;
+        width: 95px;
+        height: 18px;
+        left: 12px;
+    }
+    .system-info .invitePartner {
+        left: 105px;
+        top: 457px;
+    }
+    .inbox-b {
+        top: 153px;
+        width: 119px;
+        height: 22px;
+    }
+    .system-info .inbox {
+        left: 120px;
+        top: 153px;
+    }
+    .outbox-b {
+        top: 173px;
+        width: 119px;
+        height: 22px;
+    }
+    .system-info .outbox {
+        left: 120px;
+        top: 174px;
+    }
+    .documents-b {
+        top: 128px;
+        width: 119px;
+        height: 25px;
+    }
+    .system-info .documents {
+        left: 120px;
+        top: 129px;
+    }
+    .system-info .cuonterparties {
+        left: 120px;
+        top: 103px;
+    }
+    .cuonterparties-b {
+        top: 104px;
+        width: 120px;
+        height: 25px;
+    }
+    .system-info .createDocument {
+        left: 120px;
+        top: 79px;
+    }
+    .createDocument-b {
+        top: 79px;
+        width: 120px;
+        height: 26px;
+    }
+    .workPlace-b {
+        top: 54px;
+        width: 119px;
+        height: 25px;
+    }
+    .system-info .workPlace {
+        left: 120px;
+        top: 53px;
+    }
+    .system-info .draft {
+        left: 120px;
+        top: 196px;
+    }
+    .draft-b {
+        top: 195px;
+        width: 121px;
+        height: 23px;
+    }
+    .system-info .import {
+        left: 120px;
+        top: 218px;
+    }
+    .import-b {
+        top: 217px;
+        width: 121px;
+        height: 21px;
+    }
+    .system-info .rejected {
+        left: 120px;
+        top: 238px;
+    }
+    .rejected-b {
+        top: 238px;
+        width: 120px;
+        height: 22px;
+    }
+    .removed-b {
+        top: 260px;
+        width: 119px;
+        height: 20px;
+    }
+    .system-info .removed {
+        left: 121px;
+        top: 260px;
+    }
+    .archive-b {
+        top: 280px;
+        width: 119px;
+        height: 22px;
+    }
+    .system-info .archive {
+        left: 119px;
+        top: 282px;
+    }
+    .system-info .annul {
+        left: 120px;
+        top: 302px;
+    }
+    .annul-b {
+        top: 301px;
+        width: 121px;
+        height: 22px;
+    }
+    .system-info .attachments {
+        left: 120px;
+        top: 324px;
+    }
+    .attachments-b {
+        top: 322px;
+        width: 120px;
+        height: 22px;
+    }
+    .system-info .alldocuments {
+        left: 120px;
+        top: 345px;
+    }
+    .alldocuments-b {
+        top: 344px;
+        width: 121px;
+        height: 22px;
+    }
+    .agreement-b {
+        top: 366px;
+        width: 119px;
+        height: 24px;
+    }
+
+    .system-info .agreement {
+        left: 120px;
+        top: 366px;
+    }
+    .system-info .index {
+        left: 120px;
+        top: 390px;
+    }
+    .index-b {
+        top: 389px;
+        width: 121px;
+        height: 26px;
+    }
+    .system-info .verify {
+        left: 118px;
+        top: 416px;
+    }
+    .verify-b {
+        top: 415px;
+        width: 119px;
+        height: 31px;
+    }
+    .headerDetails-b {
+        top: 23px;
+        width: 246px;
+        height: 30px;
+        left: 150px;
+    }
+    .system-info .headerDetails {
+        left: 396px;
+        top: 23px;
+    }
+    .fakturaedi-b {
+        top: 25px;
+        width: 88px;
+        height: 29px;
+        right: 169px;
+    }
+    .system-info .fakturaedi {
+        right: 58px;
+        top: 55px;
+    }
+    .sync-b {
+        top: 24px;
+        width: 30px;
+        height: 29px;
+        right: 142px;
+    }
+    .system-info .sync {
+        right: 142px;
+        top: 54px;
+    }
+    .myData-b {
+        top: 24px;
+        width: 73px;
+        height: 30px;
+        right: 24px;
+    }
+    .system-info .myData {
+        right: 25px;
+        top: 55px;
+    }
+    .currentPage-b {
+        top: 60px;
+        width: 100px;
+        height: 34px;
+        left: 125px;
+    }
+    .system-info .currentPage {
+        left: 124px;
+        top: 94px;
+    }
+    .signSend-b {
+        top: 103px;
+        width: 106px;
+        height: 18px;
+        left: 138px;
+    }
+    .cancelDelete-b {
+        top: 104px;
+        width: 92px;
+        height: 18px;
+        left: 244px;
+    }
+    .system-info .signSend {
+        left: 243px;
+        top: 103px;
+    }
+    .system-info .cancelDelete {
+        left: 337px;
+        top: 100px;
+    }
+    .system-info .send {
+        left: 406px;
+        top: 102px;
+    }
+    .send-b {
+        top: 103px;
+        width: 69px;
+        height: 19px;
+        left: 337px;
+    }
+    .markAs-b {
+        top: 103px;
+        width: 72px;
+        height: 18px;
+        left: 406px;
+    }
+    .system-info .markAs {
+        left: 477px;
+        top: 103px;
+    }
+    .system-info .moveIntoSubdivisions {
+        left: 620px;
+        top: 103px;
+    }
+    .moveIntoSubdivisions-b {
+        top: 103px;
+        width: 144px;
+        height: 19px;
+        left: 477px;
+    }
+    .system-info .filtr {
+        right: 60px;
+        top: 103px;
+    }
+    .filtr-b {
+        top: 105px;
+        width: 39px;
+        height: 17px;
+        right: 22px;
+    }
+    .docInfo-b {
+        top: 183px;
+        width: 157px;
+        height: 31px;
+        left: 160px;
+    }
+    .system-info .docInfo {
+        left: 317px;
+        top: 178px;
+    }
+    .сontract-b {
+        top: 184px;
+        width: 87px;
+        height: 30px;
+        left: 418px;
+    }
+    .system-info .сontract {
+        left: 504px;
+        top: 182px;
+    }
+    .sum-b {
+        top: 183px;
+        width: 53px;
+        height: 31px;
+        right: 392px;
+    }
+    .system-info .sum {
+        right: 193px;
+        top: 182px;
+    }
+    .cuonterpartier-b {
+        top: 183px;
+        width: 73px;
+        height: 30px;
+        right: 261px;
+    }
+    .system-info .cuonterpartier {
+        right: 62px;
+        top: 181px;
+    }
+    .status-b {
+        top: 184px;
+        width: 70px;
+        height: 30px;
+        right: 48px;
+    }
+    .system-info .status {
+        right: 47px;
+        top: 213px;
+    }
+    .exportExcel-b {
+        top: 224px;
+        width: 80px;
+        height: 16px;
+        right: 22px;
+    }
+    .system-info .exportExcel {
+        right: 18px;
+        top: 245px;
+    }
+}
+
+@media (max-width: 1255px) {
+    #header .main-menu-ul {
+        padding: 0.5rem !important;
+    }
+
+    #footer-f .right-line .right-child ul {
+        padding: 0 0 0 25px;
+    }
+    #footer-f .left-line .left-child ul {
+        padding: 0 30px 0 0;
+    }
+}
+
+@media (max-width: 1199px) {
+    .snow-roof1:before {
+        top: -11px !important;
+        right: 1px !important;
+        background-size: 81px 16px;
+        width: 80px;
+        height: 15px;
+      }
+    .ab-im-1 {
+        width: 568px !important;
+    }
+    .ab-im-2 {
+        height: 189px !important;
+    }
+    .ab-im-3 {
+        height: 183px !important;
+    }
+    .ab-im-4 {
+        height: 350px !important;
+    }
+    .ab-im-5 {
+        height: 350px !important;
+    }
+    .ab-im-8 {
+        height: 300px !important;
+    }
+    .ab-im-9 {
+        height: 300px !important;
+    }
+    #hero-page  .sign-in-link {
+        padding: .5rem 1rem !important;
+    }
+    #header .main-menu ul li a {
+        padding: 9px 14px;
+    }
+    #header .authorization-block ul {
+        margin-top: 6px;
+    }
+    #header .logo img {
+        width: 145px;
+        margin-top: 15px;
+    }
+    #hero-page .main-text-block h2 {
+        font-size: 1.5rem;
+    }
+    #hero-page .main-text-block p {
+        font-size: 1rem;
+    }
+    #hero-page .animation-play p {
+        top: -20px;
+    }
+    .card-1, .card-2, .card-3, .card-4, .card-5, .card-6 {
+        width: 450px;
+    }
+    #instead-page .doc-body .card-flip::before {    
+        width: 130px;
+    }
+    #instead-page .doc-body .card-flip::after {
+        width: 130px;
+    }
+    #mobile-app .app-body h2 {
+        font-size: 1.5rem;
+    }
+    #mobile-app .app-body h5 {
+        font-size: 1.10rem;
+    }
+    #mobile-app .app-body {
+        width: 400px;
+        padding-top: 140px;
+    }
+    #mobile-app .mobile-app-buttons a {
+        padding: 4px 7px;
+        font-size: 17px;
+    }
+    #mobile-app .mobile-app-buttons a img {
+        width: 18px;
+        margin-bottom: 3px;
+    }
+}
+
+@media (max-width: 1000px) {
+    #map .map-body {
+        width: 768px;
+    }
+    #map .map-body svg {
+        width: 768px;
+    }
+    #map .map-body .city-usual-style {
+        height: 50px;
+        line-height: 50px;
+        font-size: 12px;
+        width: 50px;
+    }
+    #map .map-body .city-usual-style-small {
+        height: 35px;
+        line-height: 35px;
+        font-size: 12px;
+        width: 35px;
+    }
+    #map .map-body .place-title-usual-style {
+        height: 50px;
+        line-height: 50px;
+        font-size: 12px;
+        padding-right: 15px;
+    }
+    #map .map-body .place-title-usual-style-small {
+        height: 35px;
+        line-height: 35px;
+        font-size: 12px;
+        padding-right: 15px;
+    }
+    #map .map-body .karakalpakistan .number {
+        top: 176px;
+        left: 98px;
+    }
+    #map .map-body .karakalpakistan .place-title {
+        top: 176px;
+        left: 127px;
+        width: 125px;
+    }
+    #map .map-body .navoi .number {
+        top: 250px;
+        left: 300px;
+    }
+    #map .map-body .navoi .place-title {
+        top: 250px;
+        left: 327px;
+        width: 81px;
+    }
+    #map .map-body .khorezm .number {
+        top: 310px;
+        left: 190px;
+    }
+    #map .map-body .khorezm .place-title {
+        top: 310px;
+        left: 210px;
+        width: 71px;
+    }
+    #map .map-body .bukhoro .number {
+        top: 378px;
+        left: 305px;
+    }
+    #map .map-body .bukhoro .place-title {
+        top: 378px;
+        left: 333px;
+        width: 75px;
+    }
+    #map .map-body .samarkand .place-title {
+        top: 410px;
+        left: 470px;
+        width: 92px;
+    }
+    #map .map-body .samarkand .number {
+        top: 410px;
+        left: 450px;
+    }
+    #map .map-body .kashkadarya .place-title {
+        top: 457px;
+        left: 434px;
+        width: 105px;
+    }
+    #map .map-body .kashkadarya .number {
+        top: 457px;
+        left: 407px;
+    }
+    #map .map-body .surkhandarya .place-title {
+        top: 510px;
+        left: 510px;
+        width: 105px;
+    }
+    #map .map-body .surkhandarya .number {
+        top: 510px;
+        left: 480px;
+    }
+    #map .map-body .jizzakh .place-title {
+        top: 375px;
+        left: 519px;
+        width: 73px;
+    }
+    #map .map-body .jizzakh .number {
+        top: 375px;
+        left: 500px;
+    }
+    #map .map-body .sirdaryo .place-title {
+        top: 372px;
+        left: 571px;
+        width: 84px;
+    }
+    #map .map-body .sirdaryo .number {
+        top: 372px;
+        left: 550px;
+    }
+    #map .map-body .tashkent .place-title {
+        top: 321px;
+        left: 611px;
+        width: 95px;
+    }
+    #map .map-body .tashkent .number {
+        top: 321px;
+        left: 582px;
+        border: 6px solid red;
+        z-index: 999999;
+    }
+    #map .map-body .ferghana .place-title {
+        top: 377px;
+        left: 687px;
+        width: 79px;
+    }
+    #map .map-body .ferghana .number {
+        top: 377px;
+        left: 666px;
+    }
+    #map .map-body .namangan .place-title {
+        top: 325px;
+        left: 683px;
+        width: 87px;
+    }
+    #map .map-body .namangan .number {
+        top: 325px;
+        left: 665px;
+    }
+    #map .map-body .andijon .place-title {
+        top: 356px;
+        left: 734px;
+        width: 86px;
+    }
+    #map .map-body .andijon .number {
+        top: 356px;
+        left: 715px;
+    }
+}
+
+@media (max-width: 991px ) {
+    #hero-page .logo img {
+        top: 0;
+    }
+    #connect-page .gybrid-pochta .connect-video img {
+        padding-left: 0 !important;
+    }
+    .google-forms-block .google-forms {
+        width: 50% !important;
+    }
+    .add1 img {
+        width: 570px !important;
+    }
+    .steps-video {
+        width: 100%;
+        height: 640px;
+    }
+    .play-list-block {
+        padding-left: 15px;
+    }
+    #video-pleer {
+        width: 100% !important;
+    }
+    #video-pleer .play-list-block .play-list {
+        height: 250px !important;
+    }
+    #video-pleer .play-list ul li {
+        padding: 11px 26px !important;
+        font-size: 13px !important;
+    }
+    #video-pleer .main-video iframe {
+        padding-right: 15px;
+        height: 310px !important;
+    }
+    .ab-im-2, .ab-im-3, .ab-im-5, .ab-im-9  {
+        display: none;
+    }
+    .docco-float {
+        float: initial;
+    }
+    #header .authorization-block, .main-menu {
+        display: none;
+    }
+    #header .mobile-menu {
+        display: block;
+    }
+    #header .authorization-block, .main-menu, .logo-block {
+        padding: 15px 0px;
+    }
+    #header .logo img {
+        margin-top: 0;
+    }
+    #header .logo-block, #header .mobile-menu {
+        background: #3f5872 !important;
+    }
+    #hero-page .main-text {
+        left: 0;
+        margin: 0 auto;
+        top: 100px;
+    }
+    #hero-page .right-page, .main-page {
+        height: 665px;
+    }
+    #hero-page .mobile-active {
+        display: initial;
+        background: #6bc846;
+        color: white;
+        padding: 13px 26px;
+        box-shadow: 0 0 28px rgba(0,0,0,0.5);
+        width: 50%;
+        text-align: center;
+        margin-right: 25px;
+    }
+    #hero-page .mobile-passive {
+        display: none;
+    }
+    #hero-page .main-buttons {
+        display: flex;
+    }
+    #hero-page .mobile-video-animation {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        top: 90px;
+    }
+    #hero-page .mobile-video-animation {
+        display: block;
+    }
+    #hero-page .right-page {
+        display: none;
+    }
+    #hero-page .editorial {
+        display: none;
+    }
+    #connect-page .steps-mobile-disabled {
+        display: none !important;
+    }
+    #connect-page .connect-video img {
+        padding-right: 0 ;
+    }
+    .page-title {
+        padding: 40px 0 20px 0;
+    }
+    #doc-types .type-block {
+        margin: -4px 22px;
+        padding: 14px 10px;
+        font-size: 22px;
+    }
+    .card-1, .card-2, .card-3, .card-4, .card-5, .card-6 {
+        width: 330px;
+    }
+    #instead-page .doc-body svg {
+        width: 25px;
+        height: 25px;
+    }
+    #instead-page .doc-body .card-flip::after {
+        width: 75px;
+    }
+    #instead-page .doc-body .card-flip::before {
+        width: 75px;
+    }
+    #instead-page .doc-body .col-md-6 .card-flip h4 {
+        color: #ffffff;
+        margin-top: 18px;
+        font-size: 18px;
+    }
+    .card-4, .card-3 {
+        top: 490px;
+    }
+    .card-6, .card-5 {
+        top: 806px;
+    }
+    #instead-page .container {
+        height: 1150px;
+    }
+    #system-guide .main-stick-guide {
+        display: none;
+    }
+    #system-guide .system-guide-video {
+        display: block;
+    }
+    #system-guide .system-guide-video img {
+        width: 95%;
+    }
+    #system-guide .mobile-active-2 {
+        display: block;
+    }
+    #system-guide .mobile-non-active-2 {
+        display: none;
+    }
+    #mobile-app .mobile-block {
+        display: none;
+    }
+    #mobile-app .app-body {
+        padding-top: 0;
+    }
+    #mobile-app .app-body h2 {
+        text-align: center;
+    }
+    #mobile-app .app-body h5:nth-child(2) {
+        text-align: center;
+    }
+    #mobile-app .app-body h5 {
+        text-align: center;
+    }
+    #mobile-app .app-body  {
+        margin: 0 auto !important;
+    }
+    #mobile-app .app-body .mobile-app-buttons {
+        justify-content:center;
+    }
+    #footer-f .body-mobile {
+        display: block;
+    }
+    #footer-f .doc-body .footer-top, .footer-map, .footer-footer {
+        display: none !important;
+    }
+    #footer-f .doc-body {
+        padding: 0 ;
+    }
+    #footer-f .mobile-map {
+        width: 100%;
+        height: 290px;
+    }
+    #footer-f .mobile-footer-sections ul {
+        padding-left: 15px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .steps-video {
+        height: 420px;
+    }
+    .table-capsule {
+        display: block;
+    }
+
+    .how-to-pay {
+        width: 100% !important;
+        margin-top: 50px !important;
+    }
+
+    .table-price {
+        display: none;
+    }
+    #tech-support .under-title-blocks .under-blocks::after {
+        content: '';
+        width: 0;
+        height: 50%;
+        position: absolute;
+        border: 1px solid #e7e7e7;
+        top: 25%;
+        right: 0;
+    }
+    .ab-title {
+        width: 100% !important;
+    }
+    #hero-page .logo img {
+        padding-left: 10px;
+    }
+    #instead-page .container {
+        height: 1495px;
+    }
+    .card-1, .card-2, .card-3, .card-4, .card-5, .card-6 {
+        width: 93%;
+    }
+    #rate .page-title {
+        width: 400px;
+    }
+    #rate .over-priced .rate-block {
+        width: 400px;
+    }
+    #rate .over-priced .rate-body {
+        width: 340px;
+    }
+    .card-2 {
+        top: 386px;
+        left: 0;
+    }
+    .card-3 {
+        top: 600px;
+    }
+    .card-4 {
+        top: 815px;
+        left: 0;
+    }
+    .card-5 {
+        top: 1030px;
+    }
+    .card-6 {
+        top: 1245px;
+        left: 0;
+    }    
+    #instead-page .doc-body .col-md-6 .card-flip {
+        margin-bottom: 0 !important;
+        height: 200px;
+        padding: 0 0px;
+    }
+    #testemonials .testemonils-screen {
+        height: initial;
+        width: 100%;
+    }
+    #testemonials .carousel {
+        height: 635px;
+    }
+    #map .map-body {
+        display: none;
+    }
+    #map .map-body-mobile {
+        display: block;
+    }
+    #btn {
+        width: 60px !important;
+        height: 60px !important;
+    }
+    #btn img {
+        width: 30px !important;
+    }
+    .social-btn {
+        bottom: 25px;
+        left: 25px;
+    }
+    #facebook_btn::after {
+        left: 25px;
+    }
+    #instagram_btn::after {
+        transform: rotate(83deg);
+    }
+    #telelgram_btn.hoverBtn {
+        transform: translate(40px, -40px);
+    }
+    #instagram_btn.hoverBtn {
+        transform: translate(55px, 7px);
+    }
+    #facebook_btn.hoverBtn {
+        transform: translate(-9px, -55px);
+    }
+    #telelgram_btn img {
+        width: 30px;
+    }
+    #instagram_btn img {
+        width: 30px;
+    }
+    #facebook_btn img {
+        width: 25px;
+    }
+    .soc_btn {
+        width: 40px !important;
+        height: 40px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .mobile-active:nth-child(2):before {
+        background-image: url(/img/roof1.6661d6e0.png);
+        background-size: 141px 23px;
+        display: inline-block;
+        width: 139px;
+        height: 23px;
+        content: "";
+        position: absolute;
+        top: -17px;
+        left: -1px;
+    }
+    .mobile-active:nth-child(3):before {
+        background-image: url(/img/roof1.6661d6e0.png);
+        background-size: 101px 23px;
+        display: inline-block;
+        width: 101px;
+        height: 23px;
+        content: "";
+        position: absolute;
+        top: -17px;
+        left: -1px;
+    }
+    .google-forms-block .google-forms {
+        width: 90% !important;
+    }
+    .add1 img {
+        width: 320px !important;
+    }
+    #testemonials .testemonils-screen {
+        width: 122px;
+    }
+    .steps-video {
+        height: 230px;
+    }
+    .capsule {
+        margin: 0 !important;
+        margin-bottom: 20px !important;
+    }
+
+    #tech-support .under-title-blocks .under-blocks::before {
+        left: 20px !important;
+    }
+    #tech-support .under-title-blocks .under-blocks::after {
+        right: 20px !important;
+    }
+    #tech-support .under-title-blocks .under-blocks-last::after {
+        right: 20px !important;
+    }
+    .online-mark {
+        width: 15px !important;
+        height: 15px !important;
+        top: 42px !important;
+        right: 2px !important;
+    }
+    #tech-support .sub-title {
+        width: 100% !important;
+    }
+    .online-mark {
+        width: 12px;
+        height: 12px;
+    }
+    .tech-users .call-block .ava {
+        width: 50px !important;
+        margin-top: 30px !important;
+    }
+    .tech-users .call-block {
+        margin-bottom: 15px !important;
+        height: max-content !important;
+    }
+    .tech-users .call-block .users {
+        margin-top: 0;
+    }
+    .tech-users .call-block .tg {
+        margin-bottom: 40px;
+    }
+    .h4-update-title {
+        font-size: 16px;
+    }
+    .post-text {
+        display: none;
+    }
+    .other-projects {
+        padding: 7px 0px !important;
+    }
+    .fetures-title-point {
+        font-size: 15px !important;
+    }
+    .fetures-title-description {
+        font-size: 14px !important;
+    }
+    .cmpare-logo img {
+        width: 50px !important;
+    }
+    .features-table-title {
+        font-size: 16px;
+    }
+    .other-projects img {
+        width: 40px !important;
+    }
+    .fetures-title {
+        padding: 10px !important;
+    }
+    .table-title {
+        padding: 0 !important;
+    }
+    .features-icon {
+        display: none !important;
+    }
+    #video-pleer .main-video iframe {
+        height: 200px !important;
+    }
+    .svg-play {
+        display: none !important;
+    }
+    .ab-im-1 {
+        width: 300px !important;
+    }
+    .ab-im-8 {
+        height: 200px !important;
+    }
+    .ab-im-4 {
+        height: 200px !important;
+    }
+    .card-1, .card-2, .card-3, .card-4, .card-5, .card-6 {
+        width: 88%;
+    }
+    #instead-page .doc-body .col-md-6 .card-flip {
+        padding: 0 10px;
+    }
+    #hero-page .logo img {
+        width: 100%;
+    }
+    #hero-page .main-text, #doc-types .page-title, #instead-page .page-title, #rate .page-title {
+        width: 275px;
+    }
+    #instead-page .page-title h2,  #rate .page-title h2 {
+        font-size: 19px;
+    }
+    #instead-page .page-title h5, #rate .page-title h5 {
+        font-size: 15px;
+    }
+    #rate .pick-rate {
+        width: 280px;
+    }
+    #rate .rate-list {
+        width: 220px;
+    }
+    #rate .rate-block {
+        width: 270px;
+    }
+    #rate .rate-header {
+        padding: 25px 0;
+    }
+    #rate .rate-header h2 {
+        font-size: 19px;
+    }
+    #rate .rate-body {
+        width: 245px;
+        margin-top: 12px;
+    }
+    #rate .cuantity-rate .condition {
+        font-size: 11px;
+    }
+    #rate .limit-rate .condition { 
+        font-size: 11px;
+    }
+    #rate .rate-number-section {
+        font-size: 10px;
+    }
+    #rate .over-priced  h5 {
+        font-size: 12px;
+    }
+    #system-guide .page-title {
+        width: 270px;
+    }
+    #system-guide .page-title h2 {
+        font-size: 17px;
+    }
+    #mobile-app .app-body {
+        width: 270px;
+    }
+    #mobile-app .mobile-app-buttons a {
+        font-size: 12px;
+        border: 2px solid white;
+    }
+    #mobile-app .mobile-app-buttons a img {
+        margin-bottom: 0 ;
+    }
+    #testemonials .page-title h2 {
+        font-size: 17px; 
+    }
+    #testemonials .carousel {
+        height: 340px;
+    }
+    #map .page-title h2 {
+        font-size: 17px;
+    }
+    #map .map-desription {
+        width: 270px;
+        margin: 0 auto;
+        font-size: 13px;
+    }
+    #footer-f a {
+        font-size: 12px;
+    }
+    #testemonials .testemonials-description {
+        width: 260px;
+        font-size: 13px;
+    }
+    #system-guide .page-title h5 {
+        font-size: 17px;
+    }
+    #rate .over-priced  h4 {
+        font-size: 17px;
+    }
+    #rate .rate-header h2 {
+        font-size: 16px;
+    }
+    #rate .over-priced .rate-body {
+        width: 270px;
+    }
+    #rate .rate-block {
+        height: 297px;
+    }
+    #rate .over-priced .rate-block {
+        width: 270px;
+    }
+    #rate .rate-header span {
+        padding: 7px 19px;
+        font-size: 15px;
+    }
+    #rate .pick-rate input {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+    #rate .pick-rate button {
+        font-size: 14px;
+        padding-right: 20px;
+    }
+    #hero-page .right-page, .main-page {
+        height: 700px;
+    }
+    #connect-page .page-title h2 {
+        font-size: 19px;
+    }
+    #doc-types .page-title h2 {
+        font-size: 19px;
+    }
+    #head-page-title .page-title .page-title-block {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .link-c {
+        width: 100% !important;
+        padding: 0 20px;
+    }
+    .page-title-block h1 {
+        font-size: 24px;
+    }
+    .page-title-block h5 {
+        font-size: 18px;
+    }
+    .company-list {
+        padding: 0 30px !important;
+    }
+    .company-list .company {
+        width: 100% !important;
+    }
+    .rate-list {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .faq-title {
+        justify-content: center;
+    }
+    .faq-container h6 {
+        text-align: center;
+    }
+}
+
+@media (max-height: 540px) {
+    .google-forms-block {
+        top: 10px !important;
+    }
+    .modal-header-popup {
+        padding: 10px 21px;
+    }
+    .radiobuttons {
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+    .popup-button-div {
+        padding-top: 10px;
+        text-align: center;
+    }
+    .popup-button-div button {
+        width: auto !important;
+    }
+}
