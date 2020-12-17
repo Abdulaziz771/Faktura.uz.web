@@ -1,6 +1,6 @@
 <template>
   <!-- <header id="header" :class="{ 'fixed-header': scrollPosition }"> -->
-  <header id="header" :class="{'headroom--unpinned': scrolled, 'headroom': isScrolled }"  >
+  <header id="header" :class="{'headroom--unpinned': scrolled, 'headroom': isScrolled, 'isTopHeader': isTopHeader }"  >
     <div class="container-fluid">
         <nav class="row">
             <div class="logo-block justify-content-center d-flex col-5 col-sm-3 col-md-3 col-lg-2 col-xl-2">
@@ -95,12 +95,19 @@ export default {
             translate.changeLocale(value);
         },
         updateScroll() {
-
+            /* eslint-disable no-debugger */
             this.scrollPosition = window.scrollY
-            if (this.scrollPosition > 100) {
+            
+            if (this.scrollPosition > 10) {
                 this.isScrolled = true;
             } else {
                 this.isScrolled = false;
+            }
+            
+            if (this.scrollPosition < 20) {
+                this.isTopHeader = true;
+            } else  {
+                this.isTopHeader = false;
             }
         },
         handleScroll() {
@@ -124,10 +131,14 @@ export default {
     },
     mixins: [mixin],
     mounted() {
-
         window.addEventListener('scroll', this.updateScroll);
     },
     created() {
+        if (window.scrollY == 0) {
+            this.isTopHeader = true;
+        } else  {
+            this.isTopHeader = false;
+        }
         window.addEventListener("scroll", this.handleScroll);
     },
     destroyed() {

@@ -5,62 +5,58 @@
             <content class="hero-page-content">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="main-page col-lg-9 col-xl-8">
-                            <div class="main-text">
-                                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="col-12 p-0">
+                            <div class="main-slide-background">
+                                <div id="carouselExampleIndicators" data-interval="3000" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                    </ol>
                                     <div class="carousel-inner">
-                                        <div class="carousel-item ">
-                                            <div class="main-text-block">
-                                                <h2 class="text-white">
-                                                    {{ translation.translate('landingPageHome', 'mainTitle') }}
-                                                </h2>
-                                                <p class="font-weight-bolder light-brand-tx">
-                                                    {{ translation.translate('landingPageHome', 'mainDescription') }}
-                                                </p>
-                                            </div>
-                                        </div>
                                         <div class="carousel-item active">
-                                           <div class="main-text-block">
-                                                <h2 class="text-white">
-                                                    {{ translation.translate('landingPageHome', 'gybridTitle') }}
-                                                </h2>
-                                                <p class="font-weight-bolder light-brand-tx">
-                                                    {{ translation.translate('landingPageHome', 'gybridDescription') }} 
-                                                </p>
+                                            <img src="../assets/img/sldier/3333.png" class="desktop-slide" alt="...">
+                                            <div class="carousel-caption d-block">
+                                                <h5 class="slide-desc-title"> {{ translation.translate('landingPageHome', 'slider1Title') }}</h5>
+                                                <p class="slide-desc-description">{{ translation.translate('landingPageHome', 'slider1Desc') }}</p>
+                                                <div class="slide-button-group">
+                                                    <button class="take-an-action"><a target="_blank" href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3">{{ translation.translate('landingPageHome', 'slider1Button1') }}</a></button>
+                                                    <button class="take-a-link"><a target="_blank" href="https://youtu.be/zxz0LpOibbQ">{{ translation.translate('landingPageHome', 'slider1Button2') }}</a></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../assets/img/sldier/2222.png" class="desktop-slide" alt="...">
+                                            <div class="carousel-caption d-block">
+                                                <h5 class="slide-desc-title">{{ translation.translate('landingPageHome', 'slider2Title') }}</h5>
+                                                <p class="slide-desc-description">{{ translation.translate('landingPageHome', 'slider2Desc') }}</p>
+                                                <div class="slide-button-group">
+                                                    <button class="take-an-action"><a target="_blank" href="https://t.me/fakturauz">{{ translation.translate('landingPageHome', 'slider2Button1') }}</a></button>
+                                                    <button class="take-a-link"><a target="_blank" href="https://youtu.be/sqT9R3OZYyA">{{ translation.translate('landingPageHome', 'slider2Button2') }}</a></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../assets/img/sldier/1111.png" class="desktop-slide" alt="...">
+                                            <div class="carousel-caption d-block">
+                                                <h5 class="slide-desc-title">{{ translation.translate('landingPageHome', 'slider3Title') }}</h5>
+                                                <p class="slide-desc-description">{{ translation.translate('landingPageHome', 'slider3Desc') }}</p>
+                                                <div class="slide-button-group">
+                                                    <button class="take-an-action"> <a target="_blank" href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3">{{ translation.translate('landingPageHome', 'slider3Button1') }}</a></button>
+                                                    <button class="take-a-link"><a target="_blank" href="https://youtu.be/xcrJ_o4_nmc">{{ translation.translate('landingPageHome', 'slider3Button2') }}</a></button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    </div>
-                                <div class="main-buttons">
-                                    <a href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3"
-                                       class="universal-radius font-weight-bold t-n universal-transition mobile-passive" @click="callGtag('Кнопка Начать бесплатно сейчас,start_now_button,click')">{{
-                                            translation.translate('landingPageHome', 'getStartedFree')
-                                        }}</a>
-                                    <a href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3"
-                                       class="universal-radius font-weight-bold t-n universal-transition mobile-active"  @click='callGtag("Нажатие на регистрацию,log_in,click")'>{{
-                                            translation.translate('header', 'registration')
-                                        }}</a>
-                                    <a href="https://account.faktura.uz/Login?ReturnUrl=http%3a%2f%2faccount.faktura.uz%2fAuthorize%3fresponse_type%3dcode%26client_id%3d12379127389123%26redirect_uri%3dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3d%252f%26scope%3d0%252c1%252c2%252c3"
-                                       class="universal-radius font-weight-bold t-n universal-transition mobile-active" @click='callGtag("Вошедшие в систему,sign_in,click")'>{{
-                                            translation.translate('header', 'signin')
-                                        }}</a>
-                                    <router-link :to="{ name: 'video-lessons' }" class="text-white ml-3 mobile-passive">
-                                        <span @click="callGtag('Кнопка Посмотреть видео уроки,watch_video_lessons,click')">{{ translation.translate('landingPageHome', 'watchVideoLessons') }}</span>
-                                    </router-link>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
                                 </div>
-                                <div class="mobile-video-animation">
-                                    <img src="../assets/img/Initials.png" class="play-img"
-                                         alt="faktura.uz play animation" data-toggle="modal" data-target="#exampleModal" @click="loadvideoFromYouTube(1)">
-                                    <p class="text-white mt-5">
-                                        {{ translation.translate('landingPageHome', 'watch60SeconsVideo') }}</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="right-page col-lg-3 col-xl-4">
-                            <div class="animation-play d-flex">
-                                <img src="../assets/img/Initials.png" class="play-img" alt="faktura.uz play animation"
-                                     data-toggle="modal" data-target="#exampleModal" @click="loadvideoFromYouTube(1)">
-                                <p class="text-white">{{ translation.translate('landingPageHome', 'watch60SeconsVideo') }}</p>
                             </div>
                         </div>
                     </div>
@@ -86,6 +82,114 @@
                 </g>
             </svg> -->
             <img class="editorial" :class="{ 'scrolledSVG': isScrolled }" src="../assets/img/snow-ground.png" alt="">
+        </section>
+
+        <section id="connect-page">
+            <div class="page-title connect-title container-fluid">
+                <h2 class="font-weight-bolder dark">{{ translation.translate('landingPageHome', 'partners') }}</h2>
+                <h5 class="light">{{ translation.translate('landingPageHome', 'partnersDesc') }}</h5>
+            </div>
+            <div class="connect-body gybrid-pochta container partnerships">
+                <div class="row">
+                    <div class="col-3">
+                        <div>
+                            <img src="../assets/img/partnership/mobiuz.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div>
+                            <img src="../assets/img/partnership/uztelecom.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div>
+                            <img style="width: 60%" src="../assets/img/partnership/ucell.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div>
+                            <img src="../assets/img/partnership/agro_bank.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-3">
+                        <div>
+                            <img style="width: 60%" src="../assets/img/partnership/ASia.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div>
+                            <img src="../assets/img/partnership/ipoteka_bank.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div>
+                            <img style="width: 25%" src="../assets/img/partnership/NBU-01.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div>
+                            <img style="width: 30%" src="../assets/img/partnership/Temir yollar.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-3">
+                        <div>
+                            <img style="width: 100%" src="../assets/img/partnership/xalqbank.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div>
+                            <img style="width: 70%" src="../assets/img/partnership/Coca Cola.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div>
+                            <img src="../assets/img/partnership/pepsi.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div>
+                            <img src="../assets/img/partnership/korzinka_logo_new.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-3">
+                        <div>
+                            <img style="width: 75%" src="../assets/img/partnership/sqb.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div>
+                            <img style="width: 60%" src="../assets/img/partnership/qqb.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div>
+                            <img style="width: 70%" src="../assets/img/partnership/article-original.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div>
+                            <img src="../assets/img/partnership/ipak.png" alt="">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="winter-is-coming">
+                <div class="snow snow--near"></div>
+                <div class="snow snow--near snow--alt"></div>
+                
+                <div class="snow snow--mid"></div>
+                <div class="snow snow--mid snow--alt"></div>
+                
+                <div class="snow snow--far"></div>
+                <div class="snow snow--far snow--alt"></div>
+            </div>
         </section>
 
         <section id="connect-page">

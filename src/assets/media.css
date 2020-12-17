@@ -1,4 +1,8 @@
 @media (max-width: 1400px) {
+    #header .main-menu ul li a {
+        padding-right: 10px;
+        font-size: 14px;
+    }
     #connect-page .gybrid-pochta .timeline {
         left: 40px !important;
     }
@@ -597,6 +601,22 @@
 }
 
 @media (max-width: 991px ) {
+    .desktop-slide {
+        width: 566px;
+    }
+    .carousel-caption .slide-desc-title {
+        font-size: 35px;
+    }
+    .slide-desc-description {
+        font-size: 18px;
+    }
+    .desktop-slide {
+        width: 600px;
+        margin-top: 200px;
+    }
+    .mobile-slide {
+        display: initial;
+    }
     #hero-page .logo img {
         top: 0;
     }
@@ -910,6 +930,20 @@
 }
 
 @media (max-width: 576px) {
+    .carousel-caption .slide-desc-title {
+        font-size: 30px !important;
+    }
+    .slide-desc-description {
+        font-size: 16px !important;
+    }
+    .desktop-slide {
+        width: 340px;
+        margin-top: 270px;
+    }
+    .carousel-caption {
+        right: 5%;
+        left: 5%;
+    }
     .mobile-active:nth-child(2):before {
         background-image: url(/img/roof1.6661d6e0.png);
         background-size: 141px 23px;
