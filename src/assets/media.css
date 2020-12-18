@@ -807,6 +807,15 @@
 }
 
 @media (max-width: 768px) {
+    .carousel-caption {
+        right: 10%;
+        left: 10%;
+    }
+
+    .take-an-action, .take-a-link {
+        font-size: 12px;
+    }
+
     .steps-video {
         height: 420px;
     }
@@ -931,7 +940,7 @@
 
 @media (max-width: 576px) {
     .carousel-caption .slide-desc-title {
-        font-size: 30px !important;
+        font-size: 29px !important;
     }
     .slide-desc-description {
         font-size: 16px !important;

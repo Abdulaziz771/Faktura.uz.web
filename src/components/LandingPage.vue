@@ -90,95 +90,13 @@
                 <h5 class="light">{{ translation.translate('landingPageHome', 'partnersDesc') }}</h5>
             </div>
             <div class="connect-body gybrid-pochta container partnerships">
-                <div class="row">
-                    <div class="col-3">
+                <diw class="row">
+                    <div class="col-12">
                         <div>
-                            <img src="../assets/img/partnership/mobiuz.png" alt="">
+                            <img style="width: 100%" src="../assets/img/partnership/Screenshot_7.png" alt="">
                         </div>
                     </div>
-                    <div class="col-3">
-                        <div>
-                            <img src="../assets/img/partnership/uztelecom.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div>
-                            <img style="width: 60%" src="../assets/img/partnership/ucell.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div>
-                            <img src="../assets/img/partnership/agro_bank.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-5">
-                    <div class="col-3">
-                        <div>
-                            <img style="width: 60%" src="../assets/img/partnership/ASia.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div>
-                            <img src="../assets/img/partnership/ipoteka_bank.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div>
-                            <img style="width: 25%" src="../assets/img/partnership/NBU-01.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div>
-                            <img style="width: 30%" src="../assets/img/partnership/Temir yollar.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-5">
-                    <div class="col-3">
-                        <div>
-                            <img style="width: 100%" src="../assets/img/partnership/xalqbank.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div>
-                            <img style="width: 70%" src="../assets/img/partnership/Coca Cola.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div>
-                            <img src="../assets/img/partnership/pepsi.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div>
-                            <img src="../assets/img/partnership/korzinka_logo_new.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-5">
-                    <div class="col-3">
-                        <div>
-                            <img style="width: 75%" src="../assets/img/partnership/sqb.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div>
-                            <img style="width: 60%" src="../assets/img/partnership/qqb.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div>
-                            <img style="width: 70%" src="../assets/img/partnership/article-original.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div>
-                            <img src="../assets/img/partnership/ipak.png" alt="">
-                            
-                        </div>
-                    </div>
-                </div>
+                </diw>
             </div>
             <div class="winter-is-coming">
                 <div class="snow snow--near"></div>

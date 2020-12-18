@@ -2186,9 +2186,21 @@ input::-webkit-inner-spin-button {
 
 .carousel-caption {
     top: 70px !important;
-    right: 30%;
-    left: 30%;
+    right: 23%;
+    left: 23%;
 }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 50px;
+    width: 50px;
+    outline: black;
+    background-size: 50%, 50%;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+}
+
+
 
 
 
