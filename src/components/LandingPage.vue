@@ -7,14 +7,26 @@
                     <div class="row">
                         <div class="col-12 p-0">
                             <div class="main-slide-background">
-                                <div id="carouselExampleIndicators" data-interval="3000" class="carousel slide" data-ride="carousel">
+                                <div id="carouselExampleIndicators" data-interval="4000" class="carousel slide" data-ride="carousel">
                                     <ol class="carousel-indicators">
                                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                                         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
                                     </ol>
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
+                                            <img src="../assets/img/sldier/4444.png" class="desktop-slide" alt="...">
+                                            <div class="carousel-caption d-block">
+                                                <h5 class="slide-desc-title"> {{ translation.translate('landingPageHome', 'playMarketApp') }}</h5>
+                                                <p class="slide-desc-description">{{ translation.translate('landingPageHome', 'AppStoreApp') }}</p>
+                                                <div class="slide-button-group">
+                                                    <button class="take-an-action"><a target="_blank" href="https://play.google.com/store/apps/details?id=uz.faktura&hl=ru">Play Market</a></button>
+                                                    <button class="take-a-link"><a target="_blank" href="https://apps.apple.com/us/app/faktura/id1454146398">App Store</a></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item ">
                                             <img src="../assets/img/sldier/3333.png" class="desktop-slide" alt="...">
                                             <div class="carousel-caption d-block">
                                                 <h5 class="slide-desc-title"> {{ translation.translate('landingPageHome', 'slider1Title') }}</h5>
@@ -1035,10 +1047,10 @@
                                              alt="play-market faktura.uz app">
                                         Play Market
                                     </a>
-                                    <!-- <a class="apple-store" href="#">
+                                    <a class="apple-store" target="_blank" href="https://apps.apple.com/us/app/faktura/id1454146398">
                                         <img src="../assets/img/apple.png" class="mr-1" alt="apple faktura.uz app">
                                         App Store
-                                    </a> -->
+                                    </a>
                                 </div>
                             </div>
                         </div>

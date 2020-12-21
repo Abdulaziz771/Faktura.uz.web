@@ -1,4 +1,7 @@
 @media (max-width: 1400px) {
+    .carousel-caption .slide-desc-title {
+        font-size: 40px;
+    }
     #header .main-menu ul li a {
         padding-right: 10px;
         font-size: 14px;
@@ -612,7 +615,7 @@
     }
     .desktop-slide {
         width: 600px;
-        margin-top: 200px;
+        margin-top: 130px;
     }
     .mobile-slide {
         display: initial;
@@ -1252,3 +1255,4 @@
         width: auto !important;
     }
 }
+

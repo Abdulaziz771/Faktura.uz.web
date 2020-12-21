@@ -1,5 +1,4 @@
 <template>
-  <!-- <header id="header" :class="{ 'fixed-header': scrollPosition }"> -->
   <header id="header" :class="{'headroom--unpinned': scrolled, 'headroom': isScrolled, 'isTopHeader': isTopHeader }"  >
     <div class="container-fluid">
         <nav class="row">
@@ -58,7 +57,10 @@
                 </ul>
             </div>
             <div class="mobile-menu text-right col-7 col-sm-9 col-md-9">
-                <MenuIcon @click="$store.commit('toggleSidebar', true)"/>
+                <div class="justify-content-end d-flex" style="align-items: center;     margin-top: 6px;">
+                    <MenuIcon @click="$store.commit('toggleSidebar', true)"/>
+                    <a target="_blank" href="https://app.faktura.uz/uz"><LogInIcon href="www.google.com" class="login-icon"/></a>   
+                </div>
             </div>
         </nav>
     </div>
@@ -71,6 +73,7 @@ import {
   MenuIcon,
   ChevronDownIcon
 } from 'vue-feather-icons'
+import { LogInIcon } from 'vue-feather-icons'
 import translate from '../translation/translate'
 import mixin from './../gtagMixin'
 export default {
@@ -88,7 +91,8 @@ export default {
     },
     components: {
         MenuIcon,
-        ChevronDownIcon
+        ChevronDownIcon,
+        LogInIcon
     },
     methods: {
         _onChangeLanguage(value) {
@@ -161,6 +165,7 @@ export default {
     position: fixed;
     left: 0;
     right: 0;
+    top: 0;
     z-index: 99999;
 }
 

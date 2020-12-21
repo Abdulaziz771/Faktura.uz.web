@@ -186,9 +186,21 @@ ul li {
     display: flex;
 }
 
+.fixed-header {
+    background: #394d62;
+}
 
 .headroom .authorization-block {
     background-color: #3f5872 !important;
+}
+
+.login-icon {
+    background: #6fc251;
+    height: 40px !important;
+    padding: 5px;
+    color: white !important;
+    width: 40px;
+    border-radius: 5px;
 }
 
 #hero-page .right-page, .main-page {
@@ -2185,7 +2197,7 @@ input::-webkit-inner-spin-button {
 }
 
 .carousel-caption {
-    top: 70px !important;
+    top: 20px !important;
     right: 23%;
     left: 23%;
 }

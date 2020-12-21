@@ -16,6 +16,22 @@
                         <div class="col-lg-4 col-md-6 col-12">
                              <div class="c-block">
                                 <img src="../assets/img/1c.png" alt="1с в faktura.uz, версии, конфигурация">
+                                <h4 class="mt-3">{{ translation.translate('1cModulesPage', 'moduleVersion') }}: 3.4</h4>
+                                <h5 class="mt-4">{{ translation.translate('1cModulesPage', 'configuration') }}:</h5><h6>Бухгалтерия. Хозрасчет, редакция 1.3 (1.3)</h6>
+                                <h5 class="mt-4">{{ translation.translate('1cModulesPage', 'mouleDescription') }}:</h5>
+                                <h6>
+                                    {{ translation.translate('1cModulesPage', 'moduleDescriptionData') }}
+                                </h6>
+                                <div class="c-download mt-5">
+                                    <a href="https://yadi.sk/d/a8BtLdZDfDeBxg" target="_blank" @click='callGtag("Загрузка 1с модуля,1c_module_download,click")'>{{ translation.translate('1cModulesPage', 'downloadButton') }}
+                                        <DownloadIcon class="c-DownloadIcon"/> 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                             <div class="c-block">
+                                <img src="../assets/img/1c.png" alt="1с в faktura.uz, версии, конфигурация">
                                 <h4 class="mt-3">{{ translation.translate('1cModulesPage', 'moduleVersion') }}: 3.3</h4>
                                 <h5 class="mt-4">{{ translation.translate('1cModulesPage', 'configuration') }}:</h5><h6>Бухгалтерия. Хозрасчет, редакция 1.3 (1.3)</h6>
                                 <h5 class="mt-4">{{ translation.translate('1cModulesPage', 'mouleDescription') }}:</h5>
