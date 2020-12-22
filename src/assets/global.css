@@ -2192,6 +2192,15 @@ input::-webkit-inner-spin-button {
     width: 75%;
 }
 
+.faq-block-price {
+    padding: 20px;
+    background: #eaeaea;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    transition: all .2s ease;
+}
+
 .mobile-slide {
     display: none;
 }

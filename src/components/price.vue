@@ -45,6 +45,21 @@
                         </div>
                     </div>
                 </div>
+                <div class="faq-block-price d-flex">
+                    <div class="faq-title">
+                        <h5> {{ translation.translate('priceTable', 'priceCondition') }}</h5>
+                    </div>
+                </div>
+                <div class="faq-block-price d-flex">
+                    <div class="faq-title">
+                        <h5> {{ translation.translate('priceTable', 'priceCondition2') }}</h5>
+                    </div>
+                </div>
+                <div class="faq-block-price d-flex">
+                    <div class="faq-title">
+                        <h5> {{ translation.translate('priceTable', 'priceCondition3') }} <a target="_blank" href="https://yadi.sk/i/LjoTzYuPuUNU3A">{{ translation.translate('landingPageHome', 'tolinkSingle') }}</a></h5>
+                    </div>
+                </div>
                 <p class="how-to-pay">
                     {{ translation.translate('priceTable', 'goToHowToPay') }} <router-link :to='{ name: "video-lessons" }'> {{ translation.translate('landingPageHome', 'tolink') }} </router-link>
                 </p>
@@ -227,6 +242,7 @@ export default {
 
 #price table {
     margin: 100px 0;
+    margin-bottom: 70px;
     box-shadow: 0px 0px 50px -18px rgba(0,0,0,0.75);
     border-radius: 15px;
 }

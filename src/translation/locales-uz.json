@@ -32,6 +32,7 @@
         "toWatchotherVideoLessons": "Дарсликни кўриш учун шу манзилга киринг:",
         "watchAllPrices": "Faktura.uz тарифлари билан танишиш учун:",
         "tolink": "манзил",
+        "tolinkSingle": "манзил",
         "findAnswersTotheQuestions": "Ушбу дарсликда сиз ўзингизни қизиқтирган барча саволларга жавоб топасиз",
         "typesOfAccesibleDocuments": "Faktura.uz орқали қандай ҳужжатлар юбориш мумкин?",
         "exchangeBenefitsTitle": "Қоғоз ҳужжатлар алмашинуви эвазига нима оласиз?",
@@ -285,6 +286,9 @@
         "videopleer11": "Ходимни қандай қўшишим мумкин?"
     },
     "priceTable": {
+        "priceCondition":"Агар да сиз тарифингизни ишлатишни давом этсангиз, сизнинг қолган ҳужжатларингизни сони кейинги ойга ўтказиб берилади!",
+        "priceCondition2":"Faktura.uz тизимида рўйхатдан ўтганингиздан сўнг, сизга бир ойлик бепул фойдаланиш ҳуқуқи берилади.",
+        "priceCondition3":"Реквизитлар олиш учун ҳавола: ",
         "priceTableTitleFirstThing": "Ушбу саҳифада Faktura.uz тизимининг барча тариф режалари мавжуд",
         "priceTableTitleFirst": "Янги фойдаланувчилар учун 30 кун бепул",
         "priceTableTitle": "Номи",
