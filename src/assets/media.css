@@ -1236,6 +1236,7 @@
     }
 }
 
+
 @media (max-height: 540px) {
     .google-forms-block {
         top: 10px !important;
@@ -1255,4 +1256,28 @@
         width: auto !important;
     }
 }
+
+
+/* @media (max-height: 768px) {
+    .carousel-caption .slide-desc-title {
+        font-size: 30px !important;
+    }
+    .slide-desc-description {
+        font-size: 16px !important;
+    }
+    .take-an-action {
+        padding: 7px 32px !important;
+        font-size: 14px !important; 
+    }
+    .take-a-link {
+        padding: 7px 32px !important;
+        font-size: 14px !important     
+    }
+    .carousel-caption {
+        top: 10px !important;
+    }
+    .carousel-item img {
+        margin-top: -150px !important;
+    }
+} */
 
