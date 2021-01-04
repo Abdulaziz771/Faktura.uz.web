@@ -13,27 +13,49 @@
                                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                                         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                                         <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
                                     </ol>
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <img src="../assets/img/sldier/4444.png" class="desktop-slide" alt="...">
-                                            <div class="carousel-caption d-block">
-                                                <h5 class="slide-desc-title"> {{ translation.translate('landingPageHome', 'playMarketApp') }}</h5>
-                                                <p class="slide-desc-description">{{ translation.translate('landingPageHome', 'AppStoreApp') }}</p>
+                                            <img src="../assets/img/sldier/3333.png" class="desktop-slide" alt="...">
+                                            <div class="carousel-caption d-block feedbak">
+                                                <h5 class="slide-desc-title"> {{ translation.translate('landingPageHome', 'slider4Title') }}</h5>
+                                                <textarea :placeholder="translation.translate('landingPageHome', 'slider4Description')" id="" cols="30" rows="10" ></textarea>
                                                 <div class="slide-button-group">
-                                                    <button class="take-an-action"><a target="_blank" href="https://play.google.com/store/apps/details?id=uz.faktura&hl=ru">Play Market</a></button>
-                                                    <button class="take-a-link"><a target="_blank" href="https://apps.apple.com/us/app/faktura/id1454146398">App Store</a></button>
+                                                    <button class="take-an-action" @click="getFormValues"><a target="_blank">{{ translation.translate('landingPageHome', 'slider4Desc') }}</a></button>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="carousel-item ">
+                                        <div class="carousel-item">
                                             <img src="../assets/img/sldier/3333.png" class="desktop-slide" alt="...">
                                             <div class="carousel-caption d-block">
                                                 <h5 class="slide-desc-title"> {{ translation.translate('landingPageHome', 'slider1Title') }}</h5>
                                                 <p class="slide-desc-description">{{ translation.translate('landingPageHome', 'slider1Desc') }}</p>
                                                 <div class="slide-button-group">
-                                                    <button class="take-an-action"><a target="_blank" href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3">{{ translation.translate('landingPageHome', 'slider1Button1') }}</a></button>
                                                     <button class="take-a-link"><a target="_blank" href="https://youtu.be/zxz0LpOibbQ">{{ translation.translate('landingPageHome', 'slider1Button2') }}</a></button>
+                                                    <button class="take-an-action"><a target="_blank" href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3">{{ translation.translate('landingPageHome', 'slider1Button1') }}</a></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                         <div class="carousel-item ">
+                                            <img src="../assets/img/sldier/1111.png" class="desktop-slide" alt="...">
+                                            <div class="carousel-caption d-block">
+                                                <h5 class="slide-desc-title">{{ translation.translate('landingPageHome', 'slider3Title') }}</h5>
+                                                <p class="slide-desc-description">{{ translation.translate('landingPageHome', 'slider3Desc') }}</p>
+                                                <div class="slide-button-group">
+                                                    <button class="take-a-link"><a target="_blank" href="https://youtu.be/xcrJ_o4_nmc">{{ translation.translate('landingPageHome', 'slider3Button2') }}</a></button>
+                                                    <button class="take-an-action"> <a target="_blank" href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3">{{ translation.translate('landingPageHome', 'slider3Button1') }}</a></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../assets/img/sldier/4444.png" class="desktop-slide" alt="...">
+                                            <div class="carousel-caption d-block">
+                                                <h5 class="slide-desc-title"> {{ translation.translate('landingPageHome', 'playMarketApp') }}</h5>
+                                                <p class="slide-desc-description">{{ translation.translate('landingPageHome', 'AppStoreApp') }}</p>
+                                                <div class="slide-button-group">
+                                                    <button class="take-a-link"><a target="_blank" href="https://apps.apple.com/us/app/faktura/id1454146398">App Store</a></button>
+                                                    <button class="take-an-action"><a target="_blank" href="https://play.google.com/store/apps/details?id=uz.faktura&hl=ru">Play Market</a></button>
                                                 </div>
                                             </div>
                                         </div>
@@ -43,19 +65,8 @@
                                                 <h5 class="slide-desc-title">{{ translation.translate('landingPageHome', 'slider2Title') }}</h5>
                                                 <p class="slide-desc-description">{{ translation.translate('landingPageHome', 'slider2Desc') }}</p>
                                                 <div class="slide-button-group">
-                                                    <button class="take-an-action"><a target="_blank" href="https://t.me/fakturauz">{{ translation.translate('landingPageHome', 'slider2Button1') }}</a></button>
                                                     <button class="take-a-link"><a target="_blank" href="https://youtu.be/sqT9R3OZYyA">{{ translation.translate('landingPageHome', 'slider2Button2') }}</a></button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="../assets/img/sldier/1111.png" class="desktop-slide" alt="...">
-                                            <div class="carousel-caption d-block">
-                                                <h5 class="slide-desc-title">{{ translation.translate('landingPageHome', 'slider3Title') }}</h5>
-                                                <p class="slide-desc-description">{{ translation.translate('landingPageHome', 'slider3Desc') }}</p>
-                                                <div class="slide-button-group">
-                                                    <button class="take-an-action"> <a target="_blank" href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3">{{ translation.translate('landingPageHome', 'slider3Button1') }}</a></button>
-                                                    <button class="take-a-link"><a target="_blank" href="https://youtu.be/xcrJ_o4_nmc">{{ translation.translate('landingPageHome', 'slider3Button2') }}</a></button>
+                                                    <button class="take-an-action"><a target="_blank" href="https://t.me/fakturauz">{{ translation.translate('landingPageHome', 'slider2Button1') }}</a></button>
                                                 </div>
                                             </div>
                                         </div>
@@ -102,13 +113,13 @@
                 <h5 class="light">{{ translation.translate('landingPageHome', 'partnersDesc') }}</h5>
             </div>
             <div class="connect-body gybrid-pochta container partnerships">
-                <diw class="row">
+                <div class="row">
                     <div class="col-12">
                         <div>
                             <img style="width: 100%" src="../assets/img/partnership/Screenshot_7.png" alt="">
                         </div>
                     </div>
-                </diw>
+                </div>
             </div>
             <div class="winter-is-coming">
                 <div class="snow snow--near"></div>
@@ -130,16 +141,11 @@
             <div class="connect-body gybrid-pochta container-fluid">
                 <div class="row">
                     <div class="col-md-12 col-lg-6">
-                        <div class="connect-video">
-                            <img @click="loadvideoFromYouTube(4)" v-show="gybridPochta"
-                                 src="../assets/img/gybrid.png" class="bg-white"
-                                 alt="faktura.uz steps animation">
-                            <div v-show="!gybridPochta">
-                                <iframe class="steps-video gybrid-video" width="560" height="315"
-                                        :src="thirdVideoLink" frameborder="0"
+                        <div class="connect-video connect-video-1">
+                            <iframe class="steps-video gybrid-video" width="560" height="315"
+                                        src="https://www.youtube-nocookie.com/embed/xcrJ_o4_nmc" frameborder="0"
                                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                         allowfullscreen></iframe>
-                            </div>
                         </div>
                     </div>
                      <div class="col-md-12 steps-mobile-disabled col-lg-6 position-relative d-flex align-items-center">
@@ -204,15 +210,10 @@
                     </div>
                     <div class="col-md-12 col-lg-6">
                         <div class="connect-video">
-                            <img @click="loadvideoFromYouTube(2)" v-show="stepsForStarting"
-                                 src="../assets/img/ipad-mock-steps.png" class="bg-white"
-                                 alt="faktura.uz steps animation">
-                            <div v-show="!stepsForStarting">
-                                <iframe class="steps-video" width="560" height="315"
-                                        :src="fourthVideoLinks" frameborder="0"
+                             <iframe class="steps-video" width="560" height="315"
+                                        src="https://www.youtube-nocookie.com/embed/CjT3mqxBf_s" frameborder="0"
                                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                         allowfullscreen></iframe>
-                            </div>
                         </div>
                     </div>
                     <div class="w-100">
@@ -996,13 +997,10 @@
                         <div class="system-guide-video">
                             <div>
                                 <div class="text-center">
-                                    <img @click="loadvideoFromYouTube(3)"
-                                         src="../assets/img/ipad-mock.png" v-show="panelTutorialVideo"
-                                         alt="faktura.uz steps animation" class="bg-white">
                                     <div>
-                                        <iframe v-show="!panelTutorialVideo" class="steps-video p-4"
+                                        <iframe class="steps-video p-4"
                                                 style="border-radius: 50px" width="560" height="315"
-                                                :src="thirdVideoLink" frameborder="0"
+                                                src="https://www.youtube-nocookie.com/embed/4MWjz2v84lU" frameborder="0"
                                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                                 allowfullscreen></iframe>
                                     </div>
@@ -1407,7 +1405,7 @@
             </div>
         </div>
         
-        <!-- <div v-if="currentTime == 0" class="google-forms-scene"></div>
+        <div v-if="currentTime == 0" class="google-forms-scene"></div>
         <div v-if="currentTime == 0" class="google-forms-block" id="voice">
             <div  class="google-forms">
                 <div class="modal-header-popup">
@@ -1459,7 +1457,7 @@
                     </div>
                 </form>
             </div>
-        </div>-->
+        </div>
     </div>
 </template>
 <script src="../tgFunction.js"></script>
@@ -1528,7 +1526,7 @@ export default {
             firstVideoLink: null,
             secondVideoLink: null,
             thirdVideoLink: null,
-            currentTime: 2,
+            currentTime: 10,
             gybridPochta: true,
             fourthVideoLinks: null
         }
@@ -1656,29 +1654,17 @@ export default {
         }
     },
     methods: {
-        getFormValues() {
-            this.currentTime = 1, 
-            this.callGtag('Попап телеграм переходы,popup_telegram,click')
-            
-            let exampleFormControlTextarea1 = document.getElementById('exampleFormControlTextarea1')
-            let voice = document.querySelectorAll('voice')
-            let form = document.querySelectorAll('form')
-            let questions = document.querySelectorAll('.form-check-input');
-            const botToken = '1434288246:AAEkICQsJyCY9dSaRzWVRMYISVroGJeDw38';
+        async  getFormValues  (){
+            let form = await document.querySelector('.feedbak textarea')
+            console.log(form);
+            var answer = await `${form.value}`
+            console.log(answer);
+            const botToken = '1438009177:AAFbe7wRiS3w6k_Y28iYFw406fEkr3q5XJQ';
             const toWhom = '705714423';
-            
-            localStorage.setItem('forNewUsers', true);
-            if(exampleFormControlTextarea1.value){
-                var answer = `Выбран ${exampleFormControlTextarea1.getAttribute('data-social')} ${exampleFormControlTextarea1.value}`
-                fetch(`https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${toWhom}&parse_mode=html&text=${answer}`,{method: 'POST'})
-            } else {
-                questions.forEach(elem => {
-                    if(elem.checked){
-                        var answer = `Выбран: ${elem.getAttribute('data-social')}`
-                        fetch(`https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${toWhom}&parse_mode=html&text=${answer}`,{method: 'POST'})
-                    }
-                });
-            }
+            fetch(`https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${toWhom}&parse_mode=html&text=${answer}`,{method: 'POST'})
+            .then(() =>{
+                form.value = ''
+            })
         },
         stopTimer() {
             clearTimeout(this.timer);
@@ -1686,7 +1672,7 @@ export default {
         },
         startTimer() {
             this.takePhoneDiv = false;
-            this.currentTime = 2;
+            this.currentTime = 10;
             this.timer = setInterval(() => {
               this.currentTime--
             }, 1000)
@@ -1869,7 +1855,6 @@ export default {
         }
     },
     created() {
-
     },
     mounted() {
         let a = localStorage.getItem('forNewUsers') 

@@ -372,6 +372,10 @@
 }
 
 @media (max-width: 1199px) {
+    .connect-video iframe {
+        width: 490px;
+        height: 281px;
+    }
     .snow-roof1:before {
         top: -11px !important;
         right: 1px !important;
@@ -604,6 +608,16 @@
 }
 
 @media (max-width: 991px ) {
+    .connect-video iframe {
+        width: 560px !important;
+        height: 315px !important;
+    }
+    .connect-video {
+        text-align: center !important;
+    }
+    .connect-video-1 {
+        text-align: center !important;
+    }
     .desktop-slide {
         width: 566px;
     }
@@ -942,6 +956,28 @@
 }
 
 @media (max-width: 576px) {
+    .feedbak textarea {
+        width: 320px;
+        background: rgba(255, 255, 255, 0.11);
+        border: 2px solid white;
+        border-radius: 9px;
+        height: 145px;
+        color: white;
+        padding: 15px;
+        font-weight: 600;
+        font-size: 17px;
+        margin-bottom: 12px;
+    }
+    .connect-video iframe {
+        width: 90% !important;
+        height: 195px !important;
+    }
+    .carousel-control-prev {
+        display: none;
+    }
+    .carousel-control-next {
+        display: none;
+    }
     .carousel-caption .slide-desc-title {
         font-size: 29px !important;
     }

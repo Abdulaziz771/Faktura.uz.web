@@ -1,6 +1,12 @@
 
 <template>
   <div id="app">
+      <div class="faktura-call-center container-fluid">
+        <div class="row">
+          <div class="col-xl-8"></div>
+          <div class="col-xl-4 call-center-number"><p>Колл-центр: <a href="tel:+998 71 200 00 13">+998 (71) 200-00-13</a></p></div>
+        </div>
+      </div>
       <router-view></router-view>
       <transition name="slide-fade1">
           <div id="sidebar-menu"  v-show="$store.getters.isSidebaerOpen" :class="{ active : $store.getters.isSidebaerOpen }">
