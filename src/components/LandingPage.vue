@@ -1405,7 +1405,7 @@
             </div>
         </div>
         
-        <div v-if="currentTime == 0" class="google-forms-scene"></div>
+        <!-- <div v-if="currentTime == 0" class="google-forms-scene"></div>
         <div v-if="currentTime == 0" class="google-forms-block" id="voice">
             <div  class="google-forms">
                 <div class="modal-header-popup">
@@ -1457,7 +1457,7 @@
                     </div>
                 </form>
             </div>
-        </div>
+        </div> -->
     </div>
 </template>
 <script src="../tgFunction.js"></script>
