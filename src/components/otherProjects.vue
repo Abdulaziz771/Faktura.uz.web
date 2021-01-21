@@ -63,7 +63,15 @@ export default {
       headerComponent,
       footerComponent,
       ChevronRightIcon
-  }
+  },
+  metaInfo() {
+        return { 
+            title: "Другие проекты Faktura",
+            meta: [
+                { name: 'description', content: 'Новые набирающие популярность проекты от создателей Faktura. ⏩  Faktura EDI. ⏩  Docco. ⏩  Hippo. ☎️: +998 (71) 200-00-13'},
+            ]
+        }
+    },
 }
 </script>
 

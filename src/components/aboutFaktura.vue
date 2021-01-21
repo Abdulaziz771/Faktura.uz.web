@@ -4,7 +4,7 @@
             <headerComponent></headerComponent>
             <div class="page-title">
                 <div class="page-title-block">
-                    <h1>FAKTURA.UZ</h1>
+                    <h1>Система электронного документооборота Faktura</h1>
                 </div>
             </div>
         </div>
@@ -65,9 +65,16 @@ export default {
   },
   components: {
       headerComponent,
-      footerComponent,
-    //   ChevronDownIcon
-  }
+      footerComponent
+  },
+  metaInfo() {
+        return { 
+            title: "Система электронного документооборота - внедрение СЭД в Узбекистане",
+            meta: [
+                { name: 'description', content:  'Внедрение СЭД в Узбекистане. ⏩   Faktura - система автоматизации электронного документооборота. ⏩   Электронная отправка 35 видов типовых документов. ☎️: +998 (71) 200-00-13'},
+            ]
+        }
+    },
 }
 </script>
 

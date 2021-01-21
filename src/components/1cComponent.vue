@@ -32,37 +32,21 @@
                         <div class="col-lg-4 col-md-6 col-12">
                              <div class="c-block">
                                 <img src="../assets/img/1c.png" alt="1с в faktura.uz, версии, конфигурация">
-                                <h4 class="mt-3">{{ translation.translate('1cModulesPage', 'moduleVersion') }}: 3.3</h4>
-                                <h5 class="mt-4">{{ translation.translate('1cModulesPage', 'configuration') }}:</h5><h6>Бухгалтерия. Хозрасчет, редакция 1.3 (1.3)</h6>
-                                <h5 class="mt-4">{{ translation.translate('1cModulesPage', 'mouleDescription') }}:</h5>
-                                <h6>
-                                    {{ translation.translate('1cModulesPage', 'moduleDescriptionData') }}
-                                </h6>
-                                <div class="c-download mt-5">
-                                    <a href="https://yadi.sk/d/gG4oxDcv2Cm6_Q" target="_blank" @click='callGtag("Загрузка 1с модуля,1c_module_download,click")'>{{ translation.translate('1cModulesPage', 'downloadButton') }}
-                                        <DownloadIcon class="c-DownloadIcon"/> 
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12">
-                             <div class="c-block">
-                                <img src="../assets/img/1c.png" alt="1с в faktura.uz, версии, конфигурация">
-                                <h4 class="mt-3">{{ translation.translate('1cModulesPage', 'moduleVersion') }}: 3.3</h4>
+                                <h4 class="mt-3">{{ translation.translate('1cModulesPage', 'moduleVersion') }}: 3.4</h4>
                                 <h5 class="mt-4">{{ translation.translate('1cModulesPage', 'configuration') }}:</h5><h6>Управление торговлей, редакция 11 (11.4.12.61)</h6>
                                 <h5 class="mt-4">{{ translation.translate('1cModulesPage', 'mouleDescription') }}:</h5>
                                 <h6>
                                      {{ translation.translate('1cModulesPage', 'moduleDescriptionData') }}
                                 </h6>
                                 <div class="c-download mt-5">
-                                    <a href="https://yadi.sk/d/nlzm91fxdJcHCw" target="_blank" @click='callGtag("Загрузка 1с модуля,1c_module_download,click")'>{{ translation.translate('1cModulesPage', 'downloadButton') }}
+                                    <a href="https://yadi.sk/d/5smyohmE0b8ooA" target="_blank" @click='callGtag("Загрузка 1с модуля,1c_module_download,click")'>{{ translation.translate('1cModulesPage', 'downloadButton') }}
                                         <DownloadIcon class="c-DownloadIcon"/> 
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <h6 class="text-center light mt-5 rate-list link-c">{{ translation.translate('1cModulesPage', 'sendToTechLink') }} <router-link :to="{ name: 'tech-support' }">{{ translation.translate('landingPageHome', 'tolink') }}</router-link></h6>
+                    <h6 class="text-center light mt-5 rate-list link-c">{{ translation.translate('1cModulesPage', 'sendToTechLink') }} <router-link :to="{ name: 'Тех-поддержка' }">{{ translation.translate('landingPageHome', 'tolink') }}</router-link></h6>
                 </div>
             </div>
         </div>
@@ -91,7 +75,15 @@ export default {
       headerComponent,
       footerComponent,
       DownloadIcon
-  }
+  },
+  metaInfo() {
+        return { 
+            title: "Интеграция 1с с интернет банкингом и системой Faktura",
+            meta: [
+                { name: 'description', content:  'Интеграция 1с с интернет банкингом и системой Faktura, по всем вопросам обращайтесь по телефону: ☎️: +998 (71) 200-00-13.'},
+            ]
+        }
+    },
 }
 </script>
 

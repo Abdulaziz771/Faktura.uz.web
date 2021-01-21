@@ -7,6 +7,9 @@ import store from './components/store'
 import '@/assets/global.css'
 import '@/assets/media.css'
 
+import VueMeta from 'vue-meta'
+Vue.use(VueMeta)
+
 require("@/translation/translate");
 
 Vue.config.productionTip = false

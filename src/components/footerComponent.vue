@@ -8,17 +8,17 @@
                             <div class="d-flex left-child position-relative">
                                 <div>
                                     <ul class="text-left">
-                                        <li><router-link :to="{ name: 'compare' }">{{ translation.translate('footer','compare') }}</router-link></li>
+                                        <li><router-link :to="{ name: 'Сравнение' }">{{ translation.translate('footer','compare') }}</router-link></li>
                                         <li class="mt-2"><a href="https://api.faktura.uz/help/" target="_blank" @click="callGtag('API переходы,api_href,click')">API</a></li>
-                                        <li class="mt-2"><router-link :to="{ name: '1с' }">1C</router-link></li>
+                                        <li class="mt-2"><router-link :to="{ name: 'Модули 1С' }">1C</router-link></li>
                                     </ul>
                                 </div>
                                 <div>
                                     <ul class="text-left">
-                                        <li><router-link :to="{ name: 'about-faktura' }">Faktura.uz</router-link></li>
-                                        <li class="mt-2"><router-link :to="{ name: 'other-projects' }">{{ translation.translate('footer','outOtherProjects') }}</router-link> </li>
-                                        <li class="mt-2"><router-link :to="{ name: 'video-lessons' }">{{ translation.translate('footer','videoLessons') }}</router-link></li>
-                                        <li class="mt-2"><router-link :to="{ name: 'нормативно-правовая-база' }">{{ translation.translate('footer','lexuzDocumentation') }}</router-link></li>
+                                        <li><router-link :to="{ name: 'Системе' }">Faktura.uz</router-link></li>
+                                        <li class="mt-2"><router-link :to="{ name: 'Другие проэкты' }">{{ translation.translate('footer','outOtherProjects') }}</router-link> </li>
+                                        <li class="mt-2"><router-link :to="{ name: 'Видеоуроки' }">{{ translation.translate('footer','videoLessons') }}</router-link></li>
+                                        <li class="mt-2"><router-link :to="{ name: 'Нормативно правовая база' }">{{ translation.translate('footer','lexuzDocumentation') }}</router-link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -56,8 +56,8 @@
                             <div class="sitemap-ppy">
                                 <ul class="d-flex">
                                     <li class="pr-3"><a href="">{{ translation.translate('footer','privacyPolicy') }}</a></li>
-                                    <li class="pl-3 pr-3"><router-link :to="{ name: 'sitemap' }">{{ translation.translate('footer','siteMap') }}</router-link></li>
-                                    <li class="pl-3 pr-3"><router-link :to="{ name: 'oferta-ru' }">{{ translation.translate('footer','publicOfferta') }}</router-link></li>
+                                    <li class="pl-3 pr-3"><router-link :to="{ name: 'Карта сайта' }">{{ translation.translate('footer','siteMap') }}</router-link></li>
+                                    <li class="pl-3 pr-3"><router-link :to="{ name: 'Оферта' }">{{ translation.translate('footer','publicOfferta') }}</router-link></li>
                                 </ul>
                             </div>
                             <div class="country">
@@ -71,18 +71,18 @@
                             <div class="col-6 col-md-3">
                                 <div>
                                     <ul class="text-left">
-                                        <li><router-link :to="{ name: 'compare' }">{{ translation.translate('footer','compare') }}</router-link></li>
+                                        <li><router-link :to="{ name: 'Сравнение' }">{{ translation.translate('footer','compare') }}</router-link></li>
                                         <li class="mt-2"><a href="https://api.faktura.uz/help/" @click='callGtag("API переходы,api_href,clikc")' target="_blank">API</a></li>
-                                        <li class="mt-2"><router-link :to="{ name: '1с' }">1C</router-link></li>
+                                        <li class="mt-2"><router-link :to="{ name: 'Модули 1С' }">1C</router-link></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="col-6 col-md-3">
                                 <div>
                                     <ul class="text-left">
-                                        <li><router-link :to="{ name: 'about-faktura' }">Faktura.uz</router-link></li>
-                                        <li class="mt-2"><router-link :to="{ name: 'other-projects' }">{{ translation.translate('footer','outOtherProjects') }}</router-link> </li>
-                                        <li class="mt-2"><router-link :to="{ name: 'video-lessons' }">{{ translation.translate('footer','videoLessons') }}</router-link></li>
+                                        <li><router-link :to="{ name: 'Системе' }">Faktura.uz</router-link></li>
+                                        <li class="mt-2"><router-link :to="{ name: 'Другие проэкты' }">{{ translation.translate('footer','outOtherProjects') }}</router-link> </li>
+                                        <li class="mt-2"><router-link :to="{ name: 'Видеоуроки' }">{{ translation.translate('footer','videoLessons') }}</router-link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -109,16 +109,16 @@
                 </div>
             </div>
         </footer>
-        <div class="winter-is-coming">
-                <div class="snow snow--near"></div>
-                <div class="snow snow--near snow--alt"></div>
-                
-                <div class="snow snow--mid"></div>
-                <div class="snow snow--mid snow--alt"></div>
-                
-                <div class="snow snow--far"></div>
-                <div class="snow snow--far snow--alt"></div>
-            </div>
+        <!-- <div class="winter-is-coming">
+            <div class="snow snow--near"></div>
+            <div class="snow snow--near snow--alt"></div>
+            
+            <div class="snow snow--mid"></div>
+            <div class="snow snow--mid snow--alt"></div>
+            
+            <div class="snow snow--far"></div>
+            <div class="snow snow--far snow--alt"></div>
+        </div> -->
     </div>
 </template>
 

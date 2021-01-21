@@ -155,7 +155,15 @@ export default {
       CheckCircleIcon,
       XCircleIcon
 
-  }
+  },
+  metaInfo() {
+        return { 
+            title: "Сравнение СЭД Faktura с другими операторами",
+            meta: [
+                { name: 'description', content: 'Преимущества системы электронного документооборота Faktura. ⏩  Гибридная почта. ⏩  Массовое подписание и согласование документов. ⏩  Накладная и доверенность внутри системы.'},
+            ]
+        }
+    },
 }
 </script>
 

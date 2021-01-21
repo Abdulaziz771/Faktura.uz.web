@@ -23,40 +23,40 @@
                     <div class="collapse" id="collapseExample">
                         <ul class="mt-2 pl-4">
                           <li class="p-0" @click="$store.commit('toggleSidebar', false)">
-                            <router-link class="li-text-1" :to='{ name: "1с" }'>{{ translation.translate('header', '1c') }}</router-link>
+                            <router-link class="li-text-1" :to='{ name: "Модули 1С" }'>{{ translation.translate('header', '1c') }}</router-link>
                           </li>
                           <li class="p-0"  @click="$store.commit('toggleSidebar', false)">
                             <a class="li-text-1" href="https://api.faktura.uz/help/" target="_blank" @click="callGtag('API переходы,api_href,click')">{{ translation.translate('header', 'apiDocumentation') }}</a>
                           </li>
                           <li class="p-0"  @click="$store.commit('toggleSidebar', false)">
-                            <router-link class="li-text-1" :to='{ name: "compare" }'>{{ translation.translate('footer', 'compare') }}</router-link>
+                            <router-link class="li-text-1" :to='{ name: "Сравнение" }'>{{ translation.translate('footer', 'compare') }}</router-link>
                           </li>
                           <li class="p-0"  @click="$store.commit('toggleSidebar', false)">
-                            <router-link class="li-text-1" :to='{ name: "other-projects" }'>{{ translation.translate('footer', 'outOtherProjects') }}</router-link>
+                            <router-link class="li-text-1" :to='{ name: "Другие проэкты" }'>{{ translation.translate('footer', 'outOtherProjects') }}</router-link>
                           </li>
                           <li class="p-0"  @click="$store.commit('toggleSidebar', false)">
-                            <router-link class="li-text-1" :to='{ name: "FAQ" }'>FAQ</router-link>
+                            <router-link class="li-text-1" :to='{ name: "Вопросы-ответы" }'>FAQ</router-link>
                           </li>
                           <li class="p-0" @click="$store.commit('toggleSidebar', false)">
-                            <router-link class="li-text-1" :to='{ name: "rukovodstvo-polzovatelya" }'>{{ translation.translate('header','documentation') }}</router-link>
+                            <router-link class="li-text-1" :to='{ name: "Руководство пользователя" }'>{{ translation.translate('header','documentation') }}</router-link>
                           </li>
                           <li class="p-0"  @click="$store.commit('toggleSidebar', false)">
-                            <router-link class="li-text-1" :to='{ name: "about-faktura" }'>Faktura.uz </router-link>
+                            <router-link class="li-text-1" :to='{ name: "Системе" }'>Faktura.uz </router-link>
                           </li>
                         </ul>
                     </div>
                   </li>
                   <li  @click="$store.commit('toggleSidebar', false)">
-                    <router-link class="li-text" :to="{ name: 'video-lessons' }">{{ translation.translate('footer', 'videoLessons') }}</router-link>
+                    <router-link class="li-text" :to="{ name: 'Видеоуроки' }">{{ translation.translate('footer', 'videoLessons') }}</router-link>
                   </li>
                   <li  @click="$store.commit('toggleSidebar', false)">
-                    <router-link class="li-text" :to='{ name: "price" }'>{{ translation.translate('header', 'pricesItem') }}</router-link>
+                    <router-link class="li-text" :to='{ name: "Тарифы" }'>{{ translation.translate('header', 'pricesItem') }}</router-link>
                   </li>
                   <li  @click="$store.commit('toggleSidebar', false)">
-                    <router-link class="li-text" :to='{ name: "updates" }'>{{ translation.translate('header', 'updates') }}</router-link>
+                    <router-link class="li-text" :to='{ name: "Обновления" }'>{{ translation.translate('header', 'updates') }}</router-link>
                   </li>
                   <li  @click="$store.commit('toggleSidebar', false)">
-                    <router-link class="li-text" :to='{ name: "tech-support" }'>{{ translation.translate('header', 'tech') }}</router-link>
+                    <router-link class="li-text" :to='{ name: "Тех-поддержка" }'>{{ translation.translate('header', 'tech') }}</router-link>
                   </li>
                   <li v-if="$store.getters.valueofCurrentLanguage == 'uz'" class="nav-item nav-item-6 d-flex position-relative" @click="_onChangeLanguage('ru'), callGtag('Перевод на Рус,rus_translation,click')">
                       <a href="" class="nav-link font-weight-bold language-change universal-radius universal-transition" style="font-size: 18px; padding: 0; padding-right: 8px;">Ру</a>
@@ -86,16 +86,6 @@
           <div id="facebook_btn" class="all-btn soc_btn" :class="{ hoverBtn : smmFeaturesCondition }" @click='callGtag("Facebook переходы,facebook_smm,click")'>
               <a href="https://www.facebook.com/faktura.uz/" target="_blank"><img src="./assets/img/facebok-circle.png" alt=""></a>
           </div>
-      </div>
-      <div class="winter-is-coming">
-        <div class="snow snow--near"></div>
-        <div class="snow snow--near snow--alt"></div>
-        
-        <div class="snow snow--mid"></div>
-        <div class="snow snow--mid snow--alt"></div>
-        
-        <div class="snow snow--far"></div>
-        <div class="snow snow--far snow--alt"></div>
       </div>
   </div>
 </template>
@@ -136,66 +126,6 @@ export default {
 </script>
 
 <style>
-.snow, .winter-is-coming {
-  z-index: 100;
-  pointer-events: none;
-}
-
-.winter-is-coming {
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  max-width: 100%;
-}
-
-.snow {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  animation: falling linear infinite both;
-  transform: translate3D(0, -100%, 0);
-}
-.snow--near {
-  animation-duration: 10s;
-  background-image: url("assets/img/snow/abd38.png");
-  background-size: contain;
-}
-.snow--near + .snow--alt {
-  animation-delay: 5s;
-}
-.snow--mid {
-  animation-duration: 20s;
-  background-image: url("assets/img/snow/abd39.png");
-  background-size: auto;
-}
-.snow--mid + .snow--alt {
-  animation-delay: 10s;
-}
-.snow--far {
-  animation-duration: 30s;
-  background-image: url("assets/img/snow/abd40.png");
-  background-size: auto;
-}
-.snow--far + .snow--alt {
-  animation-delay: 15s;
-}
-
-@keyframes falling {
-  0% {
-    transform: translate3D(-7.5%, -100%, 0);
-  }
-  100% {
-    transform: translate3D(7.5%, 100%, 0);
-  }
-}
-
-</style>
-
-<style >
 
 #btn {
   text-align: center;

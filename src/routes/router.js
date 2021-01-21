@@ -9,49 +9,52 @@ const router = new VueRouter({
         {
             path: "/ru/price",
             redirect: { 
-                name: 'price'
+                name: 'Тарифы',
             }
         },
         {
             path: "/ru/news/faktura-uz-как-с-этим-жить",
             redirect: { 
-                name: 'tech-support'
+                name: 'Тех-поддержка'
             }
         },
         {
             path: "/ru/news/как-платить",
+            title11: "Faktura.uz",
             redirect: { 
-                name: 'tech-support'
+                name: 'Тех-поддержка',
             }
+            
         },
         { 
-            path: "*", 
-            component: () => import('../components/LandingPage')
+            path: "*",
+            name: "404", 
+            component: () => import('../components/404')
         },
         // paths
         {
             path: '/',
-            name: 'home',
+            name: 'Главная',
             component: () => import('../components/LandingPage'),
         },
         {
             path: '/video-tutorials',
-            name: 'video-lessons',
+            name: 'Видеоуроки',
             component: () => import('../components/videoLessons'),
         },
         {
             path: '/price',
-            name: 'price',
+            name: 'Тарифы',
             component: () => import('../components/price'),
         },
         {
             path: '/tech-support',
-            name: 'tech-support',
+            name: 'Тех-поддержка',
             component: () => import('../components/techSupportComponent'),
         },
         {
             path: '/updates',
-            name: 'updates',
+            name: 'Обновления',
             component: () => import('../components/updatesComponent')
         },
         //UPDATES POST HERE
@@ -68,53 +71,58 @@ const router = new VueRouter({
         //OVER HERE
         {
             path: '/FAQ',
-            name: 'FAQ',
+            name: 'Вопросы-ответы',
             component: () => import('../components/faqComponent')
         },
         {
             path: '/other-projects',
-            name: 'other-projects',
+            name: 'Другие проэкты',
             component: () => import('../components/otherProjects')
         },
         {
             path: '/1c-modules',
-            name: '1с',
+            name: 'Модули 1С',
             component: () => import('../components/1cComponent')
         },
         {
             path: '/about-faktura',
-            name: 'about-faktura',
+            name: 'Системе',
             component: () => import('../components/aboutFaktura')
         },
         {
             path: '/compare',
-            name: 'compare',
+            name: 'Сравнение',
             component: () => import('../components/compareComponent')
         },
         {
             path: '/sitemap',
-            name: 'sitemap',
+            name: 'Карта сайта',
             component: () => import('../components/siteMapComponent')
         },
         {
             path: '/oferta-ru',
-            name: 'oferta-ru',
+            name: 'Оферта',
             component: () => import('../components/publicOfferta')
         },
         {
             path: '/нормативно-правовая-база',
-            name: 'нормативно-правовая-база',
+            name: 'Нормативно правовая база',
             component: () => import('../components/lawsEDO')
         },
         {
             path: '/rukovodstvo-polzovatelya',
-            name: 'rukovodstvo-polzovatelya',
+            name: 'Руководство пользователя',
             component: () => import('../components/rukovodstvoPolzovaniya')
         },
     ],
     scrollBehavior() {
         return {x: 0, y: 0}
     }
-});
+})
+
+router.beforeEach((to, from, next) => {
+    document.title = `${ to.name } - ${ process.env.VUE_APP_TITLE }`;
+    next();
+})
 
 export default router

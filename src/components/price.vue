@@ -61,7 +61,7 @@
                     </div>
                 </div>
                 <p class="how-to-pay">
-                    {{ translation.translate('priceTable', 'goToHowToPay') }} <router-link :to='{ name: "video-lessons" }'> {{ translation.translate('landingPageHome', 'tolink') }} </router-link>
+                    {{ translation.translate('priceTable', 'goToHowToPay') }} <router-link :to='{ name: "Видеоуроки" }'> {{ translation.translate('landingPageHome', 'tolink') }} </router-link>
                 </p>
             </div>
         </div>
@@ -181,7 +181,15 @@ export default {
   components: {
       headerComponent,
       footerComponent
-  }
+  },
+  metaInfo() {
+        return { 
+            title: "Тарифы на использование СЭД Faktura",
+            meta: [
+                { name: 'description', content:  'Тарифы на использование СЭД Faktura. ⏩  Месяц бесплатного пользования после регистрации. ☎️: +998 (71) 200-00-13.'},
+            ]
+        }
+    },
 }
 </script>
 

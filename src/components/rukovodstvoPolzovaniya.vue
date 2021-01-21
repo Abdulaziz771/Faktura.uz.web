@@ -363,7 +363,15 @@ export default {
   components: {
       headerComponent,
       footerComponent,
-  }
+  },
+  metaInfo() {
+        return { 
+            title: "Руководство по пользованию СЭД Faktura",
+            meta: [
+                { name: 'description', content:  'Руководство по пользованию системы электронного документооборота Faktura. ⏩  Установка модуля работы с электронной цифровой подписью(эцп) Eimzo. ⏩  Отправление электронных договоров и счет фактур.'},
+            ]
+        }
+    },
 }
 </script>
 

@@ -107,7 +107,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-100"><h6 class="text-center light mt-5 mb-5 rate-list"> {{ translation.translate('faq', 'goToVideoLessons') }} <router-link  :to="{ name: 'video-lessons' }">{{ translation.translate('landingPageHome', 'tolink') }}</router-link></h6></div>
+            <div class="w-100"><h6 class="text-center light mt-5 mb-5 rate-list"> {{ translation.translate('faq', 'goToVideoLessons') }} <router-link  :to="{ name: 'Видеоуроки' }">{{ translation.translate('landingPageHome', 'tolink') }}</router-link></h6></div>
 
         </div>
         <footerComponent></footerComponent>
@@ -133,7 +133,15 @@ export default {
   components: {
       headerComponent,
       footerComponent,
-  }
+  },
+  metaInfo() {
+        return { 
+            title: "Часто задаваемые вопросы пользователями Faktura",
+            meta: [
+                { name: 'description', content:  'Что делать если система не видет ЭЦП ключ? Что делать если акт-счёт фактура отправлена но в Налоговом Акте не появляется? Что делать если не создается Доверенность?'},
+            ]
+        }
+    },
 }
 </script>
 

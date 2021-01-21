@@ -94,10 +94,20 @@ ul li {
     cursor: pointer;
 }
 
+.p404-title {
+    font-size: 68px;
+    font-weight: 700;
+    color: gray;
+}
+
+.p404-desc {
+    color: #8e8e8e;
+}
+
 /* her page css */
 #hero-page {
     position: relative;
-    background-image: url("img/hero-bg-4-new1.jpg");
+    background-image: url("img/hero-bg-4.jpg");
 }
 
 #header .mobile-menu {
@@ -451,7 +461,7 @@ ul li {
 
 
 .modal-header-popup {
-    text-align: left;
+    text-align: center;
     padding: 15px 21px;
     background: #66c93e;
     color: #fefefe;
@@ -1767,6 +1777,18 @@ ul li {
     width: 25%;
     color: #cecece;
     font-weight: 600;
+}
+
+.first-opros-img {
+    width: 75%;
+    padding: 25px 0;
+}
+
+.first-opros-h4 {
+    padding: 0 50px;
+    font-size: 19px;
+    color: #838383;
+    font-weight: 700;
 }
 
 #footer-f .footer-details .sitemap-ppy {

@@ -18,18 +18,8 @@
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
                                             <img src="../assets/img/sldier/3333.png" class="desktop-slide" alt="...">
-                                            <div class="carousel-caption d-block feedbak">
-                                                <h5 class="slide-desc-title"> {{ translation.translate('landingPageHome', 'slider4Title') }}</h5>
-                                                <textarea :placeholder="translation.translate('landingPageHome', 'slider4Description')" id="" cols="30" rows="10" ></textarea>
-                                                <div class="slide-button-group">
-                                                    <button class="take-an-action" @click="getFormValues"><a target="_blank">{{ translation.translate('landingPageHome', 'slider4Desc') }}</a></button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="../assets/img/sldier/3333.png" class="desktop-slide" alt="...">
                                             <div class="carousel-caption d-block">
-                                                <h5 class="slide-desc-title"> {{ translation.translate('landingPageHome', 'slider1Title') }}</h5>
+                                                <h1 class="slide-desc-title"> {{ translation.translate('landingPageHome', 'slider1Title') }}</h1>
                                                 <p class="slide-desc-description">{{ translation.translate('landingPageHome', 'slider1Desc') }}</p>
                                                 <div class="slide-button-group">
                                                     <button class="take-a-link"><a target="_blank" href="https://youtu.be/zxz0LpOibbQ">{{ translation.translate('landingPageHome', 'slider1Button2') }}</a></button>
@@ -40,7 +30,7 @@
                                          <div class="carousel-item ">
                                             <img src="../assets/img/sldier/1111.png" class="desktop-slide" alt="...">
                                             <div class="carousel-caption d-block">
-                                                <h5 class="slide-desc-title">{{ translation.translate('landingPageHome', 'slider3Title') }}</h5>
+                                                <h1 class="slide-desc-title">{{ translation.translate('landingPageHome', 'slider3Title') }}</h1>
                                                 <p class="slide-desc-description">{{ translation.translate('landingPageHome', 'slider3Desc') }}</p>
                                                 <div class="slide-button-group">
                                                     <button class="take-a-link"><a target="_blank" href="https://youtu.be/xcrJ_o4_nmc">{{ translation.translate('landingPageHome', 'slider3Button2') }}</a></button>
@@ -51,7 +41,7 @@
                                         <div class="carousel-item">
                                             <img src="../assets/img/sldier/4444.png" class="desktop-slide" alt="...">
                                             <div class="carousel-caption d-block">
-                                                <h5 class="slide-desc-title"> {{ translation.translate('landingPageHome', 'playMarketApp') }}</h5>
+                                                <h1 class="slide-desc-title"> {{ translation.translate('landingPageHome', 'playMarketApp') }}</h1>
                                                 <p class="slide-desc-description">{{ translation.translate('landingPageHome', 'AppStoreApp') }}</p>
                                                 <div class="slide-button-group">
                                                     <button class="take-a-link"><a target="_blank" href="https://apps.apple.com/us/app/faktura/id1454146398">App Store</a></button>
@@ -62,7 +52,7 @@
                                         <div class="carousel-item">
                                             <img src="../assets/img/sldier/2222.png" class="desktop-slide" alt="...">
                                             <div class="carousel-caption d-block">
-                                                <h5 class="slide-desc-title">{{ translation.translate('landingPageHome', 'slider2Title') }}</h5>
+                                                <h1 class="slide-desc-title">{{ translation.translate('landingPageHome', 'slider2Title') }}</h1>
                                                 <p class="slide-desc-description">{{ translation.translate('landingPageHome', 'slider2Desc') }}</p>
                                                 <div class="slide-button-group">
                                                     <button class="take-a-link"><a target="_blank" href="https://youtu.be/sqT9R3OZYyA">{{ translation.translate('landingPageHome', 'slider2Button2') }}</a></button>
@@ -104,7 +94,17 @@
                     <use xlink:href="#gentle-wave" x="50" y="6" fill="#fff"/>
                 </g>
             </svg> -->
-            <img class="editorial" :class="{ 'scrolledSVG': isScrolled }" src="../assets/img/snow-ground.png" alt="">
+            <!-- <img class="editorial" :class="{ 'scrolledSVG': isScrolled }" src="../assets/img/snow-ground.png" alt=""> -->
+            <div class="winter-is-coming">
+                <div class="snow snow--near"></div>
+                <div class="snow snow--near snow--alt"></div>
+                
+                <div class="snow snow--mid"></div>
+                <div class="snow snow--mid snow--alt"></div>
+                
+                <div class="snow snow--far"></div>
+                <div class="snow snow--far snow--alt"></div>
+            </div>
         </section>
 
         <section id="connect-page">
@@ -120,16 +120,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="winter-is-coming">
-                <div class="snow snow--near"></div>
-                <div class="snow snow--near snow--alt"></div>
-                
-                <div class="snow snow--mid"></div>
-                <div class="snow snow--mid snow--alt"></div>
-                
-                <div class="snow snow--far"></div>
-                <div class="snow snow--far snow--alt"></div>
             </div>
         </section>
 
@@ -160,16 +150,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="winter-is-coming">
-                <div class="snow snow--near"></div>
-                <div class="snow snow--near snow--alt"></div>
-                
-                <div class="snow snow--mid"></div>
-                <div class="snow snow--mid snow--alt"></div>
-                
-                <div class="snow snow--far"></div>
-                <div class="snow snow--far snow--alt"></div>
             </div>
         </section>
 
@@ -219,22 +199,12 @@
                     <div class="w-100">
                         <h6 class="text-center light mt-5 rate-list">
                             {{ translation.translate('landingPageHome', 'toWatchotherVideoLessons') }}
-                            <router-link :to="{ name: 'video-lessons'}">
+                            <router-link :to="{ name: 'Видеоуроки'}">
                                 {{ translation.translate('landingPageHome', 'tolink') }}
                             </router-link>
                         </h6>
                     </div>
                 </div>
-            </div>
-            <div class="winter-is-coming">
-                <div class="snow snow--near"></div>
-                <div class="snow snow--near snow--alt"></div>
-                
-                <div class="snow snow--mid"></div>
-                <div class="snow snow--mid snow--alt"></div>
-                
-                <div class="snow snow--far"></div>
-                <div class="snow snow--far snow--alt"></div>
             </div>
         </section>
 
@@ -364,16 +334,6 @@
                     </div>
                 </div>
             </div>
-            <div class="winter-is-coming">
-                <div class="snow snow--near"></div>
-                <div class="snow snow--near snow--alt"></div>
-                
-                <div class="snow snow--mid"></div>
-                <div class="snow snow--mid snow--alt"></div>
-                
-                <div class="snow snow--far"></div>
-                <div class="snow snow--far snow--alt"></div>
-            </div>
         </section>
 
         <section id="instead-page">
@@ -482,16 +442,6 @@
                     </div>
                 </div>
             </div>
-            <div class="winter-is-coming">
-                <div class="snow snow--near"></div>
-                <div class="snow snow--near snow--alt"></div>
-                
-                <div class="snow snow--mid"></div>
-                <div class="snow snow--mid snow--alt"></div>
-                
-                <div class="snow snow--far"></div>
-                <div class="snow snow--far snow--alt"></div>
-            </div>
         </section>
 
         <section id="rate">
@@ -597,16 +547,6 @@
                 <transition name="fade">
                     <h1 v-show="moreThan5000"></h1>
                 </transition>
-            </div>
-            <div class="winter-is-coming">
-                <div class="snow snow--near"></div>
-                <div class="snow snow--near snow--alt"></div>
-                
-                <div class="snow snow--mid"></div>
-                <div class="snow snow--mid snow--alt"></div>
-                
-                <div class="snow snow--far"></div>
-                <div class="snow snow--far snow--alt"></div>
             </div>
         </section>
 
@@ -1010,16 +950,6 @@
                     </div>
                 </div>
             </div>
-            <div class="winter-is-coming">
-                <div class="snow snow--near"></div>
-                <div class="snow snow--near snow--alt"></div>
-                
-                <div class="snow snow--mid"></div>
-                <div class="snow snow--mid snow--alt"></div>
-                
-                <div class="snow snow--far"></div>
-                <div class="snow snow--far snow--alt"></div>
-            </div>
         </section>
 
         <section id="mobile-app">
@@ -1404,16 +1334,27 @@
                 </div>
             </div>
         </div>
-        
-        <!-- <div v-if="currentTime == 0" class="google-forms-scene"></div>
+        <div v-if="currentTime == 0" class="google-forms-scene"></div>
         <div v-if="currentTime == 0" class="google-forms-block" id="voice">
             <div  class="google-forms">
                 <div class="modal-header-popup">
                     <h5 class="popup-text mb-0">
-                        Откуда вы о нас узнали?
+                        {{ translation.translate('landingPageHome', 'modalTitle#1') }}
                     </h5>
                 </div>
-                <form id="form" @submit.prevent="getFormValues" class="radiobuttons">
+                <div>
+                    <img class="first-opros-img" src="../assets/img/6.png" alt="">
+                </div>
+                <div>
+                    <h4 class="first-opros-h4">
+                        {{ translation.translate('landingPageHome', 'modalDescription#1') }}
+                    </h4>
+                    <div class="mt-4 mb-3">
+                        <button type="button" class="btn btn-outline-danger mr-3" @click="currentTime = 2">{{ translation.translate('landingPageHome', 'modalButton#1') }}</button>
+                        <a href="https://forms.gle/Uxr6T8XCYzP4RLCKA" target="_blank" style="color: white"><button type="button" class="btn btn-success" style="padding: 0.375rem 1.90rem;" @click="currentTime = 2">{{ translation.translate('landingPageHome', 'modalButton2#1') }}</button></a>
+                    </div>
+                </div>
+                <!-- <form id="form" @submit.prevent="getFormValues" class="radiobuttons">
                     <div class="form-check">
                         <input required data-social="Telegram" class="form-check-input" v-model="picked" type="radio" name="exampleRadios" id="exampleRadios6" value="option-telegram">
                         <label style="color: rgb(64, 100, 172)" class="form-check-label" for="exampleRadios6">
@@ -1455,9 +1396,9 @@
                     <div class="popup-button-div">
                         <button style="border-radius: 0px;font-size: 17px;padding: 5px 20px;" type="submit" class="w-100 btn btn-outline-success popup-button">Отправить</button>
                     </div>
-                </form>
+                </form> -->
             </div>
-        </div> -->
+        </div>
     </div>
 </template>
 <script src="../tgFunction.js"></script>
@@ -1654,25 +1595,25 @@ export default {
         }
     },
     methods: {
-        async  getFormValues  (){
-            let form = await document.querySelector('.feedbak textarea')
-            console.log(form);
-            var answer = await `${form.value}`
-            console.log(answer);
-            const botToken = '1438009177:AAFbe7wRiS3w6k_Y28iYFw406fEkr3q5XJQ';
-            const toWhom = '705714423';
-            fetch(`https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${toWhom}&parse_mode=html&text=${answer}`,{method: 'POST'})
-            .then(() =>{
-                form.value = ''
-            })
-        },
+        // async  getFormValues  (){
+        //     let form = await document.querySelector('.feedbak textarea')
+        //     console.log(form);
+        //     var answer = await `${form.value}`
+        //     console.log(answer);
+        //     const botToken = '1438009177:AAFbe7wRiS3w6k_Y28iYFw406fEkr3q5XJQ';
+        //     const toWhom = '705714423';
+        //     fetch(`https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${toWhom}&parse_mode=html&text=${answer}`,{method: 'POST'})
+        //     .then(() =>{
+        //         form.value = ''
+        //     })
+        // },
         stopTimer() {
             clearTimeout(this.timer);
             this.takePhoneDiv = true
         },
         startTimer() {
             this.takePhoneDiv = false;
-            this.currentTime = 10;
+            this.currentTime = 1;
             this.timer = setInterval(() => {
               this.currentTime--
             }, 1000)
@@ -1854,14 +1795,16 @@ export default {
             }
         }
     },
-    created() {
-    },
-    mounted() {
-        let a = localStorage.getItem('forNewUsers') 
-        window.addEventListener('scroll', this.updateScroll);
-        if (!a) {
-            this.startTimer()
+    metaInfo() {
+        return { 
+            title: "Электронный документооборот в Узбекистане - внедрение ЭДО",
+            meta: [
+                { name: 'description', content:  'Ведение электронного документооборота(ЭДО) в Узбекистане.⏩  Faktura - программа электронного документооборота онлайн. ⏩  Адекватная цена. ☎️: +998 (71) 200-00-13.'},
+            ]
         }
+    },
+    created() {
+        this.startTimer()
     },
     destroyed() {
         this.stopTimer()

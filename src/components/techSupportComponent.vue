@@ -135,6 +135,14 @@ export default {
   created() {
     this.updateBackground()
   },
+  metaInfo() {
+        return { 
+            title: "Техническая поддержка системы Faktura",
+            meta: [
+                { name: 'description', content:  'Наша группа техподдержки ответит на любые ваши вопросы в течение 40 секунд. Если вы не смогли связаться с нами в группе напишите нашим операторам в telegram.'},
+            ]
+        }
+    },
   components: {
       headerComponent,
       PhoneCallIcon,
