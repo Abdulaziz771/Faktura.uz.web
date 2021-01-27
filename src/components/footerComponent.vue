@@ -24,7 +24,7 @@
                             </div>
                         </div>
                         <div class="center-logo">
-                            <img class="footer-center-logo" src="../assets/img/logo-shadow.png" alt="faktura.uz logo">
+                            <img class="footer-center-logo" src="../assets/img/logo.png" alt="faktura.uz logo">
                         </div>
                         <div class="right-line position-relative">
                             <div class="right-child d-flex position-relative justify-content-end">
@@ -44,9 +44,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="footer-map">
+                    <!-- <div class="footer-map">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1499.9718681509871!2d69.20468374953117!3d41.33780112337828!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2s!4v1596528237373!5m2!1sru!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                    </div>
+                    </div> -->
                     <div class="footer-footer">
                         <div class="footer-line"></div>
                         <div class="footer-details d-flex">
@@ -55,7 +55,7 @@
                             </div>
                             <div class="sitemap-ppy">
                                 <ul class="d-flex">
-                                    <li class="pr-3"><a href="">{{ translation.translate('footer','privacyPolicy') }}</a></li>
+                                    <li class="pr-3"><a>{{ translation.translate('footer','privacyPolicy') }}</a></li>
                                     <li class="pl-3 pr-3"><router-link :to="{ name: 'Карта сайта' }">{{ translation.translate('footer','siteMap') }}</router-link></li>
                                     <li class="pl-3 pr-3"><router-link :to="{ name: 'Оферта' }">{{ translation.translate('footer','publicOfferta') }}</router-link></li>
                                 </ul>

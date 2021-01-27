@@ -135,7 +135,6 @@ ul li {
 #hero-page .logo img{
     width: 180px;
     position: relative;
-    top: -13px;
 }
 
 #header .main-menu ul li a {
@@ -423,6 +422,33 @@ ul li {
 #connect-page .gybrid-pochta .timeline {
     left: 105px !important;
     width: 450px;
+}
+
+#connect-page .gybrid-pochta .timeline-points {
+    width: 520px;
+}
+
+.timeline-points ul li {
+    margin: 10px 0 ;
+    position: relative;
+}
+
+.timeline-points h2 {
+    font-size: 19px;
+    color: #737373;
+    line-height: 40px;
+}
+
+.timeline-points ul li::before {
+    background-image: url(/img/logo.588dc8b4.png);
+    background-size: 20px 20px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    content: "";
+    position: absolute;
+    left: -25px;
+    top: 3px;
 }
 
 .connect-video-1 {
@@ -1700,12 +1726,11 @@ ul li {
 }
 
 #footer-f .doc-body {
-    padding-top: 100px;
-    padding-bottom: 20px;
+    padding-top: 30px;
 }
 
 #footer-f .footer-center-logo {
-    width: 100px;
+    width: 50px;
 }
 
 #footer-f .left-line::before {
@@ -1717,7 +1742,7 @@ ul li {
     transform: translateY(-1rem);
     position: absolute;
     right: 0;
-    top: 60px;
+    top: 40px;
 }
 
 #footer-f .right-line::after {
@@ -1729,7 +1754,7 @@ ul li {
     transform: translateY(-1rem);
     position: absolute;
     left: 0;
-    top: 60px;
+    top: 40px;
 }
 
 #footer-f .right-line .right-child, .left-line .left-child {
@@ -1791,6 +1816,10 @@ ul li {
     font-weight: 700;
 }
 
+.seo-pic {
+    width: inherit;
+}
+
 #footer-f .footer-details .sitemap-ppy {
     width: 40%;
 }
@@ -1814,19 +1843,15 @@ ul li {
 }
 
 #footer-f .right-line {
-    width: 45%;
+    width: 48%;
 }
 
 #footer-f .left-line {
-    width: 45%;
+    width: 48%;
 }
 
 #footer-f .center-logo {
-    width: 10%;
-}
-
-#footer-f .center-logo {
-    width: 10%;
+    width: 5%;
 }
 
 #footer-f .footer-footer {
@@ -2282,6 +2307,10 @@ input::-webkit-inner-spin-button {
     background-size: 50%, 50%;
     border-radius: 50%;
     border: 5px solid #ffffff;
+}
+
+.traditional-page-width {
+    width: 600px;
 }
 
 

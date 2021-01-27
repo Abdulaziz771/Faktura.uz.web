@@ -59,7 +59,7 @@
             <div class="mobile-menu text-right col-7 col-sm-9 col-md-9">
                 <div class="justify-content-end d-flex" style="align-items: center;     margin-top: 6px;">
                     <MenuIcon @click="$store.commit('toggleSidebar', true)"/>
-                    <a target="_blank" href="https://app.faktura.uz/uz"><LogInIcon href="www.google.com" class="login-icon"/></a>   
+                    <a target="_blank" href="https://app.faktura.uz/uz"><LogInIcon href="www.google.com" class="login-icon mr-0"/></a>   
                 </div>
             </div>
         </nav>

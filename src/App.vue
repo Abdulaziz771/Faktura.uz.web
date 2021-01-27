@@ -160,7 +160,7 @@ export default {
     border-radius: 50%;
     bottom: 80px;
     left: 100px;
-    z-index: 1000;
+    z-index: 999999999999999999;
     display: flex;
     justify-content: center;
     align-items: center;

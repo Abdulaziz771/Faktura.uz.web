@@ -23,14 +23,14 @@
                                                 <p class="slide-desc-description">{{ translation.translate('landingPageHome', 'slider1Desc') }}</p>
                                                 <div class="slide-button-group">
                                                     <button class="take-a-link"><a target="_blank" href="https://youtu.be/zxz0LpOibbQ">{{ translation.translate('landingPageHome', 'slider1Button2') }}</a></button>
-                                                    <button class="take-an-action"><a target="_blank" href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3">{{ translation.translate('landingPageHome', 'slider1Button1') }}</a></button>
+                                                    <button class="take-an-action"><a target="_blank" href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3">{{ translation.translate('landingPageHome', 'slider3Button1') }}</a></button>
                                                 </div>
                                             </div>
                                         </div>
                                          <div class="carousel-item ">
                                             <img src="../assets/img/sldier/1111.png" class="desktop-slide" alt="...">
                                             <div class="carousel-caption d-block">
-                                                <h1 class="slide-desc-title">{{ translation.translate('landingPageHome', 'slider3Title') }}</h1>
+                                                <h2 class="slide-desc-title">{{ translation.translate('landingPageHome', 'slider3Title') }}</h2>
                                                 <p class="slide-desc-description">{{ translation.translate('landingPageHome', 'slider3Desc') }}</p>
                                                 <div class="slide-button-group">
                                                     <button class="take-a-link"><a target="_blank" href="https://youtu.be/xcrJ_o4_nmc">{{ translation.translate('landingPageHome', 'slider3Button2') }}</a></button>
@@ -41,7 +41,7 @@
                                         <div class="carousel-item">
                                             <img src="../assets/img/sldier/4444.png" class="desktop-slide" alt="...">
                                             <div class="carousel-caption d-block">
-                                                <h1 class="slide-desc-title"> {{ translation.translate('landingPageHome', 'playMarketApp') }}</h1>
+                                                <h3 class="slide-desc-title"> {{ translation.translate('landingPageHome', 'playMarketApp') }}</h3>
                                                 <p class="slide-desc-description">{{ translation.translate('landingPageHome', 'AppStoreApp') }}</p>
                                                 <div class="slide-button-group">
                                                     <button class="take-a-link"><a target="_blank" href="https://apps.apple.com/us/app/faktura/id1454146398">App Store</a></button>
@@ -52,7 +52,7 @@
                                         <div class="carousel-item">
                                             <img src="../assets/img/sldier/2222.png" class="desktop-slide" alt="...">
                                             <div class="carousel-caption d-block">
-                                                <h1 class="slide-desc-title">{{ translation.translate('landingPageHome', 'slider2Title') }}</h1>
+                                                <h4 class="slide-desc-title">{{ translation.translate('landingPageHome', 'slider2Title') }}</h4>
                                                 <p class="slide-desc-description">{{ translation.translate('landingPageHome', 'slider2Desc') }}</p>
                                                 <div class="slide-button-group">
                                                     <button class="take-a-link"><a target="_blank" href="https://youtu.be/sqT9R3OZYyA">{{ translation.translate('landingPageHome', 'slider2Button2') }}</a></button>
@@ -437,6 +437,93 @@
                                 <h4>
                                     {{ translation.translate('landingPageHome', 'benefirGoodSide6') }}
                                 </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="connect-page">
+            <div class="page-title connect-title container traditional-page-width">
+                <h2 class="font-weight-bolder dark">Электронное хранение документов</h2>
+                <h5 class="light">Хранения документов организации является одним из основных процессов электронного документооборота</h5>
+            </div>
+            <div class="connect-body gybrid-pochta container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-6 align-self-center">
+                       <img class="seo-pic" src="../assets/img/seo-pic.png" alt="">
+                    </div>
+                     <div class="col-md-12 col-lg-6 position-relative d-flex align-items-center seo-info-1">
+                        <div class="timeline-points">
+                            <div id="accordion">
+                                <div class="card cursor-pointer"  data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                    <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0 collapsed">
+                                            Реквизиты электронного документа
+                                    </h2>
+                                    </div>
+                                    <div id="collapseFour" class="collapse show" aria-labelledby="headingThree" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Для внедрения ЭДО документы должны иметь следующие реквизиты:
+                                        <ul>
+                                            <li>Электронная цифровая подпись</li>
+                                            <li>Наименование юридического лица или фамилия, имя, отчество физического лица</li>
+                                            <li>Регистрационный номер НДС</li>
+                                            <li>Банковский счёт</li>
+                                            <li>Банк МФО</li>
+                                            <li>ИНН</li>
+                                        </ul>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="card cursor-pointer" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0" >
+                                        Преимущества электронного документооборота
+                                    </h2>
+                                    </div>
+                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Почему стоит внедрить электронный документооборот в Узбекистане? Вот некоторые из наиболее важных преимуществ, связанных с ЭДО.
+                                        <ul>
+                                            <li>Легче искать информацию. Системы электронного сканирования документов позволяют работникам быстро находить нужную информацию на электронных носителях.</li>
+                                            <li>Обеспечивает последовательное форматирование документов. Система управления документами обеспечивает мгновенный доступ к последним шаблонам компании в один клик. </li>
+                                            <li>Обеспечение безопасного резервного копирования. Внедрение ЭДО обеспечивает безопасность и сохранность информации о компании</li>
+                                            <li>Повышенная безопасность. Хранение документов в электронном виде помогает гарантировать, что документы надежно хранятся и не попадут в руки хакеров</li>
+                                            <li>Быстрый доступ к общим файлам. Облачный документооборот помогает обеспечить всем сторонам доступ к одной и той же информации.</li>
+                                            <li>Меньшие затраты. Документооборот онлайн уменьшает расходы на бумагу и освобождает место, которое отводилось бы под ее содержание</li>
+                                        </ul>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="card cursor-pointer" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0 collapsed">
+                                        Внедрение электронного документооборота
+                                    </h2>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Необходимость внедрения системы документооборота является верным признаком того, что ваш бизнес растет. Однако переход к электронному документообороту с традиционных процессов управления документами не всегда прост, особенно если вы впервые внедряете такой инструмент. Но вы увидите большую отдачу от инвестиций в ЭДО, просто используя ведение электронного документооборота. Вы сможете использовать весь спектр услуг и функций, предоставляемых программным обеспечением, которое предлагает Faktura.uz.
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="card cursor-pointer"  data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0 collapsed">
+                                        Защита информации при ЭДО
+                                    </h2>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Хранение электронных версий файлов позволяет легко обмениваться документами. Но в отличие от бумажных, вы можете контролировать, кто может получить доступ к файлам. Кроме того, вы можете защитить конфиденциальные документы, ограничив к ним путь, а также использовать технологию управления цифровыми правами, которая ограничивает количество раз, когда файл может быть прочитан или распечатан. 
+                                        <br>
+                                        <br>
+                                        Установив более эффективный контроль документов, вы можете значительно повысить безопасность системы. Даже если документы надежно защищены от вмешательства сотрудников, данные по-прежнему уязвимы для пользователей с правами системного администратора. В системе  электронного документооборота(сэд) Faktura есть журнал аудита, который информирует вас, если кто-то пытается внести изменения.
+                                    </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -997,7 +1084,7 @@
             </div>
         </section>
 
-        <section id="testemonials">
+        <!-- <section id="testemonials">
             <div class="container">
                 <div class="page-title">
                     <h2 class="font-weight-bolder dark">{{ translation.translate('landingPageHome', 'realTestemonials') }}</h2>
@@ -1056,7 +1143,7 @@
                 <div class="snow snow--far"></div>
                 <div class="snow snow--far snow--alt"></div>
             </div>
-        </section>
+        </section> -->
 
         <section id="map">
             <div class="container-fluid">
@@ -1292,7 +1379,7 @@
                     </div>
                     <div class="map-body-mobile">
                         <div>
-                            <img src="../assets/img/map.png" class="w-100">
+                            <img src="../assets/img/map.png" alt="карта" class="w-100">
                         </div>
                     </div>
                 </div>
@@ -1354,49 +1441,6 @@
                         <a href="https://forms.gle/Uxr6T8XCYzP4RLCKA" target="_blank" style="color: white"><button type="button" class="btn btn-success" style="padding: 0.375rem 1.90rem;" @click="currentTime = 2">{{ translation.translate('landingPageHome', 'modalButton2#1') }}</button></a>
                     </div>
                 </div>
-                <!-- <form id="form" @submit.prevent="getFormValues" class="radiobuttons">
-                    <div class="form-check">
-                        <input required data-social="Telegram" class="form-check-input" v-model="picked" type="radio" name="exampleRadios" id="exampleRadios6" value="option-telegram">
-                        <label style="color: rgb(64, 100, 172)" class="form-check-label" for="exampleRadios6">
-                            Telegram
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input required class="form-check-input" data-social="Instagram" v-model="picked" type="radio" name="exampleRadios" id="exampleRadios5" value="option-instagram">
-                        <label style="color: rgb(64, 100, 172)" class="form-check-label" for="exampleRadios5">
-                            Instagram
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input required data-social="Facebook" class="form-check-input" v-model="picked" type="radio" name="exampleRadios" id="exampleRadios4" value="option-facebook">
-                        <label style="color: rgb(64, 100, 172)" class="form-check-label" for="exampleRadios4">
-                            Facebook
-                        </label>
-                    </div>
-                    <div class="form-check mt-3">
-                        <input required data-social="Новостные сайты" class="form-check-input" v-model="picked" type="radio" name="exampleRadios" id="exampleRadios3" value="option-websites">
-                        <label style="color: #717171;" class="form-check-label" for="exampleRadios3">
-                            Новостные сайты
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input required class="form-check-input" data-social="Посоветовали" v-model="picked" type="radio" name="exampleRadios" id="exampleRadios2" value="option-adviced">
-                        <label style="color: #717171;" class="form-check-label" for="exampleRadios2">
-                            Посоветовали
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input required class="form-check-input" data-social="другие источники" v-model="picked" type="radio" name="exampleRadios" id="exampleRadios8" value="active">
-                        <label style="color: #717171;" class="form-check-label" for="exampleRadios8">
-                            Другие источники
-                        </label>
-                        
-                    </div>
-                    <textarea required data-social="другие источники:" :disabled="picked !== 'active'" style="margin-top: 10px;width: -webkit-fill-available;" class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
-                    <div class="popup-button-div">
-                        <button style="border-radius: 0px;font-size: 17px;padding: 5px 20px;" type="submit" class="w-100 btn btn-outline-success popup-button">Отправить</button>
-                    </div>
-                </form> -->
             </div>
         </div>
     </div>
@@ -1803,9 +1847,9 @@ export default {
             ]
         }
     },
-    created() {
-        this.startTimer()
-    },
+    // created() {
+    //     this.startTimer()
+    // },
     destroyed() {
         this.stopTimer()
     },

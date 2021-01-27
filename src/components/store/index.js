@@ -10,7 +10,7 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
     state: {
-        currentLanguage: JSON.parse(localStorage.getItem('translation')) ? JSON.parse(localStorage.getItem('translation')) : { "localeName": "uz" },
+        currentLanguage: JSON.parse(localStorage.getItem('translation')) ? JSON.parse(localStorage.getItem('translation')) : { "localeName": "ru" },
         sidebarCondition: false
     },
     getters: {

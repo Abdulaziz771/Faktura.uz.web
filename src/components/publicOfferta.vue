@@ -1015,7 +1015,7 @@ export default {
   components: {
       headerComponent,
       footerComponent
-  }
+  },
 }
 </script>
 

@@ -8,7 +8,7 @@ export default (() => {
   translation.locales = {};
 
   translation._getDefaultLocaleName = function () {
-    return "uz";
+    return "ru";
   };
 
   translation._loadLocaleNameFromStorage = function () {
