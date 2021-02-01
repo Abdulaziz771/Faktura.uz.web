@@ -446,8 +446,8 @@
 
         <section id="connect-page">
             <div class="page-title connect-title container traditional-page-width">
-                <h2 class="font-weight-bolder dark">Электронное хранение документов</h2>
-                <h5 class="light">Хранения документов организации является одним из основных процессов электронного документооборота</h5>
+                <h2 class="font-weight-bolder dark">{{ translation.translate('landingPageHome', 'seoInfoTitle20') }}</h2>
+                <h5 class="light">{{ translation.translate('landingPageHome', 'seoInfoTitle21') }}</h5>
             </div>
             <div class="connect-body gybrid-pochta container">
                 <div class="row">
@@ -460,18 +460,18 @@
                                 <div class="card cursor-pointer"  data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
                                     <div class="card-header" id="headingThree">
                                     <h2 class="mb-0 collapsed">
-                                            Реквизиты электронного документа
+                                            {{ translation.translate('landingPageHome', 'seoInfoTitle1') }}
                                     </h2>
                                     </div>
                                     <div id="collapseFour" class="collapse show" aria-labelledby="headingThree" data-parent="#accordion">
                                     <div class="card-body">
-                                        Для внедрения ЭДО документы должны иметь следующие реквизиты:
+                                       {{ translation.translate('landingPageHome', 'seoInfoTitle2') }}
                                         <ul>
-                                            <li>Электронная цифровая подпись</li>
-                                            <li>Наименование юридического лица или фамилия, имя, отчество физического лица</li>
-                                            <li>Регистрационный номер НДС</li>
-                                            <li>Банковский счёт</li>
-                                            <li>Банк МФО</li>
+                                            <li>{{ translation.translate('landingPageHome', 'seoInfoTitle3') }}</li>
+                                            <li>{{ translation.translate('landingPageHome', 'seoInfoTitle4') }}</li>
+                                            <li>{{ translation.translate('landingPageHome', 'seoInfoTitle5') }}</li>
+                                            <li>{{ translation.translate('landingPageHome', 'seoInfoTitle6') }}</li>
+                                            <li>{{ translation.translate('landingPageHome', 'seoInfoTitle7') }}</li>
                                             <li>ИНН</li>
                                         </ul>
                                     </div>
@@ -480,19 +480,19 @@
                                 <div class="card cursor-pointer" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                     <div class="card-header" id="headingOne">
                                     <h2 class="mb-0" >
-                                        Преимущества электронного документооборота
+                                       {{ translation.translate('landingPageHome', 'seoInfoTitle8') }}
                                     </h2>
                                     </div>
                                     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                                     <div class="card-body">
-                                        Почему стоит внедрить электронный документооборот в Узбекистане? Вот некоторые из наиболее важных преимуществ, связанных с ЭДО.
+                                        {{ translation.translate('landingPageHome', 'seoInfoTitle9') }}
                                         <ul>
-                                            <li>Легче искать информацию. Системы электронного сканирования документов позволяют работникам быстро находить нужную информацию на электронных носителях.</li>
-                                            <li>Обеспечивает последовательное форматирование документов. Система управления документами обеспечивает мгновенный доступ к последним шаблонам компании в один клик. </li>
-                                            <li>Обеспечение безопасного резервного копирования. Внедрение ЭДО обеспечивает безопасность и сохранность информации о компании</li>
-                                            <li>Повышенная безопасность. Хранение документов в электронном виде помогает гарантировать, что документы надежно хранятся и не попадут в руки хакеров</li>
-                                            <li>Быстрый доступ к общим файлам. Облачный документооборот помогает обеспечить всем сторонам доступ к одной и той же информации.</li>
-                                            <li>Меньшие затраты. Документооборот онлайн уменьшает расходы на бумагу и освобождает место, которое отводилось бы под ее содержание</li>
+                                            <li>{{ translation.translate('landingPageHome', 'seoInfoTitle10') }}</li>
+                                            <li>{{ translation.translate('landingPageHome', 'seoInfoTitle11') }}</li>
+                                            <li>{{ translation.translate('landingPageHome', 'seoInfoTitle12') }}</li>
+                                            <li>{{ translation.translate('landingPageHome', 'seoInfoTitle13') }}</li>
+                                            <li>{{ translation.translate('landingPageHome', 'seoInfoTitle14') }}</li>
+                                            <li>{{ translation.translate('landingPageHome', 'seoInfoTitle15') }}</li>
                                         </ul>
                                     </div>
                                     </div>
@@ -500,27 +500,27 @@
                                 <div class="card cursor-pointer" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     <div class="card-header" id="headingTwo">
                                     <h2 class="mb-0 collapsed">
-                                        Внедрение электронного документооборота
+                                        {{ translation.translate('landingPageHome', 'seoInfoTitle16') }}
                                     </h2>
                                     </div>
                                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                                     <div class="card-body">
-                                        Необходимость внедрения системы документооборота является верным признаком того, что ваш бизнес растет. Однако переход к электронному документообороту с традиционных процессов управления документами не всегда прост, особенно если вы впервые внедряете такой инструмент. Но вы увидите большую отдачу от инвестиций в ЭДО, просто используя ведение электронного документооборота. Вы сможете использовать весь спектр услуг и функций, предоставляемых программным обеспечением, которое предлагает Faktura.uz.
+                                        {{ translation.translate('landingPageHome', 'seoInfoTitle17') }}
                                     </div>
                                     </div>
                                 </div>
                                 <div class="card cursor-pointer"  data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                     <div class="card-header" id="headingThree">
                                     <h2 class="mb-0 collapsed">
-                                        Защита информации при ЭДО
+                                        {{ translation.translate('landingPageHome', 'seoInfoTitle171') }}
                                     </h2>
                                     </div>
                                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                                     <div class="card-body">
-                                        Хранение электронных версий файлов позволяет легко обмениваться документами. Но в отличие от бумажных, вы можете контролировать, кто может получить доступ к файлам. Кроме того, вы можете защитить конфиденциальные документы, ограничив к ним путь, а также использовать технологию управления цифровыми правами, которая ограничивает количество раз, когда файл может быть прочитан или распечатан. 
+                                        {{ translation.translate('landingPageHome', 'seoInfoTitle18') }}
                                         <br>
                                         <br>
-                                        Установив более эффективный контроль документов, вы можете значительно повысить безопасность системы. Даже если документы надежно защищены от вмешательства сотрудников, данные по-прежнему уязвимы для пользователей с правами системного администратора. В системе  электронного документооборота(сэд) Faktura есть журнал аудита, который информирует вас, если кто-то пытается внести изменения.
+                                        {{ translation.translate('landingPageHome', 'seoInfoTitle18') }}
                                     </div>
                                     </div>
                                 </div>

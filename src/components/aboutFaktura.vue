@@ -4,7 +4,7 @@
             <headerComponent></headerComponent>
             <div class="page-title">
                 <div class="page-title-block">
-                    <h1>Система электронного документооборота Faktura</h1>
+                    <h1>{{ translation.translate('aboutFaktura', 'aboutFakturadescription31') }}</h1>
                 </div>
             </div>
         </div>
@@ -25,23 +25,52 @@
                                 <img class="ab-im-3" src="../assets/img/153635_1c82964991935ba167f61a0f0bc6.jpg" alt="Наши молодые сотрудники в faktura.uz, внутри системы, тех-помощь">
                             </div>
                         </div>
-                        <p class="pt-5 pb-3">{{ translation.translate('aboutFaktura', 'aboutFakturadescription2') }}, <a target="_blank" href="https://korzinka.uz/">Korzinka.uz</a> , <a target="_blank" href="https://uztelecom.uz/">Uztelecom</a> — {{ translation.translate('aboutFaktura', 'aboutFakturadescription3') }}</p>
+                        <p class="pt-5 pb-3">{{ translation.translate('aboutFaktura', 'aboutFakturadescription2') }} {{ translation.translate('aboutFaktura', 'aboutFakturadescription3') }}</p>
+                        <h4 class="mt-4 mb-4">{{ translation.translate('aboutFaktura', 'aboutFakturadescription4') }}</h4>
+                        <p>{{ translation.translate('aboutFaktura', 'aboutFakturadescription5') }}</p>
+                        <ul>
+                            <ol class="mt-4">{{ translation.translate('aboutFaktura', 'aboutFakturadescription6') }}</ol>
+                            <ol class="mt-4">{{ translation.translate('aboutFaktura', 'aboutFakturadescription7') }}</ol>
+                            <ol class="mt-4">{{ translation.translate('aboutFaktura', 'aboutFakturadescription8') }}</ol>
+                            <ol class="mt-4">{{ translation.translate('aboutFaktura', 'aboutFakturadescription9') }}</ol>
+                        </ul>
+                        <h4 class="mt-4 mb-4">{{ translation.translate('aboutFaktura', 'aboutFakturadescription10') }}</h4>
                         <div class="d-flex">
                             <img class="ab-im-4" src="../assets/img/tes.jpg" alt="Тулкин Якубов, To'lqin Yakubov, Основатель Faktura.uz, SPACE ONLINE GENESIS">
                             <img class="ab-im-5" src="../assets/img/e6d5cb37e0fd68af6a92b870a7d25201.jpg" alt="Логотип Faktura.uz">
                         </div>
-                        <p class="pt-5 pb-3">{{ translation.translate('aboutFaktura', 'aboutFakturadescription4') }} </p>
+                        <p>{{ translation.translate('aboutFaktura', 'aboutFakturadescription11') }}</p>
+                        <h4>{{ translation.translate('aboutFaktura', 'aboutFakturadescription12') }}</h4>
+                        <ul>
+                            <ol class="mt-4">{{ translation.translate('aboutFaktura', 'aboutFakturadescription13') }}</ol>
+                            <ol class="mt-4">{{ translation.translate('aboutFaktura', 'aboutFakturadescription14') }}</ol>
+                            <ol class="mt-4">{{ translation.translate('aboutFaktura', 'aboutFakturadescription15') }}</ol>
+                            <ol class="mt-4">{{ translation.translate('aboutFaktura', 'aboutFakturadescription16') }}</ol>
+                        </ul>
+                        <h4 class="mt-4 mb-4">{{ translation.translate('aboutFaktura', 'aboutFakturadescription17') }} </h4>
+                        <ul>
+                            <ol class="mt-4">{{ translation.translate('aboutFaktura', 'aboutFakturadescription18') }}</ol>
+                            <ol class="mt-4">{{ translation.translate('aboutFaktura', 'aboutFakturadescription19') }}</ol>
+                            <ol class="mt-4">{{ translation.translate('aboutFaktura', 'aboutFakturadescription20') }}</ol>
+                            <ol class="mt-4">{{ translation.translate('aboutFaktura', 'aboutFakturadescription21') }}</ol>
+                            <ol class="mt-4">{{ translation.translate('aboutFaktura', 'aboutFakturadescription22') }}</ol>
+                            <ol class="mt-4">{{ translation.translate('aboutFaktura', 'aboutFakturadescription23') }}</ol>
+                        </ul>
+                        <h4 class="mt-4 mb-4">{{ translation.translate('aboutFaktura', 'aboutFakturadescription24') }} </h4>
                         <img class="ab-im-6" src="../assets/img/OloAp015661583645089_b.jpg" alt="Наша комманда">
-                        <p class="pt-5 pb-3">{{ translation.translate('aboutFaktura', 'aboutFakturadescription5') }}</p>
+                        <p class="pt-5 pb-3">{{ translation.translate('aboutFaktura', 'aboutFakturadescription25') }}</p>
+                        <p class="pt-5 pb-3">{{ translation.translate('aboutFaktura', 'aboutFakturadescription26') }}</p>
                         <div class="d-flex">
                             <img class="ab-im-8" src="../assets/img/WN8VqQ15665655981898_b.jpg" alt="Наша комманда">
                             <img class="ab-im-9" src="../assets/img/R5oEIH15665655823668_b.jpg" alt="Наша комманда">
                         </div>
-                        <p class="pt-5 pb-3">{{ translation.translate('aboutFaktura', 'aboutFakturadescription6') }}</p>
-                        <p class="pt-5 pb-3">{{ translation.translate('aboutFaktura', 'aboutFakturadescription7') }}<a href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3" target="_blank" >{{ translation.translate('landingPageHome', 'tolink') }}</a></p>
+                        <p class="pt-5 pb-3">{{ translation.translate('aboutFaktura', 'aboutFakturadescription27') }}</p>
+                        <p class="pt-5 pb-3">{{ translation.translate('aboutFaktura', 'aboutFakturadescription28') }}</p>
                         <div class="text-center pt-5 pb-5">
                             <img class="ab-im-7" src="../assets/img/map.png" alt="Число пользователей Faktura.uz">
                         </div>
+                        <p class="pt-5 pb-3">{{ translation.translate('aboutFaktura', 'aboutFakturadescription29') }}</p>
+                        <p class="pt-5 pb-3">{{ translation.translate('aboutFaktura', 'aboutFakturadescription30') }}</p>
                     </div>
                 </div>
             </div>
