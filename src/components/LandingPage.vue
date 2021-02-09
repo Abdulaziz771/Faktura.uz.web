@@ -1421,28 +1421,20 @@
                 </div>
             </div>
         </div>
-        <div v-if="currentTime == 0" class="google-forms-scene"></div>
-        <div v-if="currentTime == 0" class="google-forms-block" id="voice">
+        <!-- <div  class="google-forms-scene"></div>
+        <div class="google-forms-block" id="voice">
             <div  class="google-forms">
-                <div class="modal-header-popup">
-                    <h5 class="popup-text mb-0">
-                        {{ translation.translate('landingPageHome', 'modalTitle#1') }}
-                    </h5>
+                <div class="x-icon-block-popup">
+                    <x-icon></x-icon>
                 </div>
                 <div>
-                    <img class="first-opros-img" src="../assets/img/6.png" alt="">
-                </div>
-                <div>
-                    <h4 class="first-opros-h4">
-                        {{ translation.translate('landingPageHome', 'modalDescription#1') }}
-                    </h4>
-                    <div class="mt-4 mb-3">
-                        <button type="button" class="btn btn-outline-danger mr-3" @click="currentTime = 2">{{ translation.translate('landingPageHome', 'modalButton#1') }}</button>
-                        <a href="https://forms.gle/Uxr6T8XCYzP4RLCKA" target="_blank" style="color: white"><button type="button" class="btn btn-success" style="padding: 0.375rem 1.90rem;" @click="currentTime = 2">{{ translation.translate('landingPageHome', 'modalButton2#1') }}</button></a>
+                    <div class="mt-4 mb-3 button-footer">
+                        <button type="button" class="btn btn-outline-danger mr-3" style="border-radius: 15px;padding: 0.475rem 3.9rem;" @click="currentTime = 2">{{ translation.translate('landingPageHome', 'modalButton#1') }}</button>
+                        <a href="https://forms.gle/Uxr6T8XCYzP4RLCKA" target="_blank" style="color: white"><button type="button" class="btn btn-success" style="border-radius: 15px;padding: 0.475rem 3.9rem;" @click="currentTime = 2">{{ translation.translate('landingPageHome', 'modalButton2#1') }}</button></a>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </template>
 <script src="../tgFunction.js"></script>
@@ -1461,7 +1453,8 @@ import {
     MapPinIcon,
     Edit2Icon,
     FolderIcon,
-    AlertTriangleIcon
+    AlertTriangleIcon,
+    XIcon 
 } from 'vue-feather-icons'
 
 export default {
@@ -1524,7 +1517,8 @@ export default {
         Edit2Icon,
         FolderIcon,
         AlertTriangleIcon,
-        footerComponent
+        footerComponent,
+        XIcon 
     },
     computed: {
         ratesBase() {
@@ -1890,11 +1884,10 @@ export default {
 }
 
 .google-forms-block .google-forms {
-    width: 25%;
+    width: 50%;
     background: white;
-    border-radius: 5px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-radius: 35px;
+    position: relative;
 }
 
 .google-forms {

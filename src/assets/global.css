@@ -2313,6 +2313,21 @@ input::-webkit-inner-spin-button {
     width: 600px;
 }
 
+.button-footer {
+    text-align: right;
+    padding: 15px 70px;
+}
+
+.x-icon-block-popup {
+    position: absolute;
+    background: #28a745;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    right: -10px;
+    top: -10px;
+    font-weight: 800;
+}
 
 
 
