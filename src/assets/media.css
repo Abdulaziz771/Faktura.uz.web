@@ -980,6 +980,14 @@
 }
 
 @media (max-width: 576px) {
+    /* #blog .blog {
+        padding-left: 0;
+        padding-right: 0;
+    } */
+    #blog .container .row{
+        margin-right: 0;
+        margin-left: 0;
+    }
     .feedbak textarea {
         width: 320px;
         background: rgba(255, 255, 255, 0.11);

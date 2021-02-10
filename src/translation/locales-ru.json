@@ -230,7 +230,8 @@
         "apiDocumentation": "API документация",
         "registration": "Регистрация",
         "signin": "Войти",
-        "documentation": "Документация"
+        "documentation": "Документация",
+        "blog": "Блог"
     },
     "1cModulesPage": {
         "moduleVersion": "Версия",

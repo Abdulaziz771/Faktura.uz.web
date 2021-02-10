@@ -52,11 +52,14 @@
                   <li  @click="$store.commit('toggleSidebar', false)">
                     <router-link class="li-text" :to='{ name: "Тарифы" }'>{{ translation.translate('header', 'pricesItem') }}</router-link>
                   </li>
-                  <li  @click="$store.commit('toggleSidebar', false)">
+                  <!-- <li  @click="$store.commit('toggleSidebar', false)">
                     <router-link class="li-text" :to='{ name: "Обновления" }'>{{ translation.translate('header', 'updates') }}</router-link>
-                  </li>
+                  </li> -->
                   <li  @click="$store.commit('toggleSidebar', false)">
                     <router-link class="li-text" :to='{ name: "Тех-поддержка" }'>{{ translation.translate('header', 'tech') }}</router-link>
+                  </li>
+                  <li  @click="$store.commit('toggleSidebar', false)">
+                    <router-link class="li-text" :to='{ name: "Блоги" }'>{{ translation.translate('header', 'blog') }}</router-link>
                   </li>
                   <li v-if="$store.getters.valueofCurrentLanguage == 'uz'" class="nav-item nav-item-6 d-flex position-relative" @click="_onChangeLanguage('ru'), callGtag('Перевод на Рус,rus_translation,click')">
                       <a href="" class="nav-link font-weight-bold language-change universal-radius universal-transition" style="font-size: 18px; padding: 0; padding-right: 8px;">Ру</a>

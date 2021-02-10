@@ -114,6 +114,16 @@ const router = new VueRouter({
             name: 'Руководство пользователя',
             component: () => import('../components/rukovodstvoPolzovaniya')
         },
+        {
+            path: '/blog',
+            name: 'Блоги',
+            component: () => import('../components/blog')
+        },
+        {
+            path: '/blog/:titleRoute', 
+            name: 'Блог',
+            component: () => import('../components/blog-posts/blogPost1')
+        },
     ],
     scrollBehavior() {
         return {x: 0, y: 0}

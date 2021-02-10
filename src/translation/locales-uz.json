@@ -231,7 +231,8 @@
         "apiDocumentation": "API",
         "registration": "Рўйхатдан ўтиш",
         "signin": "Кириш",
-        "documentation": "Ҳужжатлар бўлими"
+        "documentation": "Ҳужжатлар бўлими",
+        "blog": "Блог"
     },
     "1cModulesPage": {
         "moduleVersion": "Версия",

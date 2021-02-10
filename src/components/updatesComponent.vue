@@ -14,7 +14,7 @@
                 <div class="post-block row">
                     <div class="update-post col-sm-6 col-lg-4 p-0" v-for="(update, index) in updates" :key="index">
                         <div class="body-post">
-                            <router-link :to="{ name: update.route }">
+                            <router-link :to="{ name: update.route, params: { blogPost: update.route } }">
                                 <div class="position-relative">
                                     <img :src="update.img" class="w-100" alt="">
                                     <div class="mobile-update">

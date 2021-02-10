@@ -104,7 +104,6 @@
                                 </div>
                             </div>
                         </div>
-                        <iframe class="mobile-map" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1499.9718681509871!2d69.20468374953117!3d41.33780112337828!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2s!4v1596528237373!5m2!1sru!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
                 </div>
             </div>

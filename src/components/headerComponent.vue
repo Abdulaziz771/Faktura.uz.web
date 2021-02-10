@@ -28,11 +28,14 @@
                     <li class="nav-item">
                         <router-link :to='{ name: "Тарифы" }' class="nav-link font-weight-bold universal-transition">{{ translation.translate('header','pricesItem') }}</router-link>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <router-link :to='{ name: "Обновления" }' href="" class="nav-link font-weight-bold universal-transition">{{ translation.translate('header','updates') }}</router-link>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <router-link :to='{ name: "Тех-поддержка" }' class="nav-link font-weight-bold universal-transition">{{ translation.translate('header','tech') }}</router-link>
+                    </li>
+                    <li  @click="$store.commit('toggleSidebar', false)">
+                        <router-link  class="nav-link font-weight-bold universal-transition" :to='{ name: "Блоги" }'>{{ translation.translate('header', 'blog') }}</router-link>
                     </li>
                     <li v-if="$store.getters.valueofCurrentLanguage == 'uz'" class="nav-item nav-item-6 d-flex position-relative" @click="_onChangeLanguage('ru'), callGtag('Перевод на Узб,uzb_translate,click')">
                         <a href="" class="nav-link text-white font-weight-bold language-change universal-radius universal-transition">Ру</a>
