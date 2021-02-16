@@ -92,10 +92,6 @@ export default {
     background-image: url("../../assets/img/hero-bg-4.jpg");
 }
 
-.post-body {
-    padding: 30px;
-}
-
 .update-points {
     width: 80%;
     background: #f4f4f4;

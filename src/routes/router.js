@@ -120,10 +120,15 @@ const router = new VueRouter({
             component: () => import('../components/blog')
         },
         {
-            path: '/blog/:titleRoute', 
-            name: 'Блог',
+            path: '/blog/преимущества-электронного-документооборота', 
+            name: 'преимущества-электронного-документооборота',
             component: () => import('../components/blog-posts/blogPost1')
         },
+        {
+            path: '/blog/основные-принципы-электронного-документооборота', 
+            name: 'основные-принципы-электронного-документооборота',
+            component: () => import('../components/blog-posts/blogPost2')
+        }
     ],
     scrollBehavior() {
         return {x: 0, y: 0}

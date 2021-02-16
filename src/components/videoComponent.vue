@@ -142,6 +142,42 @@ export default {
                 isActiveLink: false,
                 duration: "2:01"
             },
+            {
+                title:  "Синхронизация",
+                videoSource: "https://www.youtube-nocookie.com/embed/2yooH6PsYvs",
+                isActiveLink: false,
+                duration: "2:01"
+            },
+            {
+                title:  "Архивация документов",
+                videoSource: "https://www.youtube-nocookie.com/embed/2YJi3hKGGzk",
+                isActiveLink: false,
+                duration: "6:51"
+            },
+            {
+                title:  "Акт-сверка",
+                videoSource: "https://www.youtube-nocookie.com/embed/CjFvdcr79zw",
+                isActiveLink: false,
+                duration: "2:48"
+            },
+            {
+                title:  "Гибридная почта",
+                videoSource: "https://www.youtube-nocookie.com/embed/tFsJIt2rHqY",
+                isActiveLink: false,
+                duration: "1:21"
+            },
+            {
+                title:  "Создание договора",
+                videoSource: "https://www.youtube-nocookie.com/embed/-H9oVLRV6UU",
+                isActiveLink: false,
+                duration: "1:05"
+            },
+            {
+                title:  "Пополнение счёта и тарифы",
+                videoSource: "https://www.youtube-nocookie.com/embed/GD5Cn_uZZrc",
+                isActiveLink: false,
+                duration: "2:38"
+            },
         ]
       }
   },

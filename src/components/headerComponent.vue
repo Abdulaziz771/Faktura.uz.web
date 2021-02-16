@@ -53,7 +53,7 @@
                         <a href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3" target="_blank" class="nav-link text-white font-weight-bold log-in-link universal-transition" @click='callGtag("Нажатие на регистрацию,log_in,click")'>{{ translation.translate('header', 'registration') }}</a>
                     </li>
                     <li class="nav-item position-relative">
-                        <a href="https://account.faktura.uz/Login?ReturnUrl=http%3a%2f%2faccount.faktura.uz%2fAuthorize%3fresponse_type%3dcode%26client_id%3d12379127389123%26redirect_uri%3dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3d%252f%26scope%3d0%252c1%252c2%252c3" target="_blank" class="nav-link dark-brand-bg text-white font-weight-bold sign-in-link universal-radius universal-transition snow-roof1" @click='callGtag("Вошедшие в систему,sign_in,click")'>
+                        <a href="http://app.faktura.uz/" target="_blank" class="nav-link dark-brand-bg text-white font-weight-bold sign-in-link universal-radius universal-transition snow-roof1" @click='callGtag("Вошедшие в систему,sign_in,click")'>
                             {{ translation.translate('header', 'signin') }}
                         </a>
                     </li>
@@ -83,11 +83,6 @@ export default {
     name: 'headerComponent',
     data() {
         return {
-            isScrolled: false,
-            scrollPosition: null,
-            limitPosition: 500,
-            scrolled: false,
-            lastPosition: 0,
             isSidebarOpen: false,
             translation: translate
         }
@@ -101,56 +96,12 @@ export default {
         _onChangeLanguage(value) {
             translate.changeLocale(value);
         },
-        updateScroll() {
-            /* eslint-disable no-debugger */
-            this.scrollPosition = window.scrollY
-            
-            if (this.scrollPosition > 10) {
-                this.isScrolled = true;
-            } else {
-                this.isScrolled = false;
-            }
-            
-            if (this.scrollPosition < 20) {
-                this.isTopHeader = true;
-            } else  {
-                this.isTopHeader = false;
-            }
-        },
-        handleScroll() {
-            if (this.lastPosition < window.scrollY && this.limitPosition < window.scrollY) {
-            this.scrolled = true;
-            // move up!
-            }
-
-            if (this.lastPosition > window.scrollY) {
-            this.scrolled = false;
-            // move down
-            }
-
-            this.lastPosition = window.scrollY;
-            // this.scrolled = window.scrollY > 250;
-        },
         toggleSidebar() {
             this.isSidebarOpen = true
             this.$emit('toggleSidebar', this.isSidebarOpen)
         }
     },
-    mixins: [mixin],
-    mounted() {
-        window.addEventListener('scroll', this.updateScroll);
-    },
-    created() {
-        if (window.scrollY == 0) {
-            this.isTopHeader = true;
-        } else  {
-            this.isTopHeader = false;
-        }
-        window.addEventListener("scroll", this.handleScroll);
-    },
-    destroyed() {
-        window.removeEventListener("scroll", this.handleScroll);
-    }
+    mixins: [mixin]
 }
 </script>
 

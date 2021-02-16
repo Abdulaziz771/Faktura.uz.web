@@ -11,17 +11,28 @@
         <div id="blog">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 col-12 blog" v-for="(blog, index) in blogs" :key="index">
+                    <div class="col-lg-4 col-md-6 col-12 blog">
                         <div>
                             <div>
-                                <img :src="blog.img" class="w-100" alt="">
+                                <img src="../assets/img/blog/blog2.jpg" class="w-100" alt="">
                             </div>
                             <div class="blog-text">
-                                <div class="d-flex"><CalendarIcon style="width: 17px"/><h6>{{ blog.data }}</h6></div>
-                                <h5><router-link :to="{ name: 'Блог', params: { titleRoute: blog.titleRoute, blogIndex: index } }">{{ blog.title }}</router-link></h5>
+                                <div class="d-flex"><CalendarIcon style="width: 17px"/><h6>05:00 / 17.02.2021</h6></div>
+                                <h5><router-link :to="{ name: 'преимущества-электронного-документооборота' }">Преимущества электронного документооборота</router-link></h5>
                             </div>
                         </div>
-                    </div> 
+                    </div>
+                     <div class="col-lg-4 col-md-6 col-12 blog">
+                        <div>
+                            <div>
+                                <img src="../assets/img/blog/blog11.png" class="w-100" alt="">
+                            </div>
+                            <div class="blog-text">
+                                <div class="d-flex"><CalendarIcon style="width: 17px"/><h6>05:00 / 17.02.2021</h6></div>
+                                <h5><router-link :to="{ name: 'основные-принципы-электронного-документооборота' }">Основные принципы электронного документооборота</router-link></h5>
+                            </div>
+                        </div>
+                    </div>  
                 </div>
             </div>
         </div>
@@ -37,14 +48,14 @@ import { CalendarIcon } from 'vue-feather-icons'
 
 import translate from './../translation/translate'
 
-let blogs = require('../blog')
+// let blogs = require('../blog')
 
 export default {
   name: 'blog',
   data() {
       return {
           translation: translate,
-          blogs
+        //   blogs
       }
   },
   methods: {

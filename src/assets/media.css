@@ -980,10 +980,19 @@
 }
 
 @media (max-width: 576px) {
-    /* #blog .blog {
-        padding-left: 0;
-        padding-right: 0;
-    } */
+    .post-body {
+        padding: 0 !important;
+        padding-top: 15px !important;
+    }
+    .post-body h4 {
+        font-size: 20px;
+    }
+    .post-body h2 {
+        font-size: 27px;
+    }
+    .post-body p {
+        font-size: 16px;
+    }
     #blog .container .row{
         margin-right: 0;
         margin-left: 0;
@@ -1303,7 +1312,6 @@
         text-align: center;
     }
 }
-
 
 @media (max-height: 540px) {
     .google-forms-block {
