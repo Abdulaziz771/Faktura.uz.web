@@ -123,6 +123,14 @@ export default {
             translation: translate
         }
     },
+    metaInfo() {
+        return { 
+            title: "Преимущества электронного документооборота(ЭДО)",
+            meta: [
+                { name: 'description', content:  'Преимущества электронного документооборота(ЭДО). ✔Зачем нужно внедрять ЭДО. ✔Основные преимущества электронного документооборота.'},
+            ]
+        }
+    },
     methods: {
         doSomethingCool() {
             location.reload();

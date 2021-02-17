@@ -104,6 +104,14 @@ export default {
         translation: translate
       }
   },
+    metaInfo() {
+        return { 
+            title: "Основные принципы электронного документооборота(ЭДО)",
+            meta: [
+                { name: 'description', content:  'Основные принципы электронного документооборота (ЭДО). ✔Задачи системы электронного документооборота. ✔Критерии выбора системы электронного документооборота.'},
+            ]
+        }
+    },
   methods: {
       doSomethingCool() {
           location.reload();

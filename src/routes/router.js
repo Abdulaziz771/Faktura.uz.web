@@ -120,12 +120,12 @@ const router = new VueRouter({
             component: () => import('../components/blog')
         },
         {
-            path: '/blog/преимущества-электронного-документооборота', 
+            path: '/blog/preimushestva-elektronnogo-dokumentooborota', 
             name: 'преимущества-электронного-документооборота',
             component: () => import('../components/blog-posts/blogPost1')
         },
         {
-            path: '/blog/основные-принципы-электронного-документооборота', 
+            path: '/blog/osnovnie-principi-elektronnogo-dokumentooborota', 
             name: 'основные-принципы-электронного-документооборота',
             component: () => import('../components/blog-posts/blogPost2')
         }
