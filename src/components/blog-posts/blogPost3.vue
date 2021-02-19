@@ -4,7 +4,7 @@
             <headerComponent></headerComponent>
             <div class="page-title">
                 <div class="page-title-block">
-                    <h1>{{ translation.translate('blog', 'blog1Text1') }}</h1>
+                    <h1>{{ translation.translate('blog', 'blog3Text1') }} (УЗБ)</h1>
                 </div>
             </div>
         </div>
@@ -14,60 +14,17 @@
                     <div class="col-12 col-md-8">
                         <div class="post-body">
                             <div class="update-text">
-                                <p class="registered-date"><CalendarIcon/>05:00 / 17.02.2021</p>
+                                <p class="registered-date"><CalendarIcon/>17:15 / 19.02.2021</p>
                                 <div></div>
-                                <img src="../../assets/img/blog/blog2Max.png" alt="">
                                 <p>
-                                    {{ translation.translate('blog', 'blog1Text2') }} 
+                                    Ўзбекистон Республикаси Вазирлар Маҳкамасининг 2020 йил 14 августдаги 489-сонли Қарорининг 2-иловаси билан тасдиқланган Низомнинг 2-боб 15-бандига мувофиқ ҳисобварақ фактураларнинг 2-устунида — товарларнинг (хизматларнинг) Ягона электрон миллий каталоги бўйича идентификация коди ва номи киритилиши белгиланган. Бугунги кунда Давлат солиқ қўмитасининг тегишли ишчи гуруҳи томонидан “99900ххххх” –вақтинчалик кодлари доимий кодларга ўзгартирилмоқда.
                                 </p>
-                                <h2>
-                                    {{ translation.translate('blog', 'blog1Text3') }} 
-                                </h2>
                                 <p>
-                                    {{ translation.translate('blog', 'blog1Text4') }} 
+                                    Кейинги даврларда ЭҲФ расмийлаштиришда фақатгина доимий кодлардан фойдаланиш кўзда тутилмоқда. Бу ҳолат хўжалик юритувчи субъектларга ҳисобот даврида муаммоларни келтириб чиқариши мумкин.
                                 </p>
-                                <h2>
-                                   {{ translation.translate('blog', 'blog1Text5') }} 
-                                </h2>
-                                <img src="../../assets/img/blog/blog2in.png" alt="">
-                                <div>
-                                    <h4>
-                                        {{ translation.translate('blog', 'blog1Text6') }} 
-                                    </h4>
-                                    <p>
-                                        {{ translation.translate('blog', 'blog1Text7') }} 
-                                    </p>
-                                    <h4>
-                                        {{ translation.translate('blog', 'blog1Text8') }} 
-                                    </h4>
-                                    <p>
-                                        {{ translation.translate('blog', 'blog1Text9') }}  
-                                    </p>
-                                    <h4>
-                                        {{ translation.translate('blog', 'blog1Text10') }}  
-                                    </h4>
-                                    <p>
-                                        {{ translation.translate('blog', 'blog1Text11') }}  
-                                    </p>
-                                    <h4>
-                                        {{ translation.translate('blog', 'blog1Text12') }} 
-                                    </h4>
-                                    <p>
-                                        {{ translation.translate('blog', 'blog1Text13') }}  
-                                    </p>
-                                    <h4>
-                                        {{ translation.translate('blog', 'blog1Text14') }} 
-                                    </h4>
-                                    <p>
-                                        {{ translation.translate('blog', 'blog1Text15') }} 
-                                    </p>
-                                    <p>
-                                        {{ translation.translate('blog', 'blog1Text16') }} 
-                                    </p>
-                                    <p>
-                                        {{ translation.translate('blog', 'blog1Text17') }} 
-                                    </p>
-                                </div>
+                                <p>
+                                    Юқоридагиларни инобатга олган ҳолда ҳамда юзага келиши мумкин бўлган муаммоларни олдини олиш мақсадида, жорий йилнинг 20 февралидан бошлаб вақтинчалик кодлар ва иловага мувофиқ 5 хонали кодлардан фойдаланиш тўхтатилиши хакида огохлантирамиз.
+                                </p>
                             </div>
                             <hr>
                         </div>
@@ -87,11 +44,11 @@
                                                 <span class="date">05:00 / 17.02.2021</span>
                                             </div>
                                         </router-link>
-                                        <router-link class="d-flex" :to="{ name: 'soliq-qomitasining-489-sonli-qarori' }">   
-                                            <img src="../../assets/img/blog/blog3.png">
+                                         <router-link class="d-flex" :to="{ name: 'преимущества-электронного-документооборота' }">   
+                                            <img src="../../assets/img/blog/blog2Max.png">
                                             <div class="recent-text position-relative">
-                                                <h5>{{ translation.translate('blog', 'blog3Text1') }}</h5>
-                                                <span class="date">17:15 / 19.02.2021</span>
+                                                <h5> {{ translation.translate('blog', 'blog2Text1') }} </h5>
+                                                <span class="date">05:00 / 17.02.2021</span>
                                             </div>
                                         </router-link>
                                     </span>
@@ -225,9 +182,10 @@ export default {
     color: dimgrey;
 }
 
-.recent-updates .d-flex a:hover .recent-text h5 {
+.recent-updates .d-flex .recent-text:hover h5 {
     color: #7dc102;
 }
+
 
 .update-text {
     color: #6f6f6f;

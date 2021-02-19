@@ -83,6 +83,11 @@ export default {
     name: 'headerComponent',
     data() {
         return {
+            isScrolled: false,
+            scrollPosition: null,
+            limitPosition: 500,
+            scrolled: false,
+            lastPosition: 0,
             isSidebarOpen: false,
             translation: translate
         }
@@ -99,9 +104,53 @@ export default {
         toggleSidebar() {
             this.isSidebarOpen = true
             this.$emit('toggleSidebar', this.isSidebarOpen)
-        }
+        },
+         updateScroll() {
+            /* eslint-disable no-debugger */
+            this.scrollPosition = window.scrollY
+            
+            if (this.scrollPosition > 10) {
+                this.isScrolled = true;
+            } else {
+                this.isScrolled = false;
+            }
+            
+            if (this.scrollPosition < 20) {
+                this.isTopHeader = true;
+            } else  {
+                this.isTopHeader = false;
+            }
+        },
+        handleScroll() {
+            if (this.lastPosition < window.scrollY && this.limitPosition < window.scrollY) {
+            this.scrolled = true;
+            // move up!
+            }
+
+            if (this.lastPosition > window.scrollY) {
+            this.scrolled = false;
+            // move down
+            }
+
+            this.lastPosition = window.scrollY;
+            // this.scrolled = window.scrollY > 250;
+        },
     },
-    mixins: [mixin]
+    mixins: [mixin],
+     mounted() {
+        window.addEventListener('scroll', this.updateScroll);
+    },
+    created() {
+        if (window.scrollY == 0) {
+            this.isTopHeader = true;
+        } else  {
+            this.isTopHeader = false;
+        }
+        window.addEventListener("scroll", this.handleScroll);
+    },
+    destroyed() {
+        window.removeEventListener("scroll", this.handleScroll);
+    }
 }
 </script>
 

@@ -70,6 +70,13 @@
                                                 <span class="date">05:00 / 17.02.2021</span>
                                             </div>
                                         </router-link>
+                                        <router-link class="d-flex" :to="{ name: 'soliq-qomitasining-489-sonli-qarori' }">   
+                                            <img src="../../assets/img/blog/blog3.png">
+                                            <div class="recent-text position-relative">
+                                                <h5>{{ translation.translate('blog', 'blog3Text1') }}</h5>
+                                                <span class="date">17:15 / 19.02.2021</span>
+                                            </div>
+                                        </router-link>
                                     </span>
                                 </div>
                             </div> 
@@ -211,7 +218,7 @@ export default {
     color: dimgrey;
 }
 
-.recent-updates .d-flex:hover .recent-text h5 {
+.recent-updates .d-flex .recent-text:hover h5 {
     color: #7dc102;
 }
 

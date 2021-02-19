@@ -128,6 +128,11 @@ const router = new VueRouter({
             path: '/blog/osnovnie-principi-elektronnogo-dokumentooborota', 
             name: 'основные-принципы-электронного-документооборота',
             component: () => import('../components/blog-posts/blogPost2')
+        },
+        {
+            path: "/blog/soliq-qo'mitasining-489-sonli-qarori", 
+            name: "soliq-qomitasining-489-sonli-qarori",
+            component: () => import('../components/blog-posts/blogPost3')
         }
     ],
     scrollBehavior() {
