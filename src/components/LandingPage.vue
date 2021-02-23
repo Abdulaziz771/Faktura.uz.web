@@ -14,27 +14,36 @@
                                         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                                         <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
                                         <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
                                     </ol>
                                     <div class="carousel-inner">
-                                        <div class="carousel-item active">
+                                         <div class="carousel-item active">
+                                            <img src="../assets/img/sldier/5555.png" class="desktop-slide" alt="...">
+                                            <div class="carousel-caption d-block">
+                                                <h2 class="slide-desc-title">{{ translation.translate('landingPageHome', 'freeMonthTitle') }}</h2>
+                                                <p class="slide-desc-description mt-3 month-free">{{ translation.translate('landingPageHome', 'freeMonthDesc') }}</p>
+                                                <div class="slide-button-group">
+                                                    <button class="take-an-action glow-big"><a target="_blank" href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3">{{ translation.translate('landingPageHome', 'slider3Button1') }}</a></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
                                             <img src="../assets/img/sldier/3333.png" class="desktop-slide" alt="...">
                                             <div class="carousel-caption d-block">
                                                 <h1 class="slide-desc-title"> {{ translation.translate('landingPageHome', 'slider1Title') }}</h1>
                                                 <p class="slide-desc-description">{{ translation.translate('landingPageHome', 'slider1Desc') }}</p>
                                                 <div class="slide-button-group">
-                                                    <button class="take-a-link"><a target="_blank" href="https://youtu.be/zxz0LpOibbQ">{{ translation.translate('landingPageHome', 'slider1Button2') }}</a></button>
-                                                    <button class="take-an-action"><a target="_blank" href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3">{{ translation.translate('landingPageHome', 'slider3Button1') }}</a></button>
+                                                    <button class="take-an-action glow-big"><a target="_blank" href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3">{{ translation.translate('landingPageHome', 'slider3Button1') }}</a></button>
                                                 </div>
                                             </div>
                                         </div>
-                                         <div class="carousel-item ">
+                                        <div class="carousel-item ">
                                             <img src="../assets/img/sldier/1111.png" class="desktop-slide" alt="...">
                                             <div class="carousel-caption d-block">
                                                 <h2 class="slide-desc-title">{{ translation.translate('landingPageHome', 'slider3Title') }}</h2>
                                                 <p class="slide-desc-description">{{ translation.translate('landingPageHome', 'slider3Desc') }}</p>
                                                 <div class="slide-button-group">
-                                                    <button class="take-a-link"><a target="_blank" href="https://youtu.be/xcrJ_o4_nmc">{{ translation.translate('landingPageHome', 'slider3Button2') }}</a></button>
-                                                    <button class="take-an-action"> <a target="_blank" href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3">{{ translation.translate('landingPageHome', 'slider3Button1') }}</a></button>
+                                                    <button class="take-an-action glow-big"> <a target="_blank" href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3">{{ translation.translate('landingPageHome', 'slider3Button1') }}</a></button>
                                                 </div>
                                             </div>
                                         </div>
@@ -55,8 +64,7 @@
                                                 <h4 class="slide-desc-title">{{ translation.translate('landingPageHome', 'slider2Title') }}</h4>
                                                 <p class="slide-desc-description">{{ translation.translate('landingPageHome', 'slider2Desc') }}</p>
                                                 <div class="slide-button-group">
-                                                    <button class="take-a-link"><a target="_blank" href="https://youtu.be/sqT9R3OZYyA">{{ translation.translate('landingPageHome', 'slider2Button2') }}</a></button>
-                                                    <button class="take-an-action"><a target="_blank" href="https://t.me/fakturauz">{{ translation.translate('landingPageHome', 'slider2Button1') }}</a></button>
+                                                    <button class="take-an-action glow-big"><a target="_blank" href="https://t.me/fakturauz">{{ translation.translate('landingPageHome', 'slider2Button1') }}</a></button>
                                                 </div>
                                             </div>
                                         </div>
@@ -108,6 +116,31 @@
         </section>
 
         <section id="connect-page">
+            <div class="page-title connect-title container traditional-page-width">
+                <h2 class="font-weight-bolder dark">{{ translation.translate('landingPageHome', 'freeSectionTitle1') }}</h2>
+                <h5 class="light">{{ translation.translate('landingPageHome', 'freeSectionTitle2') }}</h5>
+            </div>
+            <div class="connect-body gybrid-pochta container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-6 align-self-center">
+                       <img src="../assets/img/free.png" class="w-100"  alt="1c">
+                    </div>
+                     <div class="col-md-12 col-lg-6 position-relative d-flex align-items-flex-start seo-info-1">
+                        <div class="timeline-1">
+                            <h5 class="light mt-4">
+                                {{ translation.translate('landingPageHome', 'freeSectionTitle3') }}
+                            </h5>
+                            <h5 class="light mt-4"> 
+                                 {{ translation.translate('landingPageHome', 'freeSectionTitle4') }} <span><a href="https://app.faktura.uz/ru/servicepackage/preview/1" target="_blank">{{ translation.translate('landingPageHome', 'freeSectionTitle5') }}</a></span>{{ translation.translate('landingPageHome', 'freeSectionTitle6') }}   
+                            </h5>
+                            <button class="take-an-action mt-4 glow-big-in-context"><a target="_blank" href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3">{{ translation.translate('landingPageHome', 'slider3Button1') }}</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="connect-page">
             <div class="page-title connect-title container-fluid">
                 <h2 class="font-weight-bolder dark">{{ translation.translate('landingPageHome', 'partners') }}</h2>
                 <h5 class="light">{{ translation.translate('landingPageHome', 'partnersDesc') }}</h5>
@@ -147,6 +180,7 @@
                             <h5 class="light mt-4"> 
                                 {{ translation.translate('landingPageHome', 'gybridMailDescription3') }}
                             </h5>
+                            <button class="take-an-action mt-4 glow-big-in-context"><a target="_blank" href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3">РЕГИСТРАЦИЯ</a></button>
                         </div>
                     </div>
                 </div>

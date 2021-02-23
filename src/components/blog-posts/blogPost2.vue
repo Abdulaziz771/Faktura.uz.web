@@ -96,6 +96,8 @@ import footerComponent from "../../components/footerComponent"
 
 import translate from './../../translation/translate'
 
+import { CalendarIcon } from 'vue-feather-icons'
+
 // let blogs = require('../../blog')
 
 export default {
@@ -170,7 +172,8 @@ export default {
     },
   components: {
       headerComponent,
-      footerComponent
+      footerComponent,
+      CalendarIcon
   },
 }
 </script>

@@ -420,6 +420,17 @@ ul li {
 }
 
 #connect-page .gybrid-pochta .timeline {
+    position: absolute !important;
+    left: 105px !important;
+    width: 450px;
+}
+
+.free-main {
+    align-items: flex-start;
+}
+
+#connect-page .gybrid-pochta .timeline-1 {
+    position: absolute !important;
     left: 105px !important;
     width: 450px;
 }
@@ -2246,7 +2257,12 @@ input::-webkit-inner-spin-button {
 
 .slide-desc-description {
     color: #bbb;
-    font-size: 22px;
+    font-size: 23px;
+}
+
+.month-free {
+    text-decoration: underline;
+    font-weight: 700;
 }
 
 .main-slide-background {
@@ -2421,4 +2437,21 @@ input::-webkit-inner-spin-button {
     position: absolute;
     left: -30px;
     top: 3px;
+}
+
+.glow-big {
+    font-size: 20px;
+    box-shadow: 0 0 16px #72bd49;
+    padding: 20px 60px;
+}
+
+.glow-big:hover {
+    box-shadow: none;
+}
+
+.glow-big-in-context {
+    font-size: 20px;
+    box-shadow: 0 0 16px #72bd49;
+    padding: 12px 45px;
+    background: #82d057;
 }

@@ -614,6 +614,14 @@
 }
 
 @media (max-width: 991px ) {
+    .free-main {
+        align-items: center;
+    }
+    #connect-page .gybrid-pochta .timeline-1 {
+        position: relative !important;
+        text-align: center;
+        margin-top: 65px;
+    }
     #connect-page .gybrid-pochta .timeline-points {
         width: 100% !important;
         margin-top: 30px;
@@ -980,6 +988,13 @@
 }
 
 @media (max-width: 576px) {
+    #connect-page .gybrid-pochta .timeline-1 {
+        width: 100%;
+        left: 0 !important;
+    }
+    .glow-big {
+        font-size: 17px;
+    }
     .post-body {
         padding: 0 !important;
         padding-top: 15px !important;
