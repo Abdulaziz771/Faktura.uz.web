@@ -364,6 +364,15 @@
     }
 }
 
+@media (max-width: 1330px) {
+   .other-projects-main-block {
+       display: none;
+   }
+   .arrow-down-img {
+       display: none;
+   }
+}
+
 @media (max-width: 1255px) {
     #header .main-menu-ul {
         padding: 0.5rem !important;
@@ -1327,6 +1336,8 @@
         text-align: center;
     }
 }
+
+
 
 @media (max-height: 540px) {
     .google-forms-block {

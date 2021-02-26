@@ -2,10 +2,73 @@
   <header id="header" :class="{'headroom--unpinned': scrolled, 'headroom': isScrolled, 'isTopHeader': isTopHeader }"  >
     <div class="container-fluid">
         <nav class="row">
-            <div class="logo-block justify-content-center d-flex col-5 col-sm-3 col-md-3 col-lg-2 col-xl-2">
+            <div class="logo-block justify-content-center d-flex col-5 col-sm-3 col-md-3 col-lg-2 col-xl-2 position-relative">
                 <router-link :to="{ name: 'Главная' }" class="logo">
-                    <img src="../assets/img/newlogo-white.png" alt="faktura.uz logo">
+                    <img src="../assets/img/newlogo-white.png" alt="faktura.uz">
                 </router-link>
+                <img src="../assets/img/arrow-down.png" @click="showOtherProjects = !showOtherProjects" :class="{ 'rotateto90': showOtherProjects }" class="arrow-down-img" alt="">
+                <div v-show="showOtherProjects" class="other-projects-main-block">
+                    <div class="d-flex product">
+                        <a href="https://docco.uz/" class="d-flex" target="_blank">
+                            <div class="other-proj-logo">
+                                <img src="../assets/img/Products/docco.png" alt="docco.uz">
+                            </div>
+                            <div>
+                                <div class="other-proj-title">
+                                    DOCCO
+                                </div>
+                                <div class="other-proj-desc">
+                                    Для управление бизнес процессов
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="d-flex product">
+                        <a href="http://hippo.uz/"  class="d-flex" target="_blank">
+                            <div class="other-proj-logo">
+                                <img src="../assets/img/Products/Hippo.png" alt="docco.uz">
+                            </div>
+                            <div>
+                                <div class="other-proj-title">
+                                    HIPPO
+                                </div>
+                                <div class="other-proj-desc">
+                                    Для складского учет и производства 
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="d-flex product">
+                        <a href="https://botcrm.uz/" class="d-flex" target="_blank">
+                            <div class="other-proj-logo">
+                                <img src="../assets/img/Products/botcrm.png" alt="docco.uz">
+                            </div>
+                            <div>
+                                <div class="other-proj-title">
+                                    BOTCRM
+                                </div>
+                                <div class="other-proj-desc">
+                                    Для работы с запросами  в едином окне
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                     <div class="d-flex product">
+                         <a href="https://edi.faktura.uz/" target="_blank" class="d-flex">
+                            <div class="other-proj-logo">
+                                <img src="../assets/img/Products/Edieye.png" alt="docco.uz">
+                            </div>
+                            <div>
+                                <div class="other-proj-title">
+                                    EDI
+                                </div>
+                                <div class="other-proj-desc">
+                                    Электронный документооборот для ритейла
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
             <div class="main-menu col-6 col-lg-7 col-xl-6">
                 <ul class="nav d-flex justify-content-end main-menu-ul">
@@ -76,7 +139,7 @@ import {
   MenuIcon,
   ChevronDownIcon
 } from 'vue-feather-icons'
-import { LogInIcon } from 'vue-feather-icons'
+import { LogInIcon  } from 'vue-feather-icons'
 import translate from '../translation/translate'
 import mixin from './../gtagMixin'
 export default {
@@ -89,7 +152,8 @@ export default {
             scrolled: false,
             lastPosition: 0,
             isSidebarOpen: false,
-            translation: translate
+            translation: translate,
+            showOtherProjects: false
         }
     },
     components: {

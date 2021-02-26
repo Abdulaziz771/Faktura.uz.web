@@ -444,6 +444,72 @@ ul li {
     position: relative;
 }
 
+.other-proj-logo {
+    align-self: center;
+}
+
+.other-proj-title {
+    font-size: 17px;
+    color: white;
+    font-weight: 600;
+}
+
+.other-proj-desc {
+    font-size: 15px;
+    color: #e8e8e8;
+    line-height: 15px;
+}
+
+.other-projects-main-block {
+    position: absolute;
+    background: #ffffff30;
+    left: 0;
+    right: -53px;
+    width: 254px;
+    top: 78px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 16px #00000057;
+    z-index: 9;
+}
+
+.rotateto90 {
+    transform: rotate(180deg);
+}
+
+.arrow-down-img {
+    width: 23px;
+    position: relative;
+    height: -webkit-fill-available;
+    top: 16px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    z-index: 1 !important;
+}
+
+.other-projects-main-block .product {
+    padding: 10px 0px;
+}
+
+.other-projects-main-block .product:hover {
+    background: #ffffff30;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+ .other-proj-title:hover {
+    text-decoration: none;
+}
+
+.other-proj-logo img {
+    margin: 9px;
+    width: 38px;
+}
+
 .timeline-points h2 {
     font-size: 19px;
     color: #737373;
