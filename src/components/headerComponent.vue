@@ -7,7 +7,7 @@
                     <img src="../assets/img/newlogo-white.png" alt="faktura.uz">
                 </router-link>
                 <img src="../assets/img/arrow-down.png" @click="showOtherProjects = !showOtherProjects" :class="{ 'rotateto90': showOtherProjects }" class="arrow-down-img" alt="">
-                <div v-show="showOtherProjects" class="other-projects-main-block">
+                <div v-show="showOtherProjects" :class="{'test1': scrolled, 'test2': isScrolled }" class="other-projects-main-block">
                     <div class="d-flex product">
                         <a href="https://docco.uz/" class="d-flex" target="_blank">
                             <div class="other-proj-logo">
@@ -219,6 +219,10 @@ export default {
 </script>
 
 <style>
+
+.test2.test1 {
+    display: none;
+}
 
 .chevron-down-header-menu {
     transition: all 0.1s ease;

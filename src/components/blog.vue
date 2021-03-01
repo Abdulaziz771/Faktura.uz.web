@@ -11,18 +11,18 @@
         <div id="blog">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 col-12 blog">
+                    <div v-for="(blog, index) in blogs" :key="index" class="col-lg-4 col-md-6 col-12 blog">
                         <div>
                             <div>
-                                <img src="../assets/img/blog/blog2.jpg" class="w-100" alt="">
+                                <img :src="blog.img" class="w-100" alt="">
                             </div>
                             <div class="blog-text">
-                                <div class="d-flex"><CalendarIcon style="width: 17px"/><h6>05:00 / 17.02.2021</h6></div>
-                                <h5><router-link :to="{ name: 'преимущества-электронного-документооборота' }">{{ translation.translate('blog', 'blog1Text1') }}</router-link></h5>
+                                <div class="d-flex"><CalendarIcon style="width: 17px"/><h6>{{ blog.data  }}</h6></div>
+                                <h5><router-link :to="{ name: blog.titleRoute }">{{ blog.title }}</router-link></h5>
                             </div>
                         </div>
                     </div>
-                     <div class="col-lg-4 col-md-6 col-12 blog">
+                     <!-- <div class="col-lg-4 col-md-6 col-12 blog">
                         <div>
                             <div>
                                 <img src="../assets/img/blog/blog11.png" class="w-100" alt="">
@@ -43,7 +43,7 @@
                                 <h5><router-link :to="{ name: 'soliq-qomitasining-489-sonli-qarori' }">{{ translation.translate('blog', 'blog3Text1') }} (УЗБ)</router-link></h5>
                             </div>
                         </div>
-                    </div>  
+                    </div>   -->
                 </div>
             </div>
         </div>
@@ -59,14 +59,14 @@ import { CalendarIcon } from 'vue-feather-icons'
 
 import translate from './../translation/translate'
 
-// let blogs = require('../blog')
+let blogs = require('../blog').default
 
 export default {
   name: 'blog',
   data() {
       return {
-          translation: translate,
-        //   blogs
+        translation: translate,
+        blogs
       }
   },
   methods: {

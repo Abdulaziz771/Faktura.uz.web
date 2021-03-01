@@ -63,18 +63,11 @@
                             <div class="recent-updates">
                                 <div class="d-flex">
                                     <span>
-                                        <router-link class="d-flex" :to="{ name: 'преимущества-электронного-документооборота' }">   
-                                            <img src="../../assets/img/blog/blog2Max.png">
+                                        <router-link v-for="(blog, index) in blogs" :key="index" class="d-flex" :to="{ name: blog.titleRoute }">   
+                                            <img :src="blog.img">
                                             <div class="recent-text position-relative">
-                                                <h5>{{ translation.translate('blog', 'blog1Text1') }}</h5>
-                                                <span class="date">05:00 / 17.02.2021</span>
-                                            </div>
-                                        </router-link>
-                                        <router-link class="d-flex" :to="{ name: 'soliq-qomitasining-489-sonli-qarori' }">   
-                                            <img src="../../assets/img/blog/blog3.png">
-                                            <div class="recent-text position-relative">
-                                                <h5>{{ translation.translate('blog', 'blog3Text1') }}</h5>
-                                                <span class="date">17:15 / 19.02.2021</span>
+                                                <h5> {{ blog.title }} </h5>
+                                                <span class="date">{{ blog.data }}</span>
                                             </div>
                                         </router-link>
                                     </span>
@@ -98,7 +91,7 @@ import translate from './../../translation/translate'
 
 import { CalendarIcon } from 'vue-feather-icons'
 
-// let blogs = require('../../blog')
+let blogs = require('./../../blog').default
 
 export default {
   name: 'blog-1',
@@ -110,7 +103,8 @@ export default {
         limitPosition: 500,
         scrolled: false,
         lastPosition: 0,
-        translation: translate
+        translation: translate,
+        blogs
       }
   },
     metaInfo() {

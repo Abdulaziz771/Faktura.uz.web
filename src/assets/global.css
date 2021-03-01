@@ -449,23 +449,23 @@ ul li {
 }
 
 .other-proj-title {
-    font-size: 17px;
+    font-size: 16px;
     color: white;
     font-weight: 600;
 }
 
 .other-proj-desc {
-    font-size: 15px;
+    font-size: 13px;
     color: #e8e8e8;
     line-height: 15px;
 }
 
 .other-projects-main-block {
     position: absolute;
-    background: #ffffff30;
+    background: #314960;
     left: 0;
-    right: -53px;
-    width: 254px;
+    right: -55px;
+    width: 270px;
     top: 78px;
     margin: 0 auto;
     border-radius: 10px;
@@ -481,7 +481,7 @@ ul li {
 .arrow-down-img {
     width: 23px;
     position: relative;
-    height: -webkit-fill-available;
+    height: 16px;
     top: 16px;
     left: 10px;
     cursor: pointer;
