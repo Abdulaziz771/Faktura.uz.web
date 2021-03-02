@@ -18,7 +18,7 @@
                                     DOCCO
                                 </div>
                                 <div class="other-proj-desc">
-                                    Для управление бизнес процессов
+                                    {{ translation.translate('landingPageHome','otherProjects1') }}
                                 </div>
                             </div>
                         </a>
@@ -33,7 +33,7 @@
                                     HIPPO
                                 </div>
                                 <div class="other-proj-desc">
-                                    Для складского учет и производства 
+                                    {{ translation.translate('landingPageHome','otherProjects2') }}
                                 </div>
                             </div>
                         </a>
@@ -48,7 +48,7 @@
                                     BOTCRM
                                 </div>
                                 <div class="other-proj-desc">
-                                    Для работы с запросами  в едином окне
+                                    {{ translation.translate('landingPageHome','otherProjects3') }}
                                 </div>
                             </div>
                         </a>
@@ -63,7 +63,7 @@
                                     EDI
                                 </div>
                                 <div class="other-proj-desc">
-                                    Электронный документооборот для ритейла
+                                    {{ translation.translate('landingPageHome','otherProjects4') }}
                                 </div>
                             </div>
                         </a>
