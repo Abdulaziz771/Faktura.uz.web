@@ -23,7 +23,7 @@
                                                 <h2 class="slide-desc-title">{{ translation.translate('landingPageHome', 'freeMonthTitle') }}</h2>
                                                 <p class="slide-desc-description mt-3 month-free">{{ translation.translate('landingPageHome', 'freeMonthDesc') }}</p>
                                                 <div class="slide-button-group">
-                                                    <button class="take-an-action glow-big"><a target="_blank" href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3">{{ translation.translate('landingPageHome', 'slider3Button1') }}</a></button>
+                                                    <button class="take-an-action glow-big"><a target="_blank" href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3" @click='callGtag("Нажатие на регистрацию,log_in,click")'>{{ translation.translate('landingPageHome', 'slider3Button1') }}</a></button>
                                                 </div>
                                             </div>
                                         </div>
@@ -33,7 +33,7 @@
                                                 <h1 class="slide-desc-title"> {{ translation.translate('landingPageHome', 'slider1Title') }}</h1>
                                                 <p class="slide-desc-description">{{ translation.translate('landingPageHome', 'slider1Desc') }}</p>
                                                 <div class="slide-button-group">
-                                                    <button class="take-an-action glow-big"><a target="_blank" href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3">{{ translation.translate('landingPageHome', 'slider3Button1') }}</a></button>
+                                                    <button class="take-an-action glow-big"><a target="_blank" href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3" @click='callGtag("Нажатие на регистрацию,log_in,click")'>{{ translation.translate('landingPageHome', 'slider3Button1') }}</a></button>
                                                 </div>
                                             </div>
                                         </div>
@@ -43,7 +43,7 @@
                                                 <h2 class="slide-desc-title">{{ translation.translate('landingPageHome', 'slider3Title') }}</h2>
                                                 <p class="slide-desc-description">{{ translation.translate('landingPageHome', 'slider3Desc') }}</p>
                                                 <div class="slide-button-group">
-                                                    <button class="take-an-action glow-big"> <a target="_blank" href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3">{{ translation.translate('landingPageHome', 'slider3Button1') }}</a></button>
+                                                    <button class="take-an-action glow-big"> <a target="_blank" href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3" @click='callGtag("Нажатие на регистрацию,log_in,click")'>{{ translation.translate('landingPageHome', 'slider3Button1') }}</a></button>
                                                 </div>
                                             </div>
                                         </div>
@@ -83,6 +83,7 @@
                     </div>
                 </div>
             </content>
+            <img class="grass-img" src="./../assets/img/grass.png" alt="">
             <!-- <svg :class="{ 'scrolledSVG': isScrolled }" class="editorial" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
                 <defs>
@@ -103,7 +104,7 @@
                 </g>
             </svg> -->
             <!-- <img class="editorial" :class="{ 'scrolledSVG': isScrolled }" src="../assets/img/snow-ground.png" alt=""> -->
-            <div class="winter-is-coming">
+            <!-- <div class="winter-is-coming">
                 <div class="snow snow--near"></div>
                 <div class="snow snow--near snow--alt"></div>
                 
@@ -112,6 +113,38 @@
                 
                 <div class="snow snow--far"></div>
                 <div class="snow snow--far snow--alt"></div>
+            </div> -->
+            <div class="snowflakes" aria-hidden="true">
+            <div class="snowflake">
+                <img src="./../assets/img/leafs/leaf.png" alt="">
+            </div>
+            <div class="snowflake">
+                <img src="./../assets/img/leafs/leaf2.png" alt="">
+            </div>
+            <div class="snowflake">
+                <img src="./../assets/img/leafs/leaf1.png" alt="">
+            </div>
+            <div class="snowflake">
+                <img src="./../assets/img/leafs/leaf2.png" alt="">
+            </div>
+            <div class="snowflake">
+                <img src="./../assets/img/leafs/leaf3.png" alt="">
+            </div>
+            <div class="snowflake">
+                <img src="./../assets/img/leafs/leaf.png" alt="">
+            </div>
+            <div class="snowflake">
+                <img src="./../assets/img/leafs/leaf1.png" alt="">
+            </div>
+            <div class="snowflake">
+                <img src="./../assets/img/leafs/leaf2.png" alt="">
+            </div>
+            <div class="snowflake">
+                <img src="./../assets/img/leafs/leaf3.png" alt="">
+            </div>
+            <div class="snowflake">
+                <img src="./../assets/img/leafs/leaf.png" alt="">
+            </div>
             </div>
         </section>
 
@@ -380,7 +413,7 @@
                 <div class="doc-body">
                     <div class="row">
                         <div class="col-12 col-md-6 thecard text-center card-1" :class="{ flipOverCard: card1 }"
-                             @click="card1 = !card1, callGtag('Просмотре выгоды ( карточки  ),flip_card,click')">
+                             @click="card1 = !card1">
                             <div class="card-flip front">
                                 <ClockIcon/>
                                 <h4>
@@ -395,7 +428,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 thecard text-center card-2" :class="{ flipOverCard: card2 }"
-                             @click="card2 = !card2, callGtag('Просмотре выгоды ( карточки  ),flip_card,click')">
+                             @click="card2 = !card2">
                             <div class="card-flip front">
                                 <inbox-icon/>
                                 <h4>
@@ -412,7 +445,7 @@
                     </div>
                     <div class="row">
                         <div class="col-12 col-md-6 thecard text-center card-3" :class="{ flipOverCard: card3 }"
-                             @click="card3 = !card3, callGtag('Просмотре выгоды ( карточки  ),flip_card,click')">
+                             @click="card3 = !card3">
                             <div class="card-flip front">
                                 <map-pin-icon/>
                                 <h4>
@@ -427,7 +460,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 thecard text-center card-4" :class="{ flipOverCard: card4 }"
-                             @click="card4 = !card4, callGtag('Просмотре выгоды ( карточки  ),flip_card,click')">
+                             @click="card4 = !card4">
                             <div class="card-flip front">
                                 <edit-2-icon/>
                                 <h4>
@@ -444,7 +477,7 @@
                     </div>
                     <div class="row">
                         <div class="col-12 col-md-6 thecard text-center card-5" :class="{ flipOverCard: card5 }"
-                             @click="card5 = !card5, callGtag('Просмотре выгоды ( карточки  ),flip_card,click')">
+                             @click="card5 = !card5">
                             <div class="card-flip front">
                                 <folder-icon/>
                                 <h4>
@@ -459,7 +492,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 thecard text-center card-6" :class="{ flipOverCard: card6 }"
-                             @click="card6 = !card6, callGtag('Просмотре выгоды ( карточки  ),flip_card,click')">
+                             @click="card6 = !card6">
                             <div class="card-flip front">
                                 <AlertTriangleIcon/>
                                 <h4>
@@ -1756,8 +1789,7 @@ export default {
         callGuide(type) {
             /* eslint-disable no-debugger */
             if (this.maxHoveredMap == 1) {
-                this.maxHoveredMap -= this.maxHoveredMap 
-                this.callGtag('Просмотре описание системы (по фото),admin_panel_hovers,hover');
+                this.maxHoveredMap -= this.maxHoveredMap
             }
 
             if (type == "inbox") {
@@ -1835,7 +1867,6 @@ export default {
         showHide(cityName, value) {
             if (this.maxHOverUzb == 1) {
                 this.maxHOverUzb -= this.maxHOverUzb
-                this.callGtag('Просмотр карты,hover_map,hover')
             }
             this[cityName] = value
         },
@@ -1856,7 +1887,6 @@ export default {
                 this.callGtag('Посмотреть анимацию,watch_animation,click')
             } else if (number == 2) {
                 this.stepsForStarting = !this.stepsForStarting
-                this.callGtag('Просмотр 3 шагов,watch_3_steps,click')
                 this.secondVideoLink = "https://www.youtube-nocookie.com/embed/CjT3mqxBf_s"
             } else if (number == 3) {
                 this.panelTutorialVideo = !this.panelTutorialVideo

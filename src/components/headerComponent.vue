@@ -9,7 +9,7 @@
                 <img src="../assets/img/arrow-down.png" @click="showOtherProjects = !showOtherProjects" :class="{ 'rotateto90': showOtherProjects }" class="arrow-down-img" alt="">
                 <div v-show="showOtherProjects" :class="{'test1': scrolled, 'test2': isScrolled }" class="other-projects-main-block">
                     <div class="d-flex product">
-                        <a href="https://docco.uz/" class="d-flex" target="_blank">
+                        <a @click="callGtag('Переходы на Docco.uz (главная),main_docco,click')" href="https://docco.uz/" class="d-flex" target="_blank">
                             <div class="other-proj-logo">
                                 <img src="../assets/img/Products/docco.png" alt="docco.uz">
                             </div>
@@ -18,13 +18,13 @@
                                     DOCCO
                                 </div>
                                 <div class="other-proj-desc">
-                                    {{ translation.translate('landingPageHome','otherProjects1') }}
+                                    {{ translation.translate('blog','otherProjects1') }}
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class="d-flex product">
-                        <a href="http://hippo.uz/"  class="d-flex" target="_blank">
+                        <a @click="callGtag('Переходы на Hippo.uz (главная),hippo_docco,click')" href="http://hippo.uz/"  class="d-flex" target="_blank">
                             <div class="other-proj-logo">
                                 <img src="../assets/img/Products/Hippo.png" alt="docco.uz">
                             </div>
@@ -33,13 +33,13 @@
                                     HIPPO
                                 </div>
                                 <div class="other-proj-desc">
-                                    {{ translation.translate('landingPageHome','otherProjects2') }}
+                                    {{ translation.translate('blog','otherProjects2') }}
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class="d-flex product">
-                        <a href="https://botcrm.uz/" class="d-flex" target="_blank">
+                        <a @click="callGtag('Переходы на Botcrm.uz (главная),botcrm_docco,click')" href="https://botcrm.uz/" class="d-flex" target="_blank">
                             <div class="other-proj-logo">
                                 <img src="../assets/img/Products/botcrm.png" alt="docco.uz">
                             </div>
@@ -48,13 +48,13 @@
                                     BOTCRM
                                 </div>
                                 <div class="other-proj-desc">
-                                    {{ translation.translate('landingPageHome','otherProjects3') }}
+                                    {{ translation.translate('blog','otherProjects3') }}
                                 </div>
                             </div>
                         </a>
                     </div>
                      <div class="d-flex product">
-                         <a href="https://edi.faktura.uz/" target="_blank" class="d-flex">
+                         <a @click="callGtag('Переходы на Edi.uz (главная),edi_docco,click')" href="https://edi.faktura.uz/" target="_blank" class="d-flex">
                             <div class="other-proj-logo">
                                 <img src="../assets/img/Products/Edieye.png" alt="docco.uz">
                             </div>
@@ -63,7 +63,7 @@
                                     EDI
                                 </div>
                                 <div class="other-proj-desc">
-                                    {{ translation.translate('landingPageHome','otherProjects4') }}
+                                    {{ translation.translate('blog','otherProjects4') }}
                                 </div>
                             </div>
                         </a>
@@ -162,6 +162,9 @@ export default {
         LogInIcon
     },
     methods: {
+        testFunc1() {
+            console.log("asd")
+        },
         _onChangeLanguage(value) {
             translate.changeLocale(value);
         },
