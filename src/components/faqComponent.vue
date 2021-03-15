@@ -21,7 +21,7 @@
                      <div class="collapse" id="collapseExample7" @click='callGtag("FAQ нажатия,faq_clicks,click")'>
                         <div class="card card-body">
                             <p>{{ translation.translate('faq', '6pointDescription2') }}</p>
-                            <iframe width="inherit" height="315" :src="this.translation.translate('faq', '6pointDescription3')" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="inherit" height="315" src="https://www.youtube-nocookie.com/embed/uGR0bztTedI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="faq-block d-flex"  data-toggle="collapse" href="#collapseExample9" @click='callGtag("FAQ нажатия,faq_clicks,click")'>
@@ -32,7 +32,7 @@
                     <div class="collapse" id="collapseExample9" @click='callGtag("FAQ нажатия,faq_clicks,click")'>
                         <div class="card card-body">
                             <p>{{ translation.translate('faq', '7pointDescription2') }}</p>
-                            <iframe width="inherit" height="315" :src="this.translation.translate('faq', '7pointDescription3')" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="inherit" height="315" src="https://www.youtube-nocookie.com/embed/dGX1roUtUDU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="faq-block d-flex"  data-toggle="collapse" href="#collapseExample10" @click='callGtag("FAQ нажатия,faq_clicks,click")'>
@@ -43,7 +43,7 @@
                     <div class="collapse" id="collapseExample10" @click='callGtag("FAQ нажатия,faq_clicks,click")'>
                         <div class="card card-body">
                             <p>{{ translation.translate('faq', '8pointDescription2') }}</p>
-                            <iframe width="inherit" height="315" :src="this.translation.translate('faq', '8pointDescription3')" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="inherit" height="315" src="https://www.youtube-nocookie.com/embed/IwlVBawRq3c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="faq-block d-flex"  data-toggle="collapse" href="#collapseExample11" @click='callGtag("FAQ нажатия,faq_clicks,click")'>
@@ -54,7 +54,7 @@
                     <div class="collapse" id="collapseExample11" @click='callGtag("FAQ нажатия,faq_clicks,click")'>
                         <div class="card card-body">
                             <p>{{ translation.translate('faq', '9pointDescription2') }}</p>
-                            <iframe width="inherit" height="315" :src="this.translation.translate('faq', '9pointDescription3')" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="inherit" height="315" src="https://www.youtube-nocookie.com/embed/4X4XbTBXcTs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="faq-block d-flex"  data-toggle="collapse" href="#collapseExample12" @click='callGtag("FAQ нажатия,faq_clicks,click")'>
@@ -75,7 +75,7 @@
                     <div class="collapse" id="collapseExample13" @click='callGtag("FAQ нажатия,faq_clicks,click")'>
                         <div class="card card-body">
                             <p>{{ translation.translate('faq', '11pointDescription2') }}</p>
-                            <iframe width="inherit" height="315" :src="this.translation.translate('faq', '11pointDescription3')" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="inherit" height="315" src="https://www.youtube-nocookie.com/embed/Mj34weqNj9g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="faq-block d-flex"  data-toggle="collapse" href="#collapseExample14" @click='callGtag("FAQ нажатия,faq_clicks,click")'>
@@ -88,7 +88,7 @@
                             <p>{{ translation.translate('faq', '12pointDescription2') }}</p>
                             <img src="./../assets/img/faq/faq1.jpg" alt="">
                             <img class="mt-4" src="./../assets/img/faq/faq2.jpg" alt="">
-                            <iframe width="inherit" height="315" :src="this.translation.translate('faq', '12pointDescription3')" class="mt-4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="inherit" height="315" src="https://www.youtube-nocookie.com/embed/GD5Cn_uZZrc" class="mt-4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="faq-block d-flex"  data-toggle="collapse" href="#collapseExample15" @click='callGtag("FAQ нажатия,faq_clicks,click")'>
@@ -103,7 +103,7 @@
                             <img class="mt-4" src="./../assets/img/faq/faq4.jpg" alt="">
                             <img class="mt-4" src="./../assets/img/faq/faq5.jpg" alt="">
                             <img class="mt-4" src="./../assets/img/faq/faq6.jpg" alt="">
-                            <iframe width="inherit" height="315" :src="this.translation.translate('faq', '13pointDescription3')" class="mt-4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="inherit" height="315" src="https://www.youtube-nocookie.com/embed/9wp8x9qWxWo" class="mt-4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="faq-block d-flex"  data-toggle="collapse" href="#collapseExample16" @click='callGtag("FAQ нажатия,faq_clicks,click")'>
@@ -114,7 +114,7 @@
                     <div class="collapse" id="collapseExample16" @click='callGtag("FAQ нажатия,faq_clicks,click")'>
                         <div class="card card-body">
                             <p>{{ translation.translate('faq', '14pointDescription2') }}</p>
-                            <iframe width="inherit" height="315" :src="this.translation.translate('faq', '14pointDescription3')" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="inherit" height="315" src="https://www.youtube-nocookie.com/embed/494zbTz_YOM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="faq-block d-flex"  data-toggle="collapse" href="#collapseExample1" @click='callGtag("FAQ нажатия,faq_clicks,click")'>

@@ -18,7 +18,9 @@
                                     </ol>
                                     <div class="carousel-inner">
                                          <div class="carousel-item active">
-                                            <img src="../assets/img/sldier/5555.png" class="desktop-slide" alt="...">
+                                            <v-lazy-image srcset="./../assets/img/sldier/5555.png" src="" use-picture  class="desktop-slide" alt="...">
+                                                <source srcset="./../assets/img/sldier/5555.png" /> 
+                                            </v-lazy-image>
                                             <div class="carousel-caption d-block">
                                                 <h2 class="slide-desc-title">{{ translation.translate('landingPageHome', 'freeMonthTitle') }}</h2>
                                                 <p class="slide-desc-description mt-3 month-free">{{ translation.translate('landingPageHome', 'freeMonthDesc') }}</p>
@@ -27,8 +29,10 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="carousel-item">
-                                            <img src="../assets/img/sldier/3333.png" class="desktop-slide" alt="...">
+                                       <div class="carousel-item">
+                                           <v-lazy-image srcset="./../assets/img/sldier/3333.png" src="" use-picture  class="desktop-slide" alt="...">
+                                                <source srcset="../assets/img/sldier/3333.png" /> 
+                                            </v-lazy-image>
                                             <div class="carousel-caption d-block">
                                                 <h1 class="slide-desc-title"> {{ translation.translate('landingPageHome', 'slider1Title') }}</h1>
                                                 <p class="slide-desc-description">{{ translation.translate('landingPageHome', 'slider1Desc') }}</p>
@@ -38,7 +42,9 @@
                                             </div>
                                         </div>
                                         <div class="carousel-item ">
-                                            <img src="../assets/img/sldier/1111.png" class="desktop-slide" alt="...">
+                                            <v-lazy-image srcset="./../assets/img/sldier/1111.png" src="" use-picture  class="desktop-slide" alt="...">
+                                                <source srcset="../assets/img/sldier/1111.png" /> 
+                                            </v-lazy-image>
                                             <div class="carousel-caption d-block">
                                                 <h2 class="slide-desc-title">{{ translation.translate('landingPageHome', 'slider3Title') }}</h2>
                                                 <p class="slide-desc-description">{{ translation.translate('landingPageHome', 'slider3Desc') }}</p>
@@ -48,7 +54,9 @@
                                             </div>
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="../assets/img/sldier/4444.png" class="desktop-slide" alt="...">
+                                            <v-lazy-image srcset="./../assets/img/sldier/4444.png" src="" use-picture  class="desktop-slide" alt="...">
+                                                <source srcset="../assets/img/sldier/4444.png" /> 
+                                            </v-lazy-image>
                                             <div class="carousel-caption d-block">
                                                 <h3 class="slide-desc-title"> {{ translation.translate('landingPageHome', 'playMarketApp') }}</h3>
                                                 <p class="slide-desc-description">{{ translation.translate('landingPageHome', 'AppStoreApp') }}</p>
@@ -59,7 +67,9 @@
                                             </div>
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="../assets/img/sldier/2222.png" class="desktop-slide" alt="...">
+                                            <v-lazy-image srcset="./../assets/img/sldier/2222.png" src="" use-picture  class="desktop-slide" alt="...">
+                                                <source srcset="../assets/img/sldier/2222.png" /> 
+                                            </v-lazy-image>
                                             <div class="carousel-caption d-block">
                                                 <h4 class="slide-desc-title">{{ translation.translate('landingPageHome', 'slider2Title') }}</h4>
                                                 <p class="slide-desc-description">{{ translation.translate('landingPageHome', 'slider2Desc') }}</p>
@@ -155,8 +165,10 @@
             </div>
             <div class="connect-body gybrid-pochta container">
                 <div class="row">
-                    <div class="col-md-12 col-lg-6 align-self-center">
-                       <img src="../assets/img/free.png" class="w-100"  alt="1c">
+                    <div class="col-md-12 col-lg-6 free-1-month">
+                        <v-lazy-image srcset="../assets/img/6.png" src="" use-picture  alt="1C">
+                            <source srcset="../assets/img/6.png" /> 
+                        </v-lazy-image>
                     </div>
                      <div class="col-md-12 col-lg-6 position-relative d-flex align-items-flex-start seo-info-1">
                         <div class="timeline-1">
@@ -182,7 +194,9 @@
                 <div class="row">
                     <div class="col-12">
                         <div>
-                            <img style="width: 100%" src="../assets/img/partnership/Screenshot_7.png" alt="">
+                            <v-lazy-image srcset="../assets/img/partnership/Screenshot_7.png" src="" use-picture  alt="1C">
+                                <source srcset="../assets/img/partnership/Screenshot_7.png"/> 
+                            </v-lazy-image>
                         </div>
                     </div>
                 </div>
@@ -198,10 +212,9 @@
                 <div class="row">
                     <div class="col-md-12 col-lg-6">
                         <div class="connect-video connect-video-1">
-                            <iframe class="steps-video gybrid-video" width="560" height="315"
-                                        src="https://www.youtube-nocookie.com/embed/xcrJ_o4_nmc" frameborder="0"
-                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
+                            <v-lazy-image srcset="./../assets/img/5.png" src="" use-picture >
+                                <source srcset="./../assets/img/5.png" /> 
+                            </v-lazy-image>
                         </div>
                     </div>
                      <div class="col-md-12 steps-mobile-disabled col-lg-6 position-relative d-flex align-items-center">
@@ -256,11 +269,10 @@
                         </ul>
                     </div>
                     <div class="col-md-12 col-lg-6">
-                        <div class="connect-video">
-                             <iframe class="steps-video" width="560" height="315"
-                                        src="https://www.youtube-nocookie.com/embed/CjT3mqxBf_s" frameborder="0"
-                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
+                        <div class="connect-video billy-with-pancle">
+                            <v-lazy-image srcset="./../assets/img/7.png" src="" use-picture >
+                                <source srcset="./../assets/img/7.png" /> 
+                            </v-lazy-image>
                         </div>
                     </div>
                     <div class="w-100">
@@ -279,7 +291,9 @@
             <div>
                 <div class="add1">
                     <a @click="testFunc" href="http://smartfinance.uz/22" target="_blank">
-                        <img src="../assets/img/64.png"  alt="1c">
+                        <v-lazy-image srcset="../assets/img/64.png" src="" use-picture >
+                            <source srcset="../assets/img/64.png" /> 
+                        </v-lazy-image>
                     </a>
                 </div>
             </div>
@@ -518,8 +532,10 @@
             </div>
             <div class="connect-body gybrid-pochta container">
                 <div class="row">
-                    <div class="col-md-12 col-lg-6 align-self-center">
-                       <img class="seo-pic" src="../assets/img/seo-pic.png" alt="">
+                    <div class="col-md-12 col-lg-6 align-self-center seo-pic">
+                        <v-lazy-image srcset="../assets/img/seo-pic.png" src="" use-picture >
+                            <source srcset="../assets/img/seo-pic.png" /> 
+                        </v-lazy-image>
                     </div>
                      <div class="col-md-12 col-lg-6 position-relative d-flex align-items-center seo-info-1">
                         <div class="timeline-points">
@@ -1088,19 +1104,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="system-guide-video">
-                            <div>
-                                <div class="text-center">
-                                    <div>
-                                        <iframe class="steps-video p-4"
-                                                style="border-radius: 50px" width="560" height="315"
-                                                src="https://www.youtube-nocookie.com/embed/4MWjz2v84lU" frameborder="0"
-                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                                allowfullscreen></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -1150,67 +1153,6 @@
                 <div class="snow snow--far snow--alt"></div>
             </div>
         </section>
-
-        <!-- <section id="testemonials">
-            <div class="container">
-                <div class="page-title">
-                    <h2 class="font-weight-bolder dark">{{ translation.translate('landingPageHome', 'realTestemonials') }}</h2>
-                    <h5 class="light testemonials-description"> {{ translation.translate('landingPageHome', 'realTestemonialsDescriptions') }} <a href="https://t.me/fakturauz" target="_blank">{{ translation.translate('landingPageHome', 'telegram') }}</a></h5>
-                </div>
-                <div class="doc-body">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div id="blogCarousel" class="carousel slide slider1" data-ride="carousel">
-                                <ol class="carousel-indicators">
-                                    <li data-target="#blogCarousel" data-slide-to="0" class="active">1</li>
-                                    <li data-target="#blogCarousel" data-slide-to="1">2</li>
-                                </ol>
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <div class="row">
-                                            <div class="col-6 text-center">
-                                                <div class="frame-for-awward">
-                                                    <img src="../assets/img/testemonials_1.jpg" class="testemonils-screen" alt="faktura.uz testemonials">
-                                                </div>
-                                            </div>
-                                            <div class="col-6 col-md-6 text-center">
-                                                <div class="frame-for-awward">
-                                                    <img src="../assets/img/testemonials_2.jpg" class="testemonils-screen" alt="faktura.uz testemonials">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="row">
-                                            <div class="col-6 col-md-6 text-center">
-                                                <div class="frame-for-awward">
-                                                    <img src="../assets/img/testemonials_3.jpg" class="testemonils-screen" alt="faktura.uz testemonials">
-                                                </div>
-                                            </div>
-                                            <div class="col-6 col-md-6 text-center">
-                                                <div class="frame-for-awward">
-                                                    <img src="../assets/img/testemonials_4.jpg" class="testemonils-screen" alt="faktura.uz testemonials">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="winter-is-coming">
-                <div class="snow snow--near"></div>
-                <div class="snow snow--near snow--alt"></div>
-                
-                <div class="snow snow--mid"></div>
-                <div class="snow snow--mid snow--alt"></div>
-                
-                <div class="snow snow--far"></div>
-                <div class="snow snow--far snow--alt"></div>
-            </div>
-        </section> -->
 
         <section id="map">
             <div class="container-fluid">
@@ -1881,21 +1823,21 @@ export default {
                 this.isScrolled = false;
             }
         },
-        loadvideoFromYouTube(number) {
-            if (number == 1) {
-                this.firstVideoLink = "https://www.youtube-nocookie.com/embed/zxz0LpOibbQ"
-                this.callGtag('Посмотреть анимацию,watch_animation,click')
-            } else if (number == 2) {
-                this.stepsForStarting = !this.stepsForStarting
-                this.secondVideoLink = "https://www.youtube-nocookie.com/embed/CjT3mqxBf_s"
-            } else if (number == 3) {
-                this.panelTutorialVideo = !this.panelTutorialVideo
-                this.secondVideoLink = "https://www.youtube-nocookie.com/embed/4MWjz2v84lU"
-            } else if (number == 4) {
-                this.gybridPochta = !this.gybridPochta
-                this.thirdVideoLink = "https://www.youtube-nocookie.com/embed/xcrJ_o4_nmc"
-            }
-        }
+        // loadvideoFromYouTube(number) {
+        //     if (number == 1) {
+        //         this.firstVideoLink = "https://www.youtube-nocookie.com/embed/zxz0LpOibbQ"
+        //         this.callGtag('Посмотреть анимацию,watch_animation,click')
+        //     } else if (number == 2) {
+        //         this.stepsForStarting = !this.stepsForStarting
+        //         this.secondVideoLink = "https://www.youtube-nocookie.com/embed/CjT3mqxBf_s"
+        //     } else if (number == 3) {
+        //         this.panelTutorialVideo = !this.panelTutorialVideo
+        //         this.secondVideoLink = "https://www.youtube-nocookie.com/embed/4MWjz2v84lU"
+        //     } else if (number == 4) {
+        //         this.gybridPochta = !this.gybridPochta
+        //         this.thirdVideoLink = "https://www.youtube-nocookie.com/embed/xcrJ_o4_nmc"
+        //     }
+        // }
     },
     metaInfo() {
         return { 

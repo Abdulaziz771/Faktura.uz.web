@@ -182,7 +182,7 @@ ul li {
 }
 
 .partnerships img {
-    width: 85%;
+    width: 100%;
 }
 
 .partnerships .col-3 div {
@@ -1894,7 +1894,15 @@ ul li {
     font-weight: 700;
 }
 
-.seo-pic {
+.seo-pic img {
+    width: inherit;
+}
+
+.seo-pic source {
+    width: inherit;
+}
+
+.seo-pic picture {
     width: inherit;
 }
 
@@ -2492,6 +2500,19 @@ input::-webkit-inner-spin-button {
 .post-body ul li {
     position: relative;
     margin-top: 10px;
+}
+
+.free-1-month {
+    text-align: center !important;
+}
+
+.free-1-month img {
+    width: 370px;
+}
+
+.billy-with-pancle img {
+    padding-right: 0;
+    width: 300px;
 }
 
 .post-body ul li::before {

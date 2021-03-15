@@ -623,6 +623,18 @@
 }
 
 @media (max-width: 991px ) {
+    #system-guide {
+        display: none !important;
+    }
+    .billy-with-pancle img {
+        width: 130px !important;
+    }
+    .free-1-month img {
+        width: 250px !important;
+    }
+    .connect-video-1 img {
+        width: 170px !important;
+    }
     .free-main {
         align-items: center;
     }

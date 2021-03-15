@@ -13,6 +13,7 @@
     "core-js": "^3.6.5",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
+    "v-lazy-image": "^1.4.0",
     "vue": "^2.6.11",
     "vue-feather-icons": "^5.1.0",
     "vue-gtag": "^1.10.0",

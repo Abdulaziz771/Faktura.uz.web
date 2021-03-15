@@ -10,6 +10,9 @@ import '@/assets/media.css'
 import VueMeta from 'vue-meta'
 Vue.use(VueMeta)
 
+import { VLazyImagePlugin } from "v-lazy-image";
+Vue.use(VLazyImagePlugin);
+
 require("@/translation/translate");
 
 Vue.config.productionTip = false
