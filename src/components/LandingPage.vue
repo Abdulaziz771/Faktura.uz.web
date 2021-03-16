@@ -1844,6 +1844,7 @@ export default {
             title: "Электронный документооборот в Узбекистане - внедрение ЭДО",
             meta: [
                 { name: 'description', content:  'Ведение электронного документооборота(ЭДО) в Узбекистане.⏩  Faktura - программа электронного документооборота онлайн. ⏩  Адекватная цена. ☎️: +998 (71) 200-00-13.'},
+                { name: 'keywords', content:  'faktura, faktura uz, soliq faktura, faktura soliq uz, e faktura, e faktura uz, soliq servis uz faktura, soliq servis faktura, faktura ru, e faktura soliq uz, e faktura soliq, soliq servis uz faktura ru, uzasbo faktura, soliqservis uz faktura, online faktura uz, my soliq, my soliq uz, soliq servis, soliq uz электронная, hisobot soliq uz, may soliq, may soliq uz, tasnif soliq uz, фактура, счет фактура, фактура уз, солик фактура, фактура узбекистана, счет фактура узбекистан, е фактура, фактура солик уз, электронный фактура, электронные счета фактуры, солик сервис уз фактура, сервис фактура, выставить фактуру'},
             ]
         }
     },
