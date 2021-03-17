@@ -660,7 +660,7 @@
     .connect-video-1 {
         text-align: center !important;
     }
-    .desktop-slide {
+    .desktop-slide img {
         width: 566px;
     }
     .carousel-caption .slide-desc-title {
@@ -669,7 +669,7 @@
     .slide-desc-description {
         font-size: 18px;
     }
-    .desktop-slide {
+    .desktop-slide img {
         width: 600px;
         margin-top: 130px;
     }
@@ -1061,7 +1061,7 @@
     .slide-desc-description {
         font-size: 16px !important;
     }
-    .desktop-slide {
+    .desktop-slide img {
         width: 340px;
         margin-top: 270px;
     }

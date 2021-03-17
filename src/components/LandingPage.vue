@@ -15,10 +15,24 @@
                                         <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
                                         <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
                                         <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
                                     </ol>
                                     <div class="carousel-inner">
-                                         <div class="carousel-item active">
-                                            <v-lazy-image srcset="./../assets/img/sldier/5555.png" src="" use-picture  class="desktop-slide" alt="...">
+                                        <div class="carousel-item desktop-slide active">
+                                            <!-- <v-lazy-image srcset="./../assets/img/sldier/6666.png" src="" use-picture  class="desktop-slide" alt="...">
+                                                <source srcset="./../assets/img/sldier/6666.png" /> 
+                                            </v-lazy-image> -->
+                                            <img src="./../assets/img/sldier/6666.png" alt="">
+                                            <div class="carousel-caption d-block">
+                                                <h2 class="slide-desc-title">{{ translation.translate('landingPageHome', 'kpkTitle') }}</h2>
+                                                <p class="slide-desc-description mt-3">{{ translation.translate('landingPageHome', 'kpkDescript') }}</p>
+                                                <div class="slide-button-group">
+                                                    <button class="take-an-action glow-big"><a target="_blank" href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3" @click='callGtag("Нажатие на регистрацию,log_in,click")'>{{ translation.translate('landingPageHome', 'slider3Button1') }}</a></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item desktop-slide">
+                                            <v-lazy-image srcset="./../assets/img/sldier/5555.png" src="" use-picture alt="...">
                                                 <source srcset="./../assets/img/sldier/5555.png" /> 
                                             </v-lazy-image>
                                             <div class="carousel-caption d-block">
@@ -29,8 +43,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                       <div class="carousel-item">
-                                           <v-lazy-image srcset="./../assets/img/sldier/3333.png" src="" use-picture  class="desktop-slide" alt="...">
+                                       <div class="carousel-item desktop-slide">
+                                           <v-lazy-image srcset="./../assets/img/sldier/3333.png" src="" use-picture alt="...">
                                                 <source srcset="../assets/img/sldier/3333.png" /> 
                                             </v-lazy-image>
                                             <div class="carousel-caption d-block">
@@ -41,8 +55,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="carousel-item ">
-                                            <v-lazy-image srcset="./../assets/img/sldier/1111.png" src="" use-picture  class="desktop-slide" alt="...">
+                                        <div class="carousel-item desktop-slide">
+                                            <v-lazy-image srcset="./../assets/img/sldier/1111.png" src="" use-picture alt="...">
                                                 <source srcset="../assets/img/sldier/1111.png" /> 
                                             </v-lazy-image>
                                             <div class="carousel-caption d-block">
@@ -53,8 +67,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="carousel-item">
-                                            <v-lazy-image srcset="./../assets/img/sldier/4444.png" src="" use-picture  class="desktop-slide" alt="...">
+                                        <div class="carousel-item desktop-slide">
+                                            <v-lazy-image srcset="./../assets/img/sldier/4444.png" src="" use-picture alt="...">
                                                 <source srcset="../assets/img/sldier/4444.png" /> 
                                             </v-lazy-image>
                                             <div class="carousel-caption d-block">
@@ -66,8 +80,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="carousel-item">
-                                            <v-lazy-image srcset="./../assets/img/sldier/2222.png" src="" use-picture  class="desktop-slide" alt="...">
+                                        <div class="carousel-item desktop-slide">
+                                            <v-lazy-image srcset="./../assets/img/sldier/2222.png" src="" use-picture alt="...">
                                                 <source srcset="../assets/img/sldier/2222.png" /> 
                                             </v-lazy-image>
                                             <div class="carousel-caption d-block">
