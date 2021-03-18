@@ -19,10 +19,9 @@
                                     </ol>
                                     <div class="carousel-inner">
                                         <div class="carousel-item desktop-slide active">
-                                            <!-- <v-lazy-image srcset="./../assets/img/sldier/6666.png" src="" use-picture  class="desktop-slide" alt="...">
+                                            <v-lazy-image srcset="./../assets/img/sldier/6666.png" src="" use-picture  class="desktop-slide" alt="...">
                                                 <source srcset="./../assets/img/sldier/6666.png" /> 
-                                            </v-lazy-image> -->
-                                            <img src="./../assets/img/sldier/6666.png" alt="">
+                                            </v-lazy-image>
                                             <div class="carousel-caption d-block">
                                                 <h2 class="slide-desc-title">{{ translation.translate('landingPageHome', 'kpkTitle') }}</h2>
                                                 <p class="slide-desc-description mt-3">{{ translation.translate('landingPageHome', 'kpkDescript') }}</p>
@@ -1836,29 +1835,16 @@ export default {
             } else {
                 this.isScrolled = false;
             }
-        },
-        // loadvideoFromYouTube(number) {
-        //     if (number == 1) {
-        //         this.firstVideoLink = "https://www.youtube-nocookie.com/embed/zxz0LpOibbQ"
-        //         this.callGtag('Посмотреть анимацию,watch_animation,click')
-        //     } else if (number == 2) {
-        //         this.stepsForStarting = !this.stepsForStarting
-        //         this.secondVideoLink = "https://www.youtube-nocookie.com/embed/CjT3mqxBf_s"
-        //     } else if (number == 3) {
-        //         this.panelTutorialVideo = !this.panelTutorialVideo
-        //         this.secondVideoLink = "https://www.youtube-nocookie.com/embed/4MWjz2v84lU"
-        //     } else if (number == 4) {
-        //         this.gybridPochta = !this.gybridPochta
-        //         this.thirdVideoLink = "https://www.youtube-nocookie.com/embed/xcrJ_o4_nmc"
-        //     }
-        // }
+        }
     },
     metaInfo() {
         return { 
             title: "Электронный документооборот в Узбекистане - внедрение ЭДО",
             meta: [
+                { property: 'og:title', content:  'Faktura.uz'},
+                { property: 'og:description', content:  'Faktura — первый официальный оператор электронного документооборота в Узбекистане - Faktura.uz'},
                 { name: 'description', content:  'Ведение электронного документооборота(ЭДО) в Узбекистане.⏩  Faktura - программа электронного документооборота онлайн. ⏩  Адекватная цена. ☎️: +998 (71) 200-00-13.'},
-                { name: 'keywords', content:  'faktura, faktura uz, soliq faktura, faktura soliq uz, e faktura, e faktura uz, soliq servis uz faktura, soliq servis faktura, faktura ru, e faktura soliq uz, e faktura soliq, soliq servis uz faktura ru, uzasbo faktura, soliqservis uz faktura, online faktura uz, my soliq, my soliq uz, soliq servis, soliq uz электронная, hisobot soliq uz, may soliq, may soliq uz, tasnif soliq uz, фактура, счет фактура, фактура уз, солик фактура, фактура узбекистана, счет фактура узбекистан, е фактура, фактура солик уз, электронный фактура, электронные счета фактуры, солик сервис уз фактура, сервис фактура, выставить фактуру'},
+                { name: 'keywords', content:  'faktura, faktura uz, soliq faktura, faktura soliq uz, e faktura, e faktura uz, soliq servis uz faktura, soliq servis faktura, faktura ru, e faktura soliq uz, e faktura soliq, soliq servis uz faktura ru, uzasbo faktura, soliqservis uz faktura, online faktura uz, my soliq, my soliq uz, soliq servis, soliq uz электронная, hisobot soliq uz, may soliq, may soliq uz, tasnif soliq uz, фактура, счет фактура, фактура уз, солик фактура, фактура узбекистана, счет фактура узбекистан, е фактура, фактура солик уз, электронный фактура, электронные счета фактуры, солик сервис уз фактура, сервис фактура, выставить фактуру'}
             ]
         }
     },
