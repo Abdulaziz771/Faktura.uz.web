@@ -7,7 +7,7 @@
                     <div class="row">
                         <div class="col-12 p-0">
                             <div class="main-slide-background">
-                                <div id="carouselExampleIndicators" data-interval="4000" class="carousel slide" data-ride="carousel">
+                                <div id="carouselExampleIndicators" data-interval="6500" class="carousel slide" data-ride="carousel">
                                     <ol class="carousel-indicators">
                                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -16,27 +16,40 @@
                                         <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
                                         <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
                                         <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
                                     </ol>
                                     <div class="carousel-inner">
                                         <div class="carousel-item desktop-slide active">
-                                            <v-lazy-image srcset="./../assets/img/sldier/6666.png" src="" use-picture  class="desktop-slide" alt="...">
-                                                <source srcset="./../assets/img/sldier/6666.png" /> 
-                                            </v-lazy-image>
-                                            <div class="carousel-caption d-block">
-                                                <h2 class="slide-desc-title">{{ translation.translate('landingPageHome', 'kpkTitle') }}</h2>
-                                                <p class="slide-desc-description mt-3">{{ translation.translate('landingPageHome', 'kpkDescript') }}</p>
-                                                <div class="slide-button-group">
-                                                    <button class="take-an-action glow-big"><a target="_blank" href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3" @click='callGtag("Нажатие на регистрацию,log_in,click")'>{{ translation.translate('landingPageHome', 'slider3Button1') }}</a></button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item desktop-slide">
                                             <v-lazy-image srcset="./../assets/img/sldier/5555.png" src="" use-picture alt="...">
                                                 <source srcset="./../assets/img/sldier/5555.png" /> 
                                             </v-lazy-image>
                                             <div class="carousel-caption d-block">
                                                 <h2 class="slide-desc-title">{{ translation.translate('landingPageHome', 'freeMonthTitle') }}</h2>
                                                 <p class="slide-desc-description mt-3 month-free">{{ translation.translate('landingPageHome', 'freeMonthDesc') }}</p>
+                                                <div class="slide-button-group">
+                                                    <button class="take-an-action glow-big"><a target="_blank" href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3" @click='callGtag("Нажатие на регистрацию,log_in,click")'>{{ translation.translate('landingPageHome', 'slider3Button1') }}</a></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item desktop-slide">
+                                            <v-lazy-image srcset="./../assets/img/sldier/7777.png" src="" use-picture alt="...">
+                                                <source srcset="./../assets/img/sldier/7777.png" /> 
+                                            </v-lazy-image>
+                                            <div class="carousel-caption d-block">
+                                                <h2 class="slide-desc-title">{{ translation.translate('landingPageHome', 'dogovorTitle') }}</h2>
+                                                <p class="slide-desc-description mt-3">{{ translation.translate('landingPageHome', 'dogovorDescription') }}</p>
+                                                <div class="slide-button-group">
+                                                    <button class="take-an-action glow-big"><a target="_blank" href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3" @click='callGtag("Нажатие на регистрацию,log_in,click")'>{{ translation.translate('landingPageHome', 'slider3Button1') }}</a></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item desktop-slide">
+                                            <v-lazy-image srcset="./../assets/img/sldier/6666.png" src="" use-picture  class="desktop-slide" alt="...">
+                                                <source srcset="./../assets/img/sldier/6666.png" /> 
+                                            </v-lazy-image>
+                                            <div class="carousel-caption d-block">
+                                                <h2 class="slide-desc-title">{{ translation.translate('landingPageHome', 'kpkTitle') }}</h2>
+                                                <p class="slide-desc-description mt-3">{{ translation.translate('landingPageHome', 'kpkDescript') }}</p>
                                                 <div class="slide-button-group">
                                                     <button class="take-an-action glow-big"><a target="_blank" href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3" @click='callGtag("Нажатие на регистрацию,log_in,click")'>{{ translation.translate('landingPageHome', 'slider3Button1') }}</a></button>
                                                 </div>
@@ -137,38 +150,6 @@
                 <div class="snow snow--far"></div>
                 <div class="snow snow--far snow--alt"></div>
             </div> -->
-            <div class="snowflakes" aria-hidden="true">
-            <div class="snowflake">
-                <img src="./../assets/img/leafs/leaf.png" alt="">
-            </div>
-            <div class="snowflake">
-                <img src="./../assets/img/leafs/leaf2.png" alt="">
-            </div>
-            <div class="snowflake">
-                <img src="./../assets/img/leafs/leaf1.png" alt="">
-            </div>
-            <div class="snowflake">
-                <img src="./../assets/img/leafs/leaf2.png" alt="">
-            </div>
-            <div class="snowflake">
-                <img src="./../assets/img/leafs/leaf3.png" alt="">
-            </div>
-            <div class="snowflake">
-                <img src="./../assets/img/leafs/leaf.png" alt="">
-            </div>
-            <div class="snowflake">
-                <img src="./../assets/img/leafs/leaf1.png" alt="">
-            </div>
-            <div class="snowflake">
-                <img src="./../assets/img/leafs/leaf2.png" alt="">
-            </div>
-            <div class="snowflake">
-                <img src="./../assets/img/leafs/leaf3.png" alt="">
-            </div>
-            <div class="snowflake">
-                <img src="./../assets/img/leafs/leaf.png" alt="">
-            </div>
-            </div>
         </section>
 
         <section id="connect-page">
@@ -1841,8 +1822,6 @@ export default {
         return { 
             title: "Электронный документооборот в Узбекистане - внедрение ЭДО",
             meta: [
-                { property: 'og:title', content:  'Faktura.uz'},
-                { property: 'og:description', content:  'Faktura — первый официальный оператор электронного документооборота в Узбекистане - Faktura.uz'},
                 { name: 'description', content:  'Ведение электронного документооборота(ЭДО) в Узбекистане.⏩  Faktura - программа электронного документооборота онлайн. ⏩  Адекватная цена. ☎️: +998 (71) 200-00-13.'},
                 { name: 'keywords', content:  'faktura, faktura uz, soliq faktura, faktura soliq uz, e faktura, e faktura uz, soliq servis uz faktura, soliq servis faktura, faktura ru, e faktura soliq uz, e faktura soliq, soliq servis uz faktura ru, uzasbo faktura, soliqservis uz faktura, online faktura uz, my soliq, my soliq uz, soliq servis, soliq uz электронная, hisobot soliq uz, may soliq, may soliq uz, tasnif soliq uz, фактура, счет фактура, фактура уз, солик фактура, фактура узбекистана, счет фактура узбекистан, е фактура, фактура солик уз, электронный фактура, электронные счета фактуры, солик сервис уз фактура, сервис фактура, выставить фактуру'}
             ]
