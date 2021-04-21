@@ -11,6 +11,13 @@
         </div>
         <div id="page-body">
             <div class="container">
+                <div class="ads-place">
+                    <div>
+                        <a href="https://buxgalter.uz/tarifs/" target="_blank">
+                            <img alt="buxgalter uz"  src="../assets/img/Banners/bux.png">
+                        </a>
+                    </div>
+                </div>
                 <div class="free-month"><h2> {{ translation.translate('priceTable', 'priceTableTitleFirstThing') }}</h2></div>
                 <table class="table table-price">
                     <thead class="thead-dark">

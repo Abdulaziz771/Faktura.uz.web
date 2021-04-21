@@ -10,6 +10,13 @@
         </div>
         <div id="blog">
             <div class="container">
+                <div class="ads-place">
+                    <div>
+                        <a href="https://buxgalter.uz/tarifs/" target="_blank">
+                            <img alt="buxgalter uz"  src="../assets/img/Banners/bux.png">
+                        </a>
+                    </div>
+                </div>
                 <div class="row">
                     <div v-for="(blog, index) in blogs" :key="index" class="col-lg-4 col-md-6 col-12 blog">
                         <div>
@@ -22,28 +29,6 @@
                             </div>
                         </div>
                     </div>
-                     <!-- <div class="col-lg-4 col-md-6 col-12 blog">
-                        <div>
-                            <div>
-                                <img src="../assets/img/blog/blog11.png" class="w-100" alt="">
-                            </div>
-                            <div class="blog-text">
-                                <div class="d-flex"><CalendarIcon style="width: 17px"/><h6>05:00 / 17.02.2021</h6></div>
-                                <h5><router-link :to="{ name: 'основные-принципы-электронного-документооборота' }">{{ translation.translate('blog', 'blog2Text1') }}</router-link></h5>
-                            </div>
-                        </div>
-                    </div>  
-                    <div class="col-lg-4 col-md-6 col-12 blog">
-                        <div>
-                            <div>
-                                <img src="../assets/img/blog/blog3.png" class="w-100" alt="">
-                            </div>
-                            <div class="blog-text">
-                                <div class="d-flex"><CalendarIcon style="width: 17px"/><h6>17:15 / 19.02.2021</h6></div>
-                                <h5><router-link :to="{ name: 'soliq-qomitasining-489-sonli-qarori' }">{{ translation.translate('blog', 'blog3Text1') }} (УЗБ)</router-link></h5>
-                            </div>
-                        </div>
-                    </div>   -->
                 </div>
             </div>
         </div>

@@ -15,7 +15,7 @@ var a = [
     },
     {
         img: require("../src/assets/img/blog/blog3.png"), // 600 x 600 разрешение
-        title: translation.translate('blog', 'blog2Text1'),
+        title: translation.translate('blog', 'blog3Text1'),
         titleRoute: "soliq-qomitasining-489-sonli-qarori",
         data: "17:15 / 19.02.2021"
     }

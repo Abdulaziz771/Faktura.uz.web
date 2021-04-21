@@ -1898,6 +1898,21 @@ ul li {
     width: inherit;
 }
 
+.ads-place div {
+    padding: 20px 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ads-place div img {
+    box-shadow: 0 0 15px rgb(0 0 0 / 39%);
+    transition: 0.1s;
+}
+
+.ads-place div img:hover {
+    box-shadow: 0 0 3px rgb(0 0 0 / 39%) !important;
+}
+
 .seo-pic source {
     width: inherit;
 }

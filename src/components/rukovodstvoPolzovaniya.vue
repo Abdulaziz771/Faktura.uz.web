@@ -9,7 +9,14 @@
             </div>
         </div>
         <div id="page-body">
-            <div class="container pt-5 pb-5">
+            <div class="container pb-5">
+                <div class="ads-place">
+                    <div>
+                        <a href="https://buxgalter.uz/tarifs/" target="_blank">
+                            <img alt="buxgalter uz"  src="../assets/img/Banners/bux.png">
+                        </a>
+                    </div>
+                </div>
                 <div class="hpanel blog-article-box">
                 <div class="panel-heading">
                     <h4>О документе</h4>

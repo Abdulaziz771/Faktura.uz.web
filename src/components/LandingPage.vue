@@ -32,9 +32,7 @@
                                             </div>
                                         </div>
                                         <div class="carousel-item desktop-slide">
-                                            <v-lazy-image srcset="./../assets/img/sldier/7777.png" src="" use-picture alt="...">
-                                                <source srcset="./../assets/img/sldier/7777.png" /> 
-                                            </v-lazy-image>
+                                            <img src="./../assets/img/sldier/7777.png" alt="">
                                             <div class="carousel-caption d-block">
                                                 <h2 class="slide-desc-title">{{ translation.translate('landingPageHome', 'dogovorTitle') }}</h2>
                                                 <p class="slide-desc-description mt-3">{{ translation.translate('landingPageHome', 'dogovorDescription') }}</p>
@@ -44,9 +42,7 @@
                                             </div>
                                         </div>
                                         <div class="carousel-item desktop-slide">
-                                            <v-lazy-image srcset="./../assets/img/sldier/6666.png" src="" use-picture  class="desktop-slide" alt="...">
-                                                <source srcset="./../assets/img/sldier/6666.png" /> 
-                                            </v-lazy-image>
+                                            <img src="./../assets/img/sldier/6666.png" class="desktop-slide" alt="">
                                             <div class="carousel-caption d-block">
                                                 <h2 class="slide-desc-title">{{ translation.translate('landingPageHome', 'kpkTitle') }}</h2>
                                                 <p class="slide-desc-description mt-3">{{ translation.translate('landingPageHome', 'kpkDescript') }}</p>
@@ -56,9 +52,7 @@
                                             </div>
                                         </div>
                                        <div class="carousel-item desktop-slide">
-                                           <v-lazy-image srcset="./../assets/img/sldier/3333.png" src="" use-picture alt="...">
-                                                <source srcset="../assets/img/sldier/3333.png" /> 
-                                            </v-lazy-image>
+                                            <img src="./../assets/img/sldier/3333.png" class="desktop-slide" alt="">
                                             <div class="carousel-caption d-block">
                                                 <h1 class="slide-desc-title"> {{ translation.translate('landingPageHome', 'slider1Title') }}</h1>
                                                 <p class="slide-desc-description">{{ translation.translate('landingPageHome', 'slider1Desc') }}</p>
@@ -119,39 +113,16 @@
                     </div>
                 </div>
             </content>
-            <img class="grass-img" src="./../assets/img/grass.png" alt="">
-            <!-- <svg :class="{ 'scrolledSVG': isScrolled }" class="editorial" xmlns="http://www.w3.org/2000/svg"
-                 xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
-                <defs>
-                    <path id="gentle-wave"
-                          d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/>
-                </defs>
-                <g class="parallax1">
-                    <use xlink:href="#gentle-wave" x="50" y="3" fill="#66c93ef0"/>
-                </g>
-                <g class="parallax2">
-                    <use xlink:href="#gentle-wave" x="50" y="0" fill="#3f5872"/>
-                </g>
-                <g class="parallax3">
-                    <use xlink:href="#gentle-wave" x="50" y="9" fill="#4a982af0"/>
-                </g>
-                <g class="parallax4">
-                    <use xlink:href="#gentle-wave" x="50" y="6" fill="#fff"/>
-                </g>
-            </svg> -->
-            <!-- <img class="editorial" :class="{ 'scrolledSVG': isScrolled }" src="../assets/img/snow-ground.png" alt=""> -->
-            <!-- <div class="winter-is-coming">
-                <div class="snow snow--near"></div>
-                <div class="snow snow--near snow--alt"></div>
-                
-                <div class="snow snow--mid"></div>
-                <div class="snow snow--mid snow--alt"></div>
-                
-                <div class="snow snow--far"></div>
-                <div class="snow snow--far snow--alt"></div>
-            </div> -->
         </section>
 
+        <div class="ads-place">
+            <div>
+                <a href="https://buxgalter.uz/tarifs/" target="_blank">
+                    <img alt="buxgalter uz"  src="../assets/img/Banners/bux.png">
+                </a>
+            </div>
+        </div>
+        <!-- 1-month free -->
         <section id="connect-page">
             <div class="page-title connect-title container traditional-page-width">
                 <h2 class="font-weight-bolder dark">{{ translation.translate('landingPageHome', 'freeSectionTitle1') }}</h2>

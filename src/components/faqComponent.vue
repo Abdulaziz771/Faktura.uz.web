@@ -11,6 +11,13 @@
         </div>
         <div id="page-body">
             <div class="container mt-5 mb-5">
+                <div class="ads-place">
+                    <div>
+                        <a href="https://buxgalter.uz/tarifs/" target="_blank">
+                            <img alt="buxgalter uz"  src="../assets/img/Banners/bux.png">
+                        </a>
+                    </div>
+                </div>
                 <div class="faq-container">
                     <h6 class="mt-3">{{ translation.translate('faq', 'generalQuestions') }}</h6>
                     <div class="faq-block d-flex"  data-toggle="collapse" href="#collapseExample7" @click='callGtag("FAQ нажатия,faq_clicks,click")'>

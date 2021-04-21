@@ -4,7 +4,7 @@
             <headerComponent></headerComponent>
             <div class="page-title">
                 <div class="page-title-block">
-                    <h1>{{ translation.translate('blog', 'blog3Text1') }} (УЗБ)</h1>
+                    <h1>{{ translation.translate('blog', 'blog3Text1') }} (узб)</h1>
                 </div>
             </div>
         </div>

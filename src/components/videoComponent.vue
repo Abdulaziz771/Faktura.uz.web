@@ -191,7 +191,7 @@ export default {
 #video-pleer {
     background: #282B32;
     margin-top: 25px;
-    margin-top: 123px !important;
+    margin-top: 60px !important;
     margin-bottom: 123px !important;
     width: 70%;
     margin: 0 auto;
