@@ -1212,6 +1212,9 @@
     #hero-page .main-text, #doc-types .page-title, #instead-page .page-title, #rate .page-title {
         width: 275px;
     }
+    #rate .page-title {
+        width: 100%;
+    }
     #instead-page .page-title h2,  #rate .page-title h2 {
         font-size: 19px;
     }
@@ -1222,10 +1225,12 @@
         width: 280px;
     }
     #rate .rate-list {
-        width: 220px;
+        width: 100% !important;
+        margin-top: 0 !important;
     }
     #rate .rate-block {
         width: 270px;
+        margin-bottom: 15px;
     }
     #rate .rate-header {
         padding: 25px 0;

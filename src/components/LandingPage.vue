@@ -150,51 +150,110 @@
             </div>
         </section>
 
-        <section id="connect-page">
-            <div class="page-title connect-title container-fluid">
-                <h2 class="font-weight-bolder dark">{{ translation.translate('landingPageHome', 'partners') }}</h2>
-                <h5 class="light">{{ translation.translate('landingPageHome', 'partnersDesc') }}</h5>
+        <!-- Price Render -->
+        <section id="rate">
+            <div class="container">
+                <div class="page-title connect-title container-fluid">
+                    <h2 class="font-weight-bolder dark"> {{
+                            translation.translate('landingPageHome', 'pricesTitle')
+                        }} </h2>
+                    <h5 class="light">{{ translation.translate('landingPageHome', 'pricesDescription') }}</h5>
+                </div>
             </div>
-            <div class="connect-body gybrid-pochta container partnerships">
-                <div class="row">
-                    <div class="col-12">
-                        <div>
-                            <v-lazy-image srcset="../assets/img/partnership/Screenshot_7.png" src="" use-picture  alt="1C">
-                                <source srcset="../assets/img/partnership/Screenshot_7.png"/> 
-                            </v-lazy-image>
+            <div class="doc-body">
+                <div class="pick-rate">
+                    <div class="input-group  mb-3 play-img-red">
+                        <input type="number" class="form-control" @keyup.enter="beforepicking"
+                               :placeholder="translation.translate('landingPageHome','amount')" v-model="docsCuantity"
+                               aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" @click="beforepicking">
+                                {{ translation.translate('landingPageHome', 'getPriceRender') }}!
+                            </button>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="connect-page">
-            <div class="page-title connect-title container-fluid">
-                <h2 class="font-weight-bolder dark">{{ translation.translate('landingPageHome', 'gybridMail') }}</h2>
-                <h5 class="light">{{ translation.translate('landingPageHome', 'gybridMailDescription') }}</h5>
-            </div>
-            <div class="connect-body gybrid-pochta container-fluid">
-                <div class="row">
-                    <div class="col-md-12 col-lg-6">
-                        <div class="connect-video connect-video-1">
-                            <v-lazy-image srcset="./../assets/img/5.png" src="" use-picture >
-                                <source srcset="./../assets/img/5.png" /> 
-                            </v-lazy-image>
+                <div :class="{ 'over-priced': moreThan5000 }">
+                    <transition name="bounce">
+                        <div class="rate-block" v-cloak v-if="pickedRate.isVisible">
+                            <div class="rate-header">
+                                <h2 class="text-center pb-4"> {{ translation.translate('landingPageHome', 'price') }}
+                                    {{ pickedRate.name }}</h2>
+                                <div class="text-center">
+                                    <span @click="callGtag('Купить тариф,buy_price,click')">
+                                        <a :href="pickedRate.link" target="_blank">{{ pickedRate.price }}</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="gray-line"></div>
+                            <div v-if="!moreThan5000" class="rate-body">
+                                <div class="container-fluid">
+                                    <div class="row  cuantity-rate">
+                                        <div class="col-8 col-md-8  text-left">
+                                        <span class="condition">
+                                            {{ translation.translate('landingPageHome', 'amountOfDocuments') }}
+                                        </span>
+                                        </div>
+                                        <div class="col-4 col-md-4 text-right">
+                                        <span class="font-weight-bolder light rate-number-section">
+                                            {{ pickedRate.cuantity }}
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" container-fluid mt-2">
+                                    <div class="row limit-rate">
+                                        <div class="col-8 col-md-8 text-left">
+                                        <span class="condition">
+                                            {{ translation.translate('landingPageHome', 'eachDocBy') }}
+                                        </span>
+                                        </div>
+                                        <div class="col-4 col-md-4 text-right">
+                                        <span class="font-weight-bolder light rate-number-section">
+                                            {{
+                                                pickedRate.everyDocPrice
+                                            }} {{ translation.translate('priceTable', 'summ') }}
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container-fluid mt-2">
+                                    <div class="row limit-rate">
+                                        <div class="col-8 col-md-8 text-left">
+                                        <span class="condition">
+                                            {{ translation.translate('landingPageHome', 'moreThantLimit') }}
+                                        </span>
+                                        </div>
+                                        <div class="col-4 col-md-4 text-right">
+                                        <span class="font-weight-bolder light rate-number-section">
+                                            {{ pickedRate.limit }} {{ translation.translate('priceTable', 'summ') }}
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div v-else class="rate-body">
+                                <h5 class="text-center light">
+                                    {{ translation.translate('landingPageHome', 'morethan5000priceDescription') }}</h5>
+                                <h4 class="text-center dark mt-4 text-danger">+998 (94) 684-46-33</h4>
+                            </div>
                         </div>
-                    </div>
-                     <div class="col-md-12 steps-mobile-disabled col-lg-6 position-relative d-flex align-items-center">
-                        <div class="timeline position-absolute">
-                            <h3 class="font-weight-bolder dark"> {{ translation.translate('landingPageHome', 'gybridMailDescription1') }} </h3>
-                            <h5 class="light mt-4">
-                                {{ translation.translate('landingPageHome', 'gybridMailDescription2') }}
-                            </h5>
-                            <h5 class="light mt-4"> 
-                                {{ translation.translate('landingPageHome', 'gybridMailDescription3') }}
-                            </h5>
-                            <button class="take-an-action mt-4 glow-big-in-context"><a target="_blank" href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3">РЕГИСТРАЦИЯ</a></button>
-                        </div>
-                    </div>
+                    </transition>
+                    <h6 class="text-center light mt-5 rate-list">
+                        {{ translation.translate('landingPageHome', 'watchAllPrices') }}
+                        <router-link :to='{ name: "price" }'>
+                            {{ translation.translate('landingPageHome', 'tolink') }}
+                        </router-link>
+                    </h6>
                 </div>
+                <transition name="bounce2">
+                    <div v-if="loadingGif" class="loading-gif text-center">
+                        <img style="width: 30px;" src="../assets/img/4749320.gif" alt="loading gif">
+                    </div>
+                </transition>
+                <transition name="fade">
+                    <h1 v-show="moreThan5000"></h1>
+                </transition>
             </div>
         </section>
 
@@ -490,198 +549,53 @@
             </div>
         </section>
 
+        <!-- gybrid mail -->
         <section id="connect-page">
-            <div class="page-title connect-title container traditional-page-width">
-                <h2 class="font-weight-bolder dark">{{ translation.translate('landingPageHome', 'seoInfoTitle20') }}</h2>
-                <h5 class="light">{{ translation.translate('landingPageHome', 'seoInfoTitle21') }}</h5>
+            <div class="page-title connect-title container-fluid">
+                <h2 class="font-weight-bolder dark">{{ translation.translate('landingPageHome', 'gybridMail') }}</h2>
+                <h5 class="light">{{ translation.translate('landingPageHome', 'gybridMailDescription') }}</h5>
             </div>
-            <div class="connect-body gybrid-pochta container">
+            <div class="connect-body gybrid-pochta container-fluid">
                 <div class="row">
-                    <div class="col-md-12 col-lg-6 align-self-center seo-pic">
-                        <v-lazy-image srcset="../assets/img/seo-pic.png" src="" use-picture >
-                            <source srcset="../assets/img/seo-pic.png" /> 
-                        </v-lazy-image>
+                    <div class="col-md-12 col-lg-6">
+                        <div class="connect-video connect-video-1">
+                            <v-lazy-image srcset="./../assets/img/5.png" src="" use-picture >
+                                <source srcset="./../assets/img/5.png" /> 
+                            </v-lazy-image>
+                        </div>
                     </div>
-                     <div class="col-md-12 col-lg-6 position-relative d-flex align-items-center seo-info-1">
-                        <div class="timeline-points">
-                            <div id="accordion">
-                                <div class="card cursor-pointer"  data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                                    <div class="card-header" id="headingThree">
-                                    <h2 class="mb-0 collapsed">
-                                            {{ translation.translate('landingPageHome', 'seoInfoTitle1') }}
-                                    </h2>
-                                    </div>
-                                    <div id="collapseFour" class="collapse show" aria-labelledby="headingThree" data-parent="#accordion">
-                                    <div class="card-body">
-                                       {{ translation.translate('landingPageHome', 'seoInfoTitle2') }}
-                                        <ul>
-                                            <li>{{ translation.translate('landingPageHome', 'seoInfoTitle3') }}</li>
-                                            <li>{{ translation.translate('landingPageHome', 'seoInfoTitle4') }}</li>
-                                            <li>{{ translation.translate('landingPageHome', 'seoInfoTitle5') }}</li>
-                                            <li>{{ translation.translate('landingPageHome', 'seoInfoTitle6') }}</li>
-                                            <li>{{ translation.translate('landingPageHome', 'seoInfoTitle7') }}</li>
-                                            <li>ИНН</li>
-                                        </ul>
-                                    </div>
-                                    </div>
-                                </div>
-                                <div class="card cursor-pointer" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                    <div class="card-header" id="headingOne">
-                                    <h2 class="mb-0" >
-                                       {{ translation.translate('landingPageHome', 'seoInfoTitle8') }}
-                                    </h2>
-                                    </div>
-                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                                    <div class="card-body">
-                                        {{ translation.translate('landingPageHome', 'seoInfoTitle9') }}
-                                        <ul>
-                                            <li>{{ translation.translate('landingPageHome', 'seoInfoTitle10') }}</li>
-                                            <li>{{ translation.translate('landingPageHome', 'seoInfoTitle11') }}</li>
-                                            <li>{{ translation.translate('landingPageHome', 'seoInfoTitle12') }}</li>
-                                            <li>{{ translation.translate('landingPageHome', 'seoInfoTitle13') }}</li>
-                                            <li>{{ translation.translate('landingPageHome', 'seoInfoTitle14') }}</li>
-                                            <li>{{ translation.translate('landingPageHome', 'seoInfoTitle15') }}</li>
-                                        </ul>
-                                    </div>
-                                    </div>
-                                </div>
-                                <div class="card cursor-pointer" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    <div class="card-header" id="headingTwo">
-                                    <h2 class="mb-0 collapsed">
-                                        {{ translation.translate('landingPageHome', 'seoInfoTitle16') }}
-                                    </h2>
-                                    </div>
-                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                                    <div class="card-body">
-                                        {{ translation.translate('landingPageHome', 'seoInfoTitle17') }}
-                                    </div>
-                                    </div>
-                                </div>
-                                <div class="card cursor-pointer"  data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    <div class="card-header" id="headingThree">
-                                    <h2 class="mb-0 collapsed">
-                                        {{ translation.translate('landingPageHome', 'seoInfoTitle171') }}
-                                    </h2>
-                                    </div>
-                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                                    <div class="card-body">
-                                        {{ translation.translate('landingPageHome', 'seoInfoTitle18') }}
-                                        <br>
-                                        <br>
-                                        {{ translation.translate('landingPageHome', 'seoInfoTitle18') }}
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
+                     <div class="col-md-12 steps-mobile-disabled col-lg-6 position-relative d-flex align-items-center">
+                        <div class="timeline position-absolute">
+                            <h3 class="font-weight-bolder dark"> {{ translation.translate('landingPageHome', 'gybridMailDescription1') }} </h3>
+                            <h5 class="light mt-4">
+                                {{ translation.translate('landingPageHome', 'gybridMailDescription2') }}
+                            </h5>
+                            <h5 class="light mt-4"> 
+                                {{ translation.translate('landingPageHome', 'gybridMailDescription3') }}
+                            </h5>
+                            <button class="take-an-action mt-4 glow-big-in-context"><a target="_blank" href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3">РЕГИСТРАЦИЯ</a></button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="rate">
-            <div class="container">
-                <div class="page-title connect-title container-fluid">
-                    <h2 class="font-weight-bolder dark"> {{
-                            translation.translate('landingPageHome', 'pricesTitle')
-                        }} </h2>
-                    <h5 class="light">{{ translation.translate('landingPageHome', 'pricesDescription') }}</h5>
-                </div>
+        <!-- partners -->
+        <section id="connect-page">
+            <div class="page-title connect-title container-fluid">
+                <h2 class="font-weight-bolder dark">{{ translation.translate('landingPageHome', 'partners') }}</h2>
+                <h5 class="light">{{ translation.translate('landingPageHome', 'partnersDesc') }}</h5>
             </div>
-            <div class="doc-body">
-                <div class="pick-rate">
-                    <div class="input-group  mb-3 play-img-red">
-                        <input type="number" class="form-control" @keyup.enter="beforepicking"
-                               :placeholder="translation.translate('landingPageHome','amount')" v-model="docsCuantity"
-                               aria-label="Recipient's username" aria-describedby="basic-addon2">
-                        <div class="input-group-append">
-                            <button class="btn btn-outline-secondary" type="button" @click="beforepicking">
-                                {{ translation.translate('landingPageHome', 'getPriceRender') }}!
-                            </button>
+            <div class="connect-body gybrid-pochta container partnerships">
+                <div class="row">
+                    <div class="col-12">
+                        <div>
+                            <v-lazy-image srcset="../assets/img/partnership/Screenshot_7.png" src="" use-picture  alt="1C">
+                                <source srcset="../assets/img/partnership/Screenshot_7.png"/> 
+                            </v-lazy-image>
                         </div>
                     </div>
                 </div>
-                <div :class="{ 'over-priced': moreThan5000 }">
-                    <transition name="bounce">
-                        <div class="rate-block" v-cloak v-if="pickedRate.isVisible">
-                            <div class="rate-header">
-                                <h2 class="text-center pb-4"> {{ translation.translate('landingPageHome', 'price') }}
-                                    {{ pickedRate.name }}</h2>
-                                <div class="text-center">
-                                    <span @click="callGtag('Купить тариф,buy_price,click')">
-                                        <a :href="pickedRate.link" target="_blank">{{ pickedRate.price }}</a>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="gray-line"></div>
-                            <div v-if="!moreThan5000" class="rate-body">
-                                <div class="container-fluid">
-                                    <div class="row  cuantity-rate">
-                                        <div class="col-8 col-md-8  text-left">
-                                        <span class="condition">
-                                            {{ translation.translate('landingPageHome', 'amountOfDocuments') }}
-                                        </span>
-                                        </div>
-                                        <div class="col-4 col-md-4 text-right">
-                                        <span class="font-weight-bolder light rate-number-section">
-                                            {{ pickedRate.cuantity }}
-                                        </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class=" container-fluid mt-2">
-                                    <div class="row limit-rate">
-                                        <div class="col-8 col-md-8 text-left">
-                                        <span class="condition">
-                                            {{ translation.translate('landingPageHome', 'eachDocBy') }}
-                                        </span>
-                                        </div>
-                                        <div class="col-4 col-md-4 text-right">
-                                        <span class="font-weight-bolder light rate-number-section">
-                                            {{
-                                                pickedRate.everyDocPrice
-                                            }} {{ translation.translate('priceTable', 'summ') }}
-                                        </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="container-fluid mt-2">
-                                    <div class="row limit-rate">
-                                        <div class="col-8 col-md-8 text-left">
-                                        <span class="condition">
-                                            {{ translation.translate('landingPageHome', 'moreThantLimit') }}
-                                        </span>
-                                        </div>
-                                        <div class="col-4 col-md-4 text-right">
-                                        <span class="font-weight-bolder light rate-number-section">
-                                            {{ pickedRate.limit }} {{ translation.translate('priceTable', 'summ') }}
-                                        </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div v-else class="rate-body">
-                                <h5 class="text-center light">
-                                    {{ translation.translate('landingPageHome', 'morethan5000priceDescription') }}</h5>
-                                <h4 class="text-center dark mt-4 text-danger">+998 (94) 684-46-33</h4>
-                            </div>
-                        </div>
-                    </transition>
-                    <h6 class="text-center light mt-5 rate-list">
-                        {{ translation.translate('landingPageHome', 'watchAllPrices') }}
-                        <router-link :to='{ name: "price" }'>
-                            {{ translation.translate('landingPageHome', 'tolink') }}
-                        </router-link>
-                    </h6>
-                </div>
-                <transition name="bounce2">
-                    <div v-if="loadingGif" class="loading-gif text-center">
-                        <img style="width: 30px;" src="../assets/img/4749320.gif" alt="loading gif">
-                    </div>
-                </transition>
-                <transition name="fade">
-                    <h1 v-show="moreThan5000"></h1>
-                </transition>
             </div>
         </section>
 
@@ -1116,6 +1030,96 @@
                 
                 <div class="snow snow--far"></div>
                 <div class="snow snow--far snow--alt"></div>
+            </div>
+        </section>
+
+        <!-- seo section -->
+        <section id="connect-page">
+            <div class="page-title connect-title container traditional-page-width">
+                <h2 class="font-weight-bolder dark">{{ translation.translate('landingPageHome', 'seoInfoTitle20') }}</h2>
+                <h5 class="light">{{ translation.translate('landingPageHome', 'seoInfoTitle21') }}</h5>
+            </div>
+            <div class="connect-body gybrid-pochta container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-6 align-self-center seo-pic">
+                        <v-lazy-image srcset="../assets/img/seo-pic.png" src="" use-picture >
+                            <source srcset="../assets/img/seo-pic.png" /> 
+                        </v-lazy-image>
+                    </div>
+                     <div class="col-md-12 col-lg-6 position-relative d-flex align-items-center seo-info-1">
+                        <div class="timeline-points">
+                            <div id="accordion">
+                                <div class="card cursor-pointer"  data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                    <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0 collapsed">
+                                            {{ translation.translate('landingPageHome', 'seoInfoTitle1') }}
+                                    </h2>
+                                    </div>
+                                    <div id="collapseFour" class="collapse show" aria-labelledby="headingThree" data-parent="#accordion">
+                                    <div class="card-body">
+                                       {{ translation.translate('landingPageHome', 'seoInfoTitle2') }}
+                                        <ul>
+                                            <li>{{ translation.translate('landingPageHome', 'seoInfoTitle3') }}</li>
+                                            <li>{{ translation.translate('landingPageHome', 'seoInfoTitle4') }}</li>
+                                            <li>{{ translation.translate('landingPageHome', 'seoInfoTitle5') }}</li>
+                                            <li>{{ translation.translate('landingPageHome', 'seoInfoTitle6') }}</li>
+                                            <li>{{ translation.translate('landingPageHome', 'seoInfoTitle7') }}</li>
+                                            <li>ИНН</li>
+                                        </ul>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="card cursor-pointer" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0" >
+                                       {{ translation.translate('landingPageHome', 'seoInfoTitle8') }}
+                                    </h2>
+                                    </div>
+                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div class="card-body">
+                                        {{ translation.translate('landingPageHome', 'seoInfoTitle9') }}
+                                        <ul>
+                                            <li>{{ translation.translate('landingPageHome', 'seoInfoTitle10') }}</li>
+                                            <li>{{ translation.translate('landingPageHome', 'seoInfoTitle11') }}</li>
+                                            <li>{{ translation.translate('landingPageHome', 'seoInfoTitle12') }}</li>
+                                            <li>{{ translation.translate('landingPageHome', 'seoInfoTitle13') }}</li>
+                                            <li>{{ translation.translate('landingPageHome', 'seoInfoTitle14') }}</li>
+                                            <li>{{ translation.translate('landingPageHome', 'seoInfoTitle15') }}</li>
+                                        </ul>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="card cursor-pointer" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0 collapsed">
+                                        {{ translation.translate('landingPageHome', 'seoInfoTitle16') }}
+                                    </h2>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="card-body">
+                                        {{ translation.translate('landingPageHome', 'seoInfoTitle17') }}
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="card cursor-pointer"  data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0 collapsed">
+                                        {{ translation.translate('landingPageHome', 'seoInfoTitle171') }}
+                                    </h2>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                    <div class="card-body">
+                                        {{ translation.translate('landingPageHome', 'seoInfoTitle18') }}
+                                        <br>
+                                        <br>
+                                        {{ translation.translate('landingPageHome', 'seoInfoTitle18') }}
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
