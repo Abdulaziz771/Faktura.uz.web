@@ -420,7 +420,7 @@ ul li {
 }
 
 #connect-page .gybrid-pochta {
-    padding-bottom: 80px !important;
+    padding-bottom: 50px !important;
 }
 
 #connect-page .gybrid-pochta .timeline {
@@ -431,12 +431,6 @@ ul li {
 
 .free-main {
     align-items: flex-start;
-}
-
-#connect-page .gybrid-pochta .timeline-1 {
-    position: absolute !important;
-    left: 105px !important;
-    width: 450px;
 }
 
 #connect-page .gybrid-pochta .timeline-points {

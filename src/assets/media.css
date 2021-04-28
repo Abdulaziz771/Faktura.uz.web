@@ -866,6 +866,9 @@
 }
 
 @media (max-width: 768px) {
+    .dop-class-for-media {
+        margin-bottom: 20px;
+    }
     .traditional-page-width {
         width: 80%;
     }

@@ -18,7 +18,30 @@
                         </a>
                     </div>
                 </div>
-                <div class="free-month"><h2> {{ translation.translate('priceTable', 'priceTableTitleFirstThing') }}</h2></div>
+                <section id="connect-page">
+                    <div class="page-title connect-title container traditional-page-width">
+                        <h2 class="font-weight-bolder dark">{{ translation.translate('landingPageHome', 'freeSectionTitle1') }}</h2>
+                        <h5 class="light">{{ translation.translate('landingPageHome', 'freeSectionTitle2') }}</h5>
+                    </div>
+                    <div class="connect-body gybrid-pochta container">
+                        <div class="row">
+                            <div class="col-md-12 col-lg-6 free-1-month">
+                                <img src="../assets/img/6.png" alt="">
+                            </div>
+                            <div class="col-md-12 col-lg-6 position-relative d-flex align-items-flex-start seo-info-1">
+                                <div class="timeline-1">
+                                    <h5 class="light mt-4">
+                                        {{ translation.translate('landingPageHome', 'freeSectionTitle3') }}
+                                    </h5>
+                                    <h5 class="light mt-4"> 
+                                        {{ translation.translate('landingPageHome', 'freeSectionTitle4') }} <span><a href="https://app.faktura.uz/ru/servicepackage/preview/1" target="_blank">{{ translation.translate('landingPageHome', 'freeSectionTitle5') }}</a></span>{{ translation.translate('landingPageHome', 'freeSectionTitle6') }}   
+                                    </h5>
+                                    <button class="take-an-action mt-4 glow-big-in-context"><a target="_blank" href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3">{{ translation.translate('landingPageHome', 'slider3Button1') }}</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <table class="table table-price">
                     <thead class="thead-dark">
                         <tr>
@@ -52,7 +75,99 @@
                         </div>
                     </div>
                 </div>
-                <div class="faq-block-price d-flex">
+                <section id="connect-page">
+                    <div class="page-title connect-title container traditional-page-width">
+                        <h2 class="font-weight-bolder dark">Дополнительные услуги</h2>
+                        <h5 class="light">Уникальные возможности внутри нашей системы</h5>
+                    </div>
+                    <div class="connect-body gybrid-pochta container">
+                        <div class="row">
+                            <div class="offset-lg-2 col-12 col-md-6 col-lg-4 dop-class-for-media">
+                                <div class="dop-block">
+                                    <div class="dop-hat">
+                                        <h5 class="mb-0">Мониторинг <br> корпоративных карт</h5>
+                                    </div>
+                                    <div class="dop-price">
+                                        <div class="dop-img">
+                                            <img src="../assets/img/All Icons/corporate-card-history.png" alt="">
+                                        </div>
+                                        <div>
+                                            <h5 class="dop-price-sum font-weight-bolder mb-0">10 000 сум</h5>
+                                        </div>
+                                        <div>
+                                            <span class="font-weight-bolder light dop-price-sum-item">за 1 карту</span>
+                                        </div>
+                                    </div>
+                                    <div class="dop-footer">
+                                        <div class="dop-info">
+                                            Подключив данную функцию вы сможете мониторить историю ваших корпоративных карточек
+                                        </div>
+                                        <button class="mt-4 take-an-action">
+                                            <a target="_blank" href="https://app.faktura.uz/ru/history/index#kpk">
+                                                Добавить
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-12 col-md-6">
+                                <div class="dop-block">
+                                    <div class="dop-hat">
+                                        <h5 class="mb-0">Гибридная почта</h5>
+                                    </div>
+                                    <div class="dop-price">
+                                        <div class="dop-img">
+                                            <img src="../assets/img/All Icons/gybrid-letter.png" alt="">
+                                        </div>
+                                        <div>
+                                            <h5 class="dop-price-sum font-weight-bolder mb-0">5 000 сум</h5>
+                                        </div>
+                                        <div>
+                                            <span class="font-weight-bolder light dop-price-sum-item">за 1 отправку</span>
+                                        </div>
+                                    </div>
+                                    <div class="dop-footer">
+                                        <div class="dop-info">
+                                            Отпрвляйте деловые пиьсма в электронном виде по географическому адресу с доставкой в виде бумаги 
+                                        </div>
+                                        <button class="mt-4 take-an-action">
+                                            <a target="_blank" href="https://app.faktura.uz/ru/hybriddocument/add">
+                                                Отправить
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="connect-page">
+                    <div class="page-title connect-title container traditional-page-width pb-4">
+                        <h2 class="font-weight-bolder dark">Условия тарифного плана</h2>
+                    </div>
+                    <div class="connect-body gybrid-pochta container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="tarif-plan">
+                                    <h5 class="light">
+                                        Входящие документы бесплатные
+                                    </h5>
+                                    <hr>
+                                    <h5 class="light mt-4">
+                                        Оставшиеся количество документов перейдут на следующий месяц  только при условии что вы активировали нужный вам тариф заранее (до того как истечет время предыдущего тарифа)
+                                    </h5>
+                                    <hr>#connect-page .gybrid-pochta
+                                    <h5 class="light mt-4">
+                                        При недостатке количества документов в вашем выбранном тарифе, будут взиматься сверх лимит на каждый исходящий документ
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- <div class="faq-block-price d-flex">
                     <div class="faq-title">
                         <h5> {{ translation.translate('priceTable', 'priceCondition') }}</h5>
                     </div>
@@ -66,7 +181,7 @@
                     <div class="faq-title">
                         <h5> {{ translation.translate('priceTable', 'priceCondition3') }} <a target="_blank" href="https://yadi.sk/i/LjoTzYuPuUNU3A">{{ translation.translate('landingPageHome', 'tolinkSingle') }}</a></h5>
                     </div>
-                </div>
+                </div> -->
                 <p class="how-to-pay">
                     {{ translation.translate('priceTable', 'goToHowToPay') }} <router-link :to='{ name: "Видеоуроки" }'> {{ translation.translate('landingPageHome', 'tolink') }} </router-link>
                 </p>
@@ -201,6 +316,48 @@ export default {
 </script>
 
 <style>
+.tarif-plan {
+    background: #F7F7F7;
+    padding: 30px;
+    border-radius: 10px;
+}
+.dop-info {
+    height: 150px;
+    background: white;
+}
+.dop-footer button {
+    margin-bottom: 25px;
+}
+.dop-info {
+    font-weight: 700;
+    font-size: 17px;
+    padding: 20px;
+}
+.dop-footer {
+    text-align: center;
+}
+
+.dop-price {
+    text-align: center;
+    padding: 15px 0;
+    background: #F3F3F3;
+}
+.dop-img {
+    padding-bottom: 15px;
+}
+.dop-hat {
+    background: #3A546D;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    border-radius: 7px 7px 0 0;
+    align-items: center;
+}
+
 .set-price {
     padding: 3px 10px;
     font-size: 12px;
@@ -256,9 +413,8 @@ export default {
 }
 
 #price table {
-    margin: 100px 0;
     margin-bottom: 70px;
-    box-shadow: 0px 0px 50px -18px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 22px -5px rgb(0 0 0 / 75%);
     border-radius: 15px;
 }
 
@@ -269,6 +425,12 @@ export default {
     margin-bottom: 123px;
     font-size: 17px;
     color: gray;
+}
+
+.dop-block {
+    box-shadow: 0px 0px 20px -5px rgb(0 0 0 / 75%);
+    border-radius: 7px;
+    height: 100%;
 }
 
 </style>

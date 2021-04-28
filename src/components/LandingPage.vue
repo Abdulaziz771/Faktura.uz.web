@@ -1399,20 +1399,6 @@
                 </div>
             </div>
         </div>
-        <!-- <div  class="google-forms-scene"></div>
-        <div class="google-forms-block" id="voice">
-            <div  class="google-forms">
-                <div class="x-icon-block-popup">
-                    <x-icon></x-icon>
-                </div>
-                <div>
-                    <div class="mt-4 mb-3 button-footer">
-                        <button type="button" class="btn btn-outline-danger mr-3" style="border-radius: 15px;padding: 0.475rem 3.9rem;" @click="currentTime = 2">{{ translation.translate('landingPageHome', 'modalButton#1') }}</button>
-                        <a href="https://forms.gle/Uxr6T8XCYzP4RLCKA" target="_blank" style="color: white"><button type="button" class="btn btn-success" style="border-radius: 15px;padding: 0.475rem 3.9rem;" @click="currentTime = 2">{{ translation.translate('landingPageHome', 'modalButton2#1') }}</button></a>
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </div>
 </template>
 <script src="../tgFunction.js"></script>
