@@ -122,17 +122,47 @@ const router = new VueRouter({
         {
             path: '/blog/preimushestva-elektronnogo-dokumentooborota', 
             name: 'преимущества-электронного-документооборота',
-            component: () => import('../components/blog-posts/blogPost1')
+            component: () => import('../components/blog-posts/PreimushestvaElektronnogo')
         },
         {
             path: '/blog/osnovnie-principi-elektronnogo-dokumentooborota', 
             name: 'основные-принципы-электронного-документооборота',
-            component: () => import('../components/blog-posts/blogPost2')
+            component: () => import('../components/blog-posts/OsnovniePrincipi')
         },
         {
             path: "/blog/soliq-qo'mitasining-489-sonli-qarori", 
             name: "soliq-qomitasining-489-sonli-qarori",
-            component: () => import('../components/blog-posts/blogPost3')
+            component: () => import('../components/blog-posts/Preduprejdenie')
+        },
+        {
+            path: "/blog/zagruzka-schet-faktur-s-lgotami", 
+            name: "Загрузка счет-фактур с льготами",
+            component: () => import('../components/blog-posts/ReestrLgota')
+        },
+        {
+            path: "/blog/spisok-izmeneniy-uluchsheniy-v-versii-1-8-12", 
+            name: "Список изменений и улучшений в версии 1.8.12",
+            component: () => import('../components/blog-posts/Versiya1812')
+        },
+        {
+            path: "/blog/spisok-izmeneniy-uluchsheniy-v-versii-1-8-13", 
+            name: "Список изменений и улучшений в версии 1.8.13",
+            component: () => import('../components/blog-posts/Veriya1813')
+        },
+        {
+            path: "/resources", 
+            name: "resources",
+            component: () => import('../components/Recources')
+        },
+        {
+            path: "/facilities", 
+            name: "facilities",
+            component: () => import('../components/facilities')
+        },
+        {
+            path: "/admin", 
+            name: "adminPanel",
+            component: () => import('../components/adminPanel')
         }
     ],
     scrollBehavior() {

@@ -38,7 +38,6 @@
                                 <div>
                                     <ul class="text-left">
                                         <li><a href="tel:+998 71 200 00 13">+998 71 200 00 13</a></li>
-                                        <li class="mt-2"><a href="tel:+998 94 684 46 33">+998 94 684 46 33</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -99,7 +98,6 @@
                                 <div>
                                     <ul class="text-left">
                                         <li><a href="tel:+998 71 200 00 13">+998 71 200 00 13</a></li>
-                                        <li class="mt-2"><a href="tel:+998 94 684 46 33">+998 94 684 46 33</a></li>
                                     </ul>
                                 </div>
                             </div>

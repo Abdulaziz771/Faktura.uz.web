@@ -623,6 +623,12 @@
 }
 
 @media (max-width: 991px ) {
+    .secondary-title {
+        font-size: 17px !important;
+    }
+    .main-news-text-cover h2 {
+        font-size: 22px !important;
+    }
     #system-guide {
         display: none !important;
     }
@@ -866,6 +872,12 @@
 }
 
 @media (max-width: 768px) {
+    .secondary-news img {
+        height: 90px !important;
+    }
+    .faktura-call-center div:nth-child(1), .faktura-call-center div:nth-child(3) {
+        display: none !important;
+    }
     .dop-class-for-media {
         margin-bottom: 20px;
     }

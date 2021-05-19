@@ -72,39 +72,33 @@
             </div>
             <div class="main-menu col-6 col-lg-7 col-xl-6">
                 <ul class="nav d-flex justify-content-end main-menu-ul">
-                    <li class="nav-item nav-item-1 position-relative d-flex">
-                        <router-link :to='{ name: "Главная" }' class="nav-link font-weight-bold universal-transition">{{ translation.translate('header','aboutUs') }}</router-link>
-                        <ChevronDownIcon class="chevron-down-header-menu cursor-pointer"/> 
-                        <ul class="dropdown-item-1 universal-transition pl-0 bg-white universal-radius dark-brand-tx">
-                            <li class="nav-item"><router-link class="t-n dark-brand-tx font-weight-bolder universal-transition" :to='{ name: "Модули 1С" }'>{{ translation.translate('header','1c') }}</router-link></li>
-                            <li class="nav-item"><a class="t-n dark-brand-tx font-weight-bolder universal-transition" href="https://api.faktura.uz/help/" target="_blank" @click="callGtag('API переходы,api_href,click')">{{ translation.translate('header','apiDocumentation') }}</a></li>
-                            <li class="nav-item"><router-link class="t-n dark-brand-tx font-weight-bolder universal-transition" :to='{ name: "Сравнение" }'>{{ translation.translate('footer','compare') }}</router-link></li>
-                            <li class="nav-item"><router-link class="t-n dark-brand-tx font-weight-bolder universal-transition" :to='{ name: "Другие проэкты" }'>{{ translation.translate('footer','outOtherProjects') }}</router-link></li>
-                            <li class="nav-item"><router-link class="t-n dark-brand-tx font-weight-bolder universal-transition" :to='{ name: "Вопросы-ответы" }'>FAQ</router-link></li>
-                            <li class="nav-item"><router-link class="t-n dark-brand-tx font-weight-bolder universal-transition" :to='{ name: "Руководство пользователя" }'>{{ translation.translate('header','documentation') }}</router-link></li>
-                            <li class="nav-item"><router-link class="t-n dark-brand-tx font-weight-bolder universal-transition" :to='{ name: "Системе" }'>Faktura.uz </router-link></li>
-                        </ul>
-                    </li>
                     <li class="nav-item">
-                        <router-link :to='{ name: "Видеоуроки" }' class="nav-link font-weight-bold universal-transition">{{ translation.translate('header','videolessons') }}</router-link>
+                        <router-link :to="{ name: 'Главная' }" class="nav-link font-weight-bold universal-transition">{{ translation.translate('landingPageHome','menuItem1') }}</router-link>
                     </li>
                     <li class="nav-item">
                         <router-link :to='{ name: "Тарифы" }' class="nav-link font-weight-bold universal-transition">{{ translation.translate('header','pricesItem') }}</router-link>
                     </li>
-                    <!-- <li class="nav-item">
-                        <router-link :to='{ name: "Обновления" }' href="" class="nav-link font-weight-bold universal-transition">{{ translation.translate('header','updates') }}</router-link>
-                    </li> -->
                     <li class="nav-item">
-                        <router-link :to='{ name: "Тех-поддержка" }' class="nav-link font-weight-bold universal-transition">{{ translation.translate('header','tech') }}</router-link>
+                        <router-link :to='{ name: "facilities" }' class="nav-link font-weight-bold universal-transition">{{ translation.translate('landingPageHome','menuItem2') }}</router-link>
                     </li>
-                    <li  @click="$store.commit('toggleSidebar', false)">
-                        <router-link  class="nav-link font-weight-bold universal-transition" :to='{ name: "Блоги" }'>{{ translation.translate('header', 'blog') }}</router-link>
+                    <li class="nav-item">
+                        <router-link :to='{ name: "Блоги" }' class="nav-link font-weight-bold universal-transition">{{ translation.translate('landingPageHome','menuItem3') }}</router-link>
                     </li>
-                    <li v-if="$store.getters.valueofCurrentLanguage == 'uz'" class="nav-item nav-item-6 d-flex position-relative" @click="_onChangeLanguage('ru'), callGtag('Перевод на Узб,uzb_translate,click')">
+                    <li class="nav-item nav-item-1 position-relative d-flex">
+                        <a  class="nav-link font-weight-bold universal-transition cursor-pointer">{{ translation.translate('landingPageHome','menuItem4') }}</a>
+                        <ChevronDownIcon class="chevron-down-header-menu cursor-pointer"/> 
+                        <ul class="dropdown-item-1 universal-transition pl-0 bg-white universal-radius dark-brand-tx">
+                            <li class="nav-item"><router-link class="t-n dark-brand-tx font-weight-bolder universal-transition" :to='{ name: "resources" }'>{{ translation.translate('landingPageHome','menuItem5') }}</router-link></li>
+                            <li class="nav-item"><router-link class="t-n dark-brand-tx font-weight-bolder universal-transition" :to='{ name: "Видеоуроки" }'>{{ translation.translate('header','videolessons') }}</router-link></li>
+                            <li class="nav-item"><router-link class="t-n dark-brand-tx font-weight-bolder universal-transition" :to='{ name: "Вопросы-ответы" }'>FAQ</router-link></li>
+                            <li class="nav-item"><a class="t-n dark-brand-tx font-weight-bolder universal-transition" href="https://api.faktura.uz/help/" target="_blank" @click="callGtag('API переходы,api_href,click')">API</a></li>
+                        </ul>
+                    </li>
+                    <li v-if="$store.getters.valueofCurrentLanguage == 'uz'" class="nav-item nav-item-6 ml-2 d-flex position-relative" @click="_onChangeLanguage('ru'), callGtag('Перевод на Узб,uzb_translate,click')">
                         <a href="" class="nav-link text-white font-weight-bold language-change universal-radius universal-transition">Ру</a>
                         <img src="../assets/img/rus-icon.png" class="cursor-pointer" alt="faktura.uz russian icon language">
                     </li>
-                    <li v-else class="nav-item nav-item-6 d-flex position-relative" @click="_onChangeLanguage('uz'), callGtag('Перевод на Рус,rus_translation,click')">
+                    <li v-else class="nav-item nav-item-6 ml-2 d-flex position-relative" @click="_onChangeLanguage('uz'), callGtag('Перевод на Рус,rus_translation,click')">
                         <a href="" class="nav-link text-white font-weight-bold language-change universal-radius universal-transition">Уз</a>
                         <img src="../assets/img/uz-icon.png" class="cursor-pointer" alt="faktura.uz russian icon language">
                     </li>
@@ -228,11 +222,12 @@ export default {
 }
 
 .chevron-down-header-menu {
-    transition: all 0.1s ease;
+   transition: all 0.1s ease;
     color: white;
     position: relative;
-    top: 10px;
-    left: -14px;
+    top: 9px;
+    right: 10px;
+    width: 18px;
 }
 
 .headroom {

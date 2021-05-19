@@ -1,10 +1,11 @@
 
 <template>
   <div id="app">
-      <div class="faktura-call-center container-fluid">
-        <div class="row">
-          <div class="col-xl-8"></div>
-          <div class="col-xl-4 call-center-number"><p>{{ translation.translate('techSupport', 'call-center') }} <a href="tel:+998 71 200 00 13">+998 (71) 200-00-13</a></p></div>
+      <div class="container-fluid">
+        <div class="row faktura-call-center">
+          <div class="col-md-4 text-center"><img src="./assets/img/All Icons/any.png" alt=""><span><a href="https://t.me/fakturauz" target="_blank">Удаленный доступ</a></span></div>
+          <div class="col-md-4 col-12 text-center"><img src="./assets/img/All Icons/tel.png" alt=""><span><a href="tel:+998 71 200 00 13" target="_blank">+998 (71) 200-00-13</a></span></div>
+          <div class="col-md-4 text-center"><img src="./assets/img/All Icons/mes.png" alt=""><span><a href="https://t.me/fakturauz" target="_blank">Написать в чат</a></span></div>
         </div>
       </div>
       <router-view></router-view>
@@ -18,48 +19,37 @@
               </div>
               <div class="sidebar-body">
                 <ul>
+                  
+                  <li  @click="$store.commit('toggleSidebar', false)">
+                    <router-link class="li-text"  :to="{ name: 'Главная' }">{{ translation.translate('landingPageHome','menuItem1') }}</router-link>
+                  </li>
+                  <li  @click="$store.commit('toggleSidebar', false)">
+                    <router-link class="li-text" :to='{ name: "Тарифы" }'>{{ translation.translate('header', 'pricesItem') }}</router-link>
+                  </li>
+                  <li  @click="$store.commit('toggleSidebar', false)">
+                    <router-link class="li-text" :to='{ name: "facilities" }'>{{ translation.translate('landingPageHome','menuItem2') }}</router-link>
+                  </li>
+                  <li  @click="$store.commit('toggleSidebar', false)">
+                    <router-link class="li-text" :to='{ name: "Блоги" }'>{{ translation.translate('landingPageHome','menuItem3') }}</router-link>
+                  </li>
                   <li>
-                    <a data-toggle="collapse" href="#collapseExample" class="li-text">{{ translation.translate('header', 'aboutUs') }}<ChevronDownIcon style="width: 25px;"/></a>
+                    <a data-toggle="collapse" href="#collapseExample" class="li-text">{{ translation.translate('landingPageHome','menuItem4') }}<ChevronDownIcon style="width: 25px;"/></a>
                     <div class="collapse" id="collapseExample">
                         <ul class="mt-2 pl-4">
-                          <li class="p-0" @click="$store.commit('toggleSidebar', false)">
-                            <router-link class="li-text-1" :to='{ name: "Модули 1С" }'>{{ translation.translate('header', '1c') }}</router-link>
+                          <li class="p-0"  @click="$store.commit('toggleSidebar', false)">
+                            <router-link class="li-text-1" :to='{ name: "resources" }'>{{ translation.translate('landingPageHome','menuItem5') }}</router-link>
+                          </li>
+                          <li class="p-0"  @click="$store.commit('toggleSidebar', false)">
+                            <router-link class="li-text-1" :to='{ name: "Видеоуроки" }'>{{ translation.translate('header','videolessons') }}</router-link>
                           </li>
                           <li class="p-0"  @click="$store.commit('toggleSidebar', false)">
                             <a class="li-text-1" href="https://api.faktura.uz/help/" target="_blank" @click="callGtag('API переходы,api_href,click')">{{ translation.translate('header', 'apiDocumentation') }}</a>
                           </li>
                           <li class="p-0"  @click="$store.commit('toggleSidebar', false)">
-                            <router-link class="li-text-1" :to='{ name: "Сравнение" }'>{{ translation.translate('footer', 'compare') }}</router-link>
-                          </li>
-                          <li class="p-0"  @click="$store.commit('toggleSidebar', false)">
-                            <router-link class="li-text-1" :to='{ name: "Другие проэкты" }'>{{ translation.translate('footer', 'outOtherProjects') }}</router-link>
-                          </li>
-                          <li class="p-0"  @click="$store.commit('toggleSidebar', false)">
                             <router-link class="li-text-1" :to='{ name: "Вопросы-ответы" }'>FAQ</router-link>
-                          </li>
-                          <li class="p-0" @click="$store.commit('toggleSidebar', false)">
-                            <router-link class="li-text-1" :to='{ name: "Руководство пользователя" }'>{{ translation.translate('header','documentation') }}</router-link>
-                          </li>
-                          <li class="p-0"  @click="$store.commit('toggleSidebar', false)">
-                            <router-link class="li-text-1" :to='{ name: "Системе" }'>Faktura.uz </router-link>
                           </li>
                         </ul>
                     </div>
-                  </li>
-                  <li  @click="$store.commit('toggleSidebar', false)">
-                    <router-link class="li-text" :to="{ name: 'Видеоуроки' }">{{ translation.translate('footer', 'videoLessons') }}</router-link>
-                  </li>
-                  <li  @click="$store.commit('toggleSidebar', false)">
-                    <router-link class="li-text" :to='{ name: "Тарифы" }'>{{ translation.translate('header', 'pricesItem') }}</router-link>
-                  </li>
-                  <!-- <li  @click="$store.commit('toggleSidebar', false)">
-                    <router-link class="li-text" :to='{ name: "Обновления" }'>{{ translation.translate('header', 'updates') }}</router-link>
-                  </li> -->
-                  <li  @click="$store.commit('toggleSidebar', false)">
-                    <router-link class="li-text" :to='{ name: "Тех-поддержка" }'>{{ translation.translate('header', 'tech') }}</router-link>
-                  </li>
-                  <li  @click="$store.commit('toggleSidebar', false)">
-                    <router-link class="li-text" :to='{ name: "Блоги" }'>{{ translation.translate('header', 'blog') }}</router-link>
                   </li>
                   <li v-if="$store.getters.valueofCurrentLanguage == 'uz'" class="nav-item nav-item-6 d-flex position-relative" @click="_onChangeLanguage('ru'), callGtag('Перевод на Рус,rus_translation,click')">
                       <a href="" class="nav-link font-weight-bold language-change universal-radius universal-transition" style="font-size: 18px; padding: 0; padding-right: 8px;">Ру</a>
@@ -69,6 +59,7 @@
                       <a href="" class="nav-link font-weight-bold language-change universal-radius universal-transition" style="font-size: 18px; padding: 0; padding-right: 8px;">Уз</a>
                       <img src="./assets/img/uz-icon.png" class="cursor-pointer" alt="faktura.uz russian icon language" style="height: 23px; width: 23px">
                   </li>
+                  
                 </ul>
               </div>
           </div>

@@ -1,0 +1,253 @@
+<template>
+    <div id="videlessons">
+        <div id="head-page-title">
+            <headerComponent></headerComponent>
+            <div class="page-title">
+                <div class="page-title-block">
+                    <h1>{{ translation.translate('blog', 'blog3Text1') }} (узб)</h1>
+                </div>
+            </div>
+        </div>
+        <div id="page-body" style="background: #f6f6f6;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="post-body">
+                            <div class="update-text">
+                                <p class="registered-date"><CalendarIcon/>17:15 / 19.02.2021</p>
+                                <div></div>
+                                <p>
+                                    Ўзбекистон Республикаси Вазирлар Маҳкамасининг 2020 йил 14 августдаги 489-сонли Қарорининг 2-иловаси билан тасдиқланган Низомнинг 2-боб 15-бандига мувофиқ ҳисобварақ фактураларнинг 2-устунида — товарларнинг (хизматларнинг) Ягона электрон миллий каталоги бўйича идентификация коди ва номи киритилиши белгиланган. Бугунги кунда Давлат солиқ қўмитасининг тегишли ишчи гуруҳи томонидан “99900ххххх” –вақтинчалик кодлари доимий кодларга ўзгартирилмоқда.
+                                </p>
+                                <p>
+                                    Кейинги даврларда ЭҲФ расмийлаштиришда фақатгина доимий кодлардан фойдаланиш кўзда тутилмоқда. Бу ҳолат хўжалик юритувчи субъектларга ҳисобот даврида муаммоларни келтириб чиқариши мумкин.
+                                </p>
+                                <p>
+                                    Юқоридагиларни инобатга олган ҳолда ҳамда юзага келиши мумкин бўлган муаммоларни олдини олиш мақсадида, жорий йилнинг 20 февралидан бошлаб вақтинчалик кодлар ва <a target="_blank" href="https://disk.yandex.uz/i/Kt-qkG43ucD2wA">қуйидаги иловага мувофиқ</a> 5 хонали кодлардан фойдаланиш тўхтатилиши хакида огохлантирамиз.
+                                </p>
+                                <a target="_blank" href="https://disk.yandex.uz/i/Kt-qkG43ucD2wA">Иловани юклаб олинг!</a>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                    <!-- <div class="col-12 col-md-4 sidebar">
+                        <div class="">
+                            <div class="post-title">
+                                <span> {{ translation.translate('blog', 'blog1Text') }}  </span>
+                            </div>
+                            <div class="recent-updates">
+                                <div class="d-flex">
+                                    <span>
+                                         <router-link v-for="(blog, index) in blogs" :key="index" class="d-flex" :to="{ name: blog.titleRoute }">   
+                                            <img :src="blog.img">
+                                            <div class="recent-text position-relative">
+                                                <h5> {{ blog.title }} </h5>
+                                                <span class="date">{{ blog.data }}</span>
+                                            </div>
+                                        </router-link>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="pb-5"></div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <footerComponent></footerComponent>
+    </div>
+</template>
+
+<script>
+import headerComponent from "../../components/headerComponent"
+import footerComponent from "../../components/footerComponent"
+
+// let blogs = require('../../blog')
+
+import translate from '../../translation/translate'
+
+import { CalendarIcon } from 'vue-feather-icons'
+
+let blogs = require('../../news').default
+
+export default {
+    name: 'blog-1',
+    data() {
+        return {
+            currentBlogId: null,
+            isScrolled: false,
+            scrollPosition: null,
+            limitPosition: 500,
+            scrolled: false,
+            lastPosition: 0,
+            translation: translate,
+            blogs
+        }
+    },
+    metaInfo() {
+        return { 
+            title: "Преимущества электронного документооборота(ЭДО)",
+            meta: [
+                { 
+                    name: 'description',
+                    content:  'Преимущества электронного документооборота(ЭДО). ✔Зачем нужно внедрять ЭДО. ✔Основные преимущества электронного документооборота.'
+                },
+                { 
+                    property: 'og:image',
+                    content:  'https://faktura.uz/img/blog3.d13e8567.png'
+                },
+                { 
+                    property: 'og:image:type',
+                    content:  'image/png'
+                },
+                { 
+                    property: 'og:image:width',
+                    content:  '1024'
+                },
+                { 
+                    property: 'og:image:height',
+                    content:  '1024'
+                },
+            ]
+        }
+    },
+    methods: {
+        doSomethingCool() {
+            location.reload();
+        },
+        updateScroll() {
+            /* eslint-disable no-debugger */
+            this.scrollPosition = window.scrollY
+            
+            if (this.scrollPosition > 10) {
+                this.isScrolled = true;
+            } else {
+                this.isScrolled = false;
+            }
+            
+            if (this.scrollPosition < 20) {
+                this.isTopHeader = true;
+            } else  {
+                this.isTopHeader = false;
+            }
+        },
+        handleScroll() {
+            if (this.lastPosition < window.scrollY && this.limitPosition < window.scrollY) {
+            this.scrolled = true;
+            // move up!
+            }
+
+            if (this.lastPosition > window.scrollY) {
+            this.scrolled = false;
+            // move down
+            }
+
+            this.lastPosition = window.scrollY;
+            // this.scrolled = window.scrollY > 250;
+        },
+    },
+    mounted() {
+        window.addEventListener('scroll', this.updateScroll);
+    },
+    destroyed() {
+        window.removeEventListener("scroll", this.handleScroll);
+    },
+    components: {
+        headerComponent,
+        footerComponent,
+        CalendarIcon
+    }
+}
+</script>
+
+<style>
+
+#videlessons #head-page-title {
+    background-image: url("../../assets/img/hero-bg-4.jpg");
+}
+
+.post-body {
+    padding: 30px;
+}
+
+.update-points {
+    width: 80%;
+    background: #f4f4f4;
+    padding: 16px;
+    margin-bottom: 45px;
+    border-radius: 10px;
+}
+
+.recent-text {
+    padding: 0 13px;
+}
+
+.recent-text .date {
+    font-size: 12px;
+    color: #9e9e9e;
+}
+
+.recent-text h5 {
+    font-size: 17px;
+    color: dimgrey;
+        line-height: 14px;
+}
+
+.recent-text h5 {
+    font-size: 17px;
+    color: dimgrey;
+}
+
+.recent-updates .d-flex .recent-text:hover h5 {
+    color: #7dc102;
+}
+
+
+.update-text {
+    color: #6f6f6f;
+    padding-top: 20px;
+    background: white;
+    padding: 10px 15px;
+}
+
+.update-text img {
+    width: 100%;
+    padding: 2% 0;
+}
+
+.update-points p {
+    font-weight: 600;
+    padding-top: 15px;
+    color: #818181;
+}
+
+.recent-updates img {
+    width: 115px;
+}
+
+.recent-updates a:hover {
+    text-decoration: none;
+}
+
+.sidebar .post-title {
+    border-bottom: 3px solid #3c566f;
+    padding-top: 30px;
+}
+
+.sidebar .post-title span{
+    background: #3c566f;
+    color: white;
+    font-size: 14px;
+    padding: 7px 10px;
+    position: relative;
+    bottom: 2px;
+    font-weight: 600;
+}
+
+.recent-updates .d-flex {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+</style>
