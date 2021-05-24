@@ -115,13 +115,6 @@
             </content>
         </section>
 
-        <div class="ads-place">
-            <div>
-                <a href="https://buxgalter.uz/tarifs/" target="_blank">
-                    <img alt="buxgalter uz"  src="../assets/img/Banners/bux.png">
-                </a>
-            </div>
-        </div>
         <!-- 1-month free -->
         <section id="connect-page">
             <div class="page-title connect-title container traditional-page-width">
@@ -312,15 +305,6 @@
         </section>
 
         <section id="doc-types" class="position-relative">
-            <div>
-                <div class="add1">
-                    <a @click="testFunc" href="http://smartfinance.uz/22" target="_blank">
-                        <v-lazy-image srcset="../assets/img/64.png" src="" use-picture >
-                            <source srcset="../assets/img/64.png" /> 
-                        </v-lazy-image>
-                    </a>
-                </div>
-            </div>
             <div class="doc-types-background">
                 <div class="page-title  container-fluid">
                     <h2 class="font-weight-bolder dark doc-type-title text-white">
@@ -1858,25 +1842,6 @@ export default {
 
 .main-page {
     position: inherit;
-}
-
-.add1 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.add1 img {
-    width: 820px;
-    box-shadow: 0 0 35px rgba(0,0,0,0.5);
-    cursor: pointer;
-    transition: all 0.15s ease;
-}
-.add1 img:hover {
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
-}
-.add1 a {
-    position: absolute;
-    top: -135px;
 }
 
 </style>

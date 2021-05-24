@@ -11,13 +11,6 @@
         </div>
         <div id="page-body">
             <div class="container mb-5">
-                <div class="ads-place">
-                    <div>
-                        <a href="https://buxgalter.uz/tarifs/" target="_blank">
-                            <img alt="buxgalter uz"  src="../assets/img/Banners/bux.png">
-                        </a>
-                    </div>
-                </div>
                 <div class="comapre-table">
                     <div class="row comapre-table-row">
                         <div class="col-8">

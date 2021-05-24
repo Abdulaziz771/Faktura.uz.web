@@ -11,13 +11,6 @@
         </div>
         <div id="page-body">
             <div class="container-fluid">
-                <div class="ads-place">
-                    <div>
-                        <a href="https://buxgalter.uz/tarifs/" target="_blank">
-                            <img alt="buxgalter uz"  src="../assets/img/Banners/bux.png">
-                        </a>
-                    </div>
-                </div>
                 <videoComponent></videoComponent>
             </div>
         </div>

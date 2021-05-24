@@ -87,7 +87,7 @@ ul li {
 }
 
 .doc-types-background .page-title {
-    padding: 80px 0 70px 0;
+    padding: 25px 0 5px 0;
 }
 
 .w-90 {
@@ -400,7 +400,7 @@ ul li {
     cursor: pointer;
 }
 #connect-page .connect-body {
-    padding-bottom: 130px;
+    padding-bottom: 30px;
 }
 
 #connect-page .gybrid-pochta .connect-video img {
@@ -560,15 +560,6 @@ ul li {
     cursor: pointer;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-}
-
-#connect-page .connect-body {
-    padding-bottom: 223px;
-}
-
-
-#doc-types .doc-types-background {
-    padding-top: 75px;
 }
 
 #connect-page {

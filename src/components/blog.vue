@@ -11,13 +11,6 @@
         </div>
         <div id="blog">
             <div class="container">
-                <!-- <div class="ads-place">
-                    <div>
-                        <a href="https://buxgalter.uz/tarifs/" target="_blank">
-                            <img alt="buxgalter uz"  src="../assets/img/Banners/bux.png">
-                        </a>
-                    </div>
-                </div> -->
                 <div class="row">
                     <div class="col-12">
                         <div class="toggle-buttons-block d-flex justify-content-center">

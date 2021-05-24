@@ -25,7 +25,7 @@
                                    <span class="font-weight-bolder light">v 1.0.13</span>
                                </div>
                                <div class="app-button">
-                                    <a href="http://localhost:8080/recources/Faktura Play Market.apk" download="Faktura Android.apk">
+                                    <a href="https://faktura.uz/recources/Faktura Play Market.apk" download="Faktura Android.apk">
                                         <button class="mt-4 take-an-action">
                                             Скачать
                                         </button>
@@ -65,7 +65,7 @@
                                    <span class="font-weight-bolder light">v 3.41</span>
                                </div>
                                <div class="app-button">
-                                    <a href="http://localhost:8080/recources/E-imzo windows-v3.41.exe" download="E-imzo windows">
+                                    <a href="https://faktura.uz/recources/E-imzo windows-v3.41.exe" download="E-imzo windows">
                                         <button class="mt-4 take-an-action">
                                             Скачать
                                         </button>
@@ -85,7 +85,7 @@
                                    <span class="font-weight-bolder light">v 1.6</span>
                                </div>
                                <div class="app-button">
-                                    <a href="http://localhost:8080/recources/e-imzo_1.6.apk" download="E-imzo Android">
+                                    <a href="https://faktura.uz/recources/e-imzo_1.6.apk" download="E-imzo Android">
                                         <button class="mt-4 take-an-action">
                                             Скачать
                                         </button>
@@ -105,7 +105,7 @@
                                    <span class="font-weight-bolder light">v 6.2.3</span>
                                </div>
                                <div class="app-button">
-                                   <a href="http://localhost:8080/recources/AnyDesk Windows.exe" download="Anydesk Windows">
+                                   <a href="https://faktura.uz/recources/AnyDesk Windows.exe" download="Anydesk Windows">
                                         <button class="mt-4 take-an-action">
                                             Скачать
                                         </button>
@@ -125,7 +125,7 @@
                                    <span class="font-weight-bolder light">v 6.1.4</span>
                                </div>
                                <div class="app-button">
-                                   <a href="http://localhost:8080/recources/AnyDesk MacOS.dmg" download="Anydesk MacOS">
+                                   <a href="https://faktura.uz/recources/AnyDesk MacOS.dmg" download="Anydesk MacOS">
                                         <button class="mt-4 take-an-action">
                                             Скачать
                                         </button>
@@ -145,7 +145,7 @@
                                    <span class="font-weight-bolder light">v 1.7</span>
                                </div>
                                <div class="app-button">
-                                   <a href="http://localhost:8080/recources/Archive Manager.msi" download="Archive Manager">
+                                   <a href="https://faktura.uz/recources/Archive Manager.msi" download="Archive Manager">
                                         <button class="mt-4 take-an-action">
                                             Скачать
                                         </button>
@@ -165,7 +165,7 @@
                                    <span class="font-weight-bolder light">v 1.0.0</span>
                                </div>
                                <div class="app-button">
-                                   <a href="http://localhost:8080/recources/Faktura-Sync.zip" download="Faktura-Sync">
+                                   <a href="https://faktura.uz/recources/Faktura-Sync.zip" download="Faktura-Sync">
                                         <button class="mt-4 take-an-action">
                                             Скачать
                                         </button>
@@ -185,7 +185,7 @@
                                    <span class="font-weight-bolder light">v 3.5</span>
                                </div>
                                <div class="app-button">
-                                   <a href="http://localhost:8080/recources/Управление торговлей, редакция 11 (11.4.12.61).epf" download="Управление торговлей, редакция 11 (11.4.12.61)">
+                                   <a href="https://faktura.uz/recources/Управление торговлей, редакция 11 (11.4.12.61).epf" download="Управление торговлей, редакция 11 (11.4.12.61)">
                                         <button class="mt-4 take-an-action">
                                             Скачать
                                         </button>
@@ -205,7 +205,7 @@
                                    <span class="font-weight-bolder light">v 3.5</span>
                                </div>
                                <div class="app-button">
-                                   <a href="http://localhost:8080/recources/Бухгалтерия. Хозрасчет, редакция 1.3 (1.3).epf" download="Бухгалтерия. Хозрасчет, редакция 1.3 (1.3)">
+                                   <a href="https://faktura.uz/recources/Бухгалтерия. Хозрасчет, редакция 1.3 (1.3).epf" download="Бухгалтерия. Хозрасчет, редакция 1.3 (1.3)">
                                         <button class="mt-4 take-an-action">
                                             Скачать
                                         </button>

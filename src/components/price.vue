@@ -11,13 +11,6 @@
         </div>
         <div id="page-body">
             <div class="container">
-                <div class="ads-place">
-                    <div>
-                        <a href="https://buxgalter.uz/tarifs/" target="_blank">
-                            <img alt="buxgalter uz"  src="../assets/img/Banners/bux.png">
-                        </a>
-                    </div>
-                </div>
                 <section id="connect-page">
                     <div class="page-title connect-title container traditional-page-width">
                         <h2 class="font-weight-bolder dark">{{ translation.translate('landingPageHome', 'freeSectionTitle1') }}</h2>
