@@ -131,18 +131,6 @@ export default {
                 duration: "4:36"
             },
             {
-                title:  this.translation.translate('videolessons', 'videopleer10'),
-                videoSource: "https://www.youtube-nocookie.com/embed/aR9p7RAkrKI",
-                isActiveLink: false,
-                duration: "2:25"
-            },
-            {
-                title:  this.translation.translate('videolessons', 'videopleer11'),
-                videoSource: "https://www.youtube-nocookie.com/embed/-7Z3F12M6y8",
-                isActiveLink: false,
-                duration: "2:01"
-            },
-            {
                 title:  "Синхронизация",
                 videoSource: "https://www.youtube-nocookie.com/embed/2yooH6PsYvs",
                 isActiveLink: false,
@@ -183,6 +171,54 @@ export default {
                 videoSource: "https://www.youtube-nocookie.com/embed/RzFrlnP-XyQ",
                 isActiveLink: false,
                 duration: "0:16"
+            },
+            {
+                title:  "Проблемы со входом в свой личный аккаунт",
+                videoSource: "https://www.youtube-nocookie.com/embed/JbtEQhfa_M8",
+                isActiveLink: false,
+                duration: "1:40"
+            },
+            {
+                title:  "Обновление в системе",
+                videoSource: "https://www.youtube-nocookie.com/embed/cnCvaBCmSk8",
+                isActiveLink: false,
+                duration: "1:29"
+            }, 
+            {
+                title:  "Faktura EDI-подключение телеграмм бота",
+                videoSource: "https://www.youtube-nocookie.com/embed/OY9CvZ2_coQ",
+                isActiveLink: false,
+                duration: "1:07"
+            },
+            {
+                title:  "Создание договор - роуминга !",
+                videoSource: "https://www.youtube-nocookie.com/embed/k2aQiaHdxIc",
+                isActiveLink: false,
+                duration: "2:52"
+            },
+            {
+                title:  "Дополнительная -возвратная счет-фактура",
+                videoSource: "https://www.youtube-nocookie.com/embed/fihwW19V6_M",
+                isActiveLink: false,
+                duration: "1:53"
+            },
+            {
+                title:  "Используйте Faktura.uz удобно!",
+                videoSource: "https://www.youtube-nocookie.com/embed/qIkGnyFvCSU",
+                isActiveLink: false,
+                duration: "0:48"
+            },
+            {
+                title:  "Согласование документов внутри Faktura.uz",
+                videoSource: "https://www.youtube-nocookie.com/embed/MWdhfXCkRh8",
+                isActiveLink: false,
+                duration: "3:38"
+            },
+            {
+                title:  "Устали подписывать документы вручную?",
+                videoSource: "https://www.youtube-nocookie.com/embed/5nI4VmNIEec",
+                isActiveLink: false,
+                duration: "1:22"
             },
             
         ]
