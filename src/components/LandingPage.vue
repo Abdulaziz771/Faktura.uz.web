@@ -9,16 +9,28 @@
                             <div class="main-slide-background">
                                 <div id="carouselExampleIndicators" data-interval="6500" class="carousel slide" data-ride="carousel">
                                     <ol class="carousel-indicators">
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                        <li v-for="(sliderToggle, index) in sliderData" :key="index" data-target="#carouselExampleIndicators" :data-slide-to="index" class="active"></li>
                                         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                        <!-- <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
                                         <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
                                         <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
                                         <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="7"></li> -->
                                     </ol>
                                     <div class="carousel-inner">
+                                        <!-- <div class="carousel-item desktop-slide"  v-for="(slider, index) in sliderData" :key="index" :class="{ 'active': index === 0 }">
+                                            <v-lazy-image :srcset="`http://localhost/uploads/` + slider.photo" use-picture alt="...">
+                                                <source :srcset="`http://localhost/uploads/` + slider.photo" /> 
+                                            </v-lazy-image>
+                                            <div class="carousel-caption d-block">
+                                                <h2 class="slide-desc-title">{{ slider.title }}</h2>
+                                                <p class="slide-desc-description mt-3 month-free">{{ slider.description }}</p>
+                                                <div class="slide-button-group">
+                                                    <button v-if="slider.whiteButton.name != ''" class="take-a-link"><a target="_blank" :href="slider.whiteButton.link">{{ slider.whiteButton.name }}</a></button>
+                                                    <button class="take-an-action"><a target="_blank" :href="slider.greenButton.link">{{ slider.greenButton.name }}</a></button>
+                                                </div>
+                                            </div>
+                                        </div> -->
                                         <div class="carousel-item desktop-slide active">
                                             <v-lazy-image srcset="./../assets/img/sldier/5555.png" src="" use-picture alt="...">
                                                 <source srcset="./../assets/img/sldier/5555.png" /> 
@@ -27,11 +39,11 @@
                                                 <h2 class="slide-desc-title">{{ translation.translate('landingPageHome', 'freeMonthTitle') }}</h2>
                                                 <p class="slide-desc-description mt-3 month-free">{{ translation.translate('landingPageHome', 'freeMonthDesc') }}</p>
                                                 <div class="slide-button-group">
-                                                    <button class="take-an-action glow-big"><a target="_blank" href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3" @click='callGtag("Нажатие на регистрацию,log_in,click")'>{{ translation.translate('landingPageHome', 'slider3Button1') }}</a></button>
+                                                    <button class="take-an-action glow-big"><a target="_blank" href="https://account.faktura.uz/RegisterNew" @click='callGtag("Нажатие на регистрацию,log_in,click")'>{{ translation.translate('landingPageHome', 'slider3Button1') }}</a></button>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="carousel-item desktop-slide">
+                                        <!-- <div class="carousel-item desktop-slide">
                                             <img src="./../assets/img/sldier/7777.png" alt="">
                                             <div class="carousel-caption d-block">
                                                 <h2 class="slide-desc-title">{{ translation.translate('landingPageHome', 'dogovorTitle') }}</h2>
@@ -41,7 +53,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="carousel-item desktop-slide">
+                                       <div class="carousel-item desktop-slide">
                                             <img src="./../assets/img/sldier/6666.png" class="desktop-slide" alt="">
                                             <div class="carousel-caption d-block">
                                                 <h2 class="slide-desc-title">{{ translation.translate('landingPageHome', 'kpkTitle') }}</h2>
@@ -97,7 +109,7 @@
                                                     <button class="take-an-action glow-big"><a target="_blank" href="https://t.me/fakturauz">{{ translation.translate('landingPageHome', 'slider2Button1') }}</a></button>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -315,9 +327,7 @@
                         <div class="types-block text-center">
                             <div class="row">
                                 <div class="col-12 col-lg-4">
-                                    <div class="type-block">{{
-                                            translation.translate('landingPageHome', 'docType4')
-                                        }}
+                                    <div class="type-block">{{ translation.translate('landingPageHome', 'docType4') }}
                                     </div>
                                     <span class="ribbon3">{{
                                             translation.translate('landingPageHome', 'docType1')
@@ -1410,6 +1420,10 @@ export default {
     mixins: [mixin],
     data() {
         return {
+            sliderData: [],
+            firstSliderData: true,
+            language: localStorage.getItem("translation"),
+            allSliders: "",
             anotherSources: null,
             picked: null,
             maxHoveredMap: 1,
@@ -1469,6 +1483,14 @@ export default {
         XIcon 
     },
     computed: {
+        firstFuncActive() {
+            if (this.firstSliderData) {
+                this.firstSliderData = false
+                return true
+            } else {
+                return false
+            }
+        },
         ratesBase() {
             return [
                 {
@@ -1581,18 +1603,35 @@ export default {
         }
     },
     methods: {
-        // async  getFormValues  (){
-        //     let form = await document.querySelector('.feedbak textarea')
-        //     console.log(form);
-        //     var answer = await `${form.value}`
-        //     console.log(answer);
-        //     const botToken = '1438009177:AAFbe7wRiS3w6k_Y28iYFw406fEkr3q5XJQ';
-        //     const toWhom = '705714423';
-        //     fetch(`https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${toWhom}&parse_mode=html&text=${answer}`,{method: 'POST'})
-        //     .then(() =>{
-        //         form.value = ''
-        //     })
-        // },
+        getAllSliders(find = {lang: "uz"}, need = {all: 0}) {
+            fetch("http://localhost/api/get/homePageSlider", {
+                method: "POST",
+                credentials: 'omit',
+                headers: {
+                    "content-type": "application/json"
+                },
+                body: JSON.stringify({
+                    find,
+                    need
+                })
+            })
+            .then(data => data.json())
+            .then(data => {
+                data.data.sort((a, b) =>{
+                if (a.position < b.position){
+                    return -1;
+                }
+                if (a.position > b.position){
+                    return 1;
+                }
+                return 0;
+
+                })
+                if(data.success){
+                    this.sliderData = data.data
+                }
+            })
+        },
         stopTimer() {
             clearTimeout(this.timer);
             this.takePhoneDiv = true
@@ -1772,11 +1811,11 @@ export default {
             ]
         }
     },
-    // created() {
-    //     this.startTimer()
-    // },
     destroyed() {
         this.stopTimer()
+    },
+    created() {
+        this.getAllSliders({lang: JSON.parse(localStorage.getItem("translation")).localeName});
     },
 }
 </script>
