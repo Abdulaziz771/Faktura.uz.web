@@ -178,6 +178,13 @@ export default {
                 isActiveLink: false,
                 duration: "2:38"
             },
+            {
+                title:  "Фильтр для нахождение ценных документов",
+                videoSource: "https://www.youtube-nocookie.com/embed/RzFrlnP-XyQ",
+                isActiveLink: false,
+                duration: "0:16"
+            },
+            
         ]
       }
   },
