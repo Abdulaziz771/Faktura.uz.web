@@ -56,16 +56,16 @@
                        <div class="col-12 col-md-4 col-lg-3 app-main">
                            <div class="app-block">
                                <div class="app-img">
-                                   <img src="./../assets/img/All Icons/eimzo.png" alt="">
+                                   <img src="./../assets/img/All Icons/1c.png" alt="">
                                </div>
                                <div class="app-title">
-                                   <span class="font-weight-bolder dark">Электронная подпись <br> (Windows)</span>
+                                   <span class="font-weight-bolder dark"> Faktura.EDO <p class="downloadEDO">(Управление торговлей, редакция 11)</p></span>
                                </div>
                                <div class="app-version">
-                                   <span class="font-weight-bolder light">v 3.41</span>
+                                   <span class="font-weight-bolder light">v 3.5</span>
                                </div>
                                <div class="app-button">
-                                    <a href="https://faktura.uz/recources/E-imzo windows-v3.41.exe" download="E-imzo windows">
+                                   <a href="https://faktura.uz/recources/Управление торговлей, редакция 11 (11.4.12.61).epf" download="Управление торговлей, редакция 11 (11.4.12.61)">
                                         <button class="mt-4 take-an-action">
                                             Скачать
                                         </button>
@@ -76,16 +76,17 @@
                        <div class="col-12 col-md-4 col-lg-3 app-main">
                            <div class="app-block">
                                <div class="app-img">
-                                   <img src="./../assets/img/All Icons/eimzo.png" alt="">
+                                   <img src="./../assets/img/All Icons/1c.png" alt="png">
                                </div>
                                <div class="app-title">
-                                   <span class="font-weight-bolder dark">Электронная подпись <br> (Android)</span>
+                                   <span class="font-weight-bolder dark">Faktura.EDO<p class="downloadEDO">(Бухгалтерия. Хозрасчет,
+                                    редакция 1.3)</p></span>
                                </div>
                                <div class="app-version">
-                                   <span class="font-weight-bolder light">v 1.6</span>
+                                   <span class="font-weight-bolder light">v 3.6</span>
                                </div>
                                <div class="app-button">
-                                    <a href="https://faktura.uz/recources/e-imzo_1.6.apk" download="E-imzo Android">
+                                   <a href="https://faktura.uz/resources/Faktura_uz_ЭДО_Версия_3_6_3_Толстый.epf" download="Faktura_uz_ЭДО_Версия_3_6_Толстый.epf">
                                         <button class="mt-4 take-an-action">
                                             Скачать
                                         </button>
@@ -176,16 +177,16 @@
                        <div class="col-12 col-md-4 col-lg-3 app-main">
                            <div class="app-block">
                                <div class="app-img">
-                                   <img src="./../assets/img/All Icons/1c.png" alt="">
+                                   <img src="./../assets/img/All Icons/eimzo.png" alt="">
                                </div>
                                <div class="app-title">
-                                   <span class="font-weight-bolder dark">Управление торговлей, <br> редакция 11 (11.4.12.61) </span>
+                                   <span class="font-weight-bolder dark">Электронная подпись <br> (Windows)</span>
                                </div>
                                <div class="app-version">
-                                   <span class="font-weight-bolder light">v 3.5</span>
+                                   <span class="font-weight-bolder light">v 3.41</span>
                                </div>
                                <div class="app-button">
-                                   <a href="https://faktura.uz/recources/Управление торговлей, редакция 11 (11.4.12.61).epf" download="Управление торговлей, редакция 11 (11.4.12.61)">
+                                    <a href="https://faktura.uz/recources/E-imzo windows-v3.41.exe" download="E-imzo windows">
                                         <button class="mt-4 take-an-action">
                                             Скачать
                                         </button>
@@ -196,16 +197,16 @@
                        <div class="col-12 col-md-4 col-lg-3 app-main">
                            <div class="app-block">
                                <div class="app-img">
-                                   <img src="./../assets/img/All Icons/1c.png" alt="">
+                                   <img src="./../assets/img/All Icons/eimzo.png" alt="">
                                </div>
                                <div class="app-title">
-                                   <span class="font-weight-bolder dark">Бухгалтерия. Хозрасчет,<br> редакция 1.3 (1.3)</span>
+                                   <span class="font-weight-bolder dark">Электронная подпись <br> (Android)</span>
                                </div>
                                <div class="app-version">
-                                   <span class="font-weight-bolder light">v 3.5</span>
+                                   <span class="font-weight-bolder light">v 1.6</span>
                                </div>
                                <div class="app-button">
-                                   <a href="https://faktura.uz/recources/Бухгалтерия. Хозрасчет, редакция 1.3 (1.3).epf" download="Бухгалтерия. Хозрасчет, редакция 1.3 (1.3)">
+                                    <a href="https://faktura.uz/recources/e-imzo_1.6.apk" download="E-imzo Android">
                                         <button class="mt-4 take-an-action">
                                             Скачать
                                         </button>
@@ -213,6 +214,7 @@
                                </div>
                            </div>
                        </div>
+                      
                    </div>
                </div>
             </div>
@@ -263,6 +265,8 @@ export default {
 }
 
 .app-block {
+    width: 100%;
+    height: 100%;
     text-align: center;
     padding: 20px;
     border-radius: 10px;
@@ -278,6 +282,10 @@ export default {
 
 .app-main {
     margin-bottom: 25px;
+}
+
+.downloadEDO{
+    font-size: 10px;
 }
 
 </style>
