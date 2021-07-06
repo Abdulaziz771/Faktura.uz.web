@@ -86,7 +86,7 @@
                                    <span class="font-weight-bolder light">v 3.6</span>
                                </div>
                                <div class="app-button">
-                                   <a href="https://faktura.uz/resources/Faktura_uz_ЭДО_Версия_3_6_3_Толстый.epf" download="Faktura_uz_ЭДО_Версия_3_6_Толстый.epf">
+                                   <a href="https://faktura.uz/resources/Faktura_uz_ЭДО_Версия_3_6_Толстый.epf" download="Faktura_uz_ЭДО_Версия_3_6_Толстый">
                                         <button class="mt-4 take-an-action">
                                             Скачать
                                         </button>
