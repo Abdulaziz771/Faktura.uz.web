@@ -27,9 +27,9 @@ const router = new VueRouter({
             
         },
         { 
-            path: "*",
-            name: "404", 
-            component: () => import('../components/404')
+            path: "/blog/*",
+            name: "universalBlog", 
+            component: () => import('../components/universalBlog')
         },
         // paths
         {

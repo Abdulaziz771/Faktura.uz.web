@@ -48,14 +48,14 @@
                     <div class="row secondary-news">
                         <div class="col-12 col-lg-6 mt-3" v-for="update in updates" :key="update.index">
                             <div class="d-flex">
-                                <router-link :to="{ name: update.titleRoute }" class="link-to-article">
-                                    <img :src="update.imgSecondary" alt="">
+                                <router-link :to="'/blog/' + update.link" class="link-to-article">
+                                    <img style="width: 206px; height: 130px" :src="'https://dev.faktura.uz/' + update.mainPhoto" alt="">
                                 </router-link>
                                 <div class="seccondary-block">
                                     <div class="seccondary-data-text">
-                                        <CalendarIcon/><span>{{ update.data }}</span>
+                                        <CalendarIcon stroke-width="3"/><span style="margin-left: 4px">{{ update.created_date.time + " / " +  update.created_date.date}}</span>
                                     </div>
-                                    <router-link :to="{ name: update.titleRoute }" class="link-to-article">
+                                    <router-link :to="'/blog/' + update.link" class="link-to-article">
                                         <h5 class="secondary-title">{{ update.title }}</h5>
                                     </router-link>
                                 </div>
@@ -85,16 +85,16 @@
                         </div>
                     </div>
                     <div class="row secondary-news">
-                        <div class="col-12 col-lg-6 mt-3" v-for="newsItem in news" :key="newsItem.index">
+                        <div class="col-12 col-lg-6 mt-3" v-for="newsItem in news" :key="newsItem._id">
                             <div class="d-flex">
-                                <router-link :to="{ name: newsItem.titleRoute }" class="link-to-article">
-                                    <img :src="newsItem.imgSecondary" alt="">
+                                <router-link :to="'/blog/' + newsItem.link" class="link-to-article">
+                                    <img style="width: 206px; height: 130px" :src="'https://dev.faktura.uz/' + newsItem.mainPhoto" alt="">
                                 </router-link>
                                 <div class="seccondary-block">
                                     <div class="seccondary-data-text">
-                                        <CalendarIcon/><span>{{ newsItem.data }}</span>
+                                        <CalendarIcon stroke-width="3"/><span style="margin-left: 4px">{{ newsItem.created_date.time + " / " +  newsItem.created_date.date}}</span>
                                     </div>
-                                    <router-link :to="{ name: newsItem.titleRoute }" class="link-to-article">
+                                    <router-link :to="'/blog/' + newsItem.link" class="link-to-article">
                                         <h5 class="secondary-title">{{ newsItem.title }}</h5>
                                     </router-link>
                                 </div>
@@ -116,8 +116,8 @@ import { CalendarIcon } from 'vue-feather-icons'
 
 import translate from './../translation/translate'
 
-let news = require('../news').default
-let updates = require('../updates').default
+// let news = require('../news').default
+// let updates = require('../updates').default
 
 export default {
     /* eslint-disable no-debugger */
@@ -126,8 +126,8 @@ export default {
   data() {
       return {
         translation: translate,
-        news,
-        updates,
+        news: [],
+        updates: [],
         activeButton: null,
         mainNews: [
             {
@@ -161,6 +161,22 @@ export default {
             this.activeButton = false
             localStorage.setItem("activeButton", false);
         }
+    },
+    getAllPost(lang = "uz", category){
+        return fetch("https://dev.faktura.uz/api/get/newsAndUpdates", {
+            method: "POST",
+            credentials: "omit",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({
+                find: {lang, category, isActive: true},
+                need: {title: 1, created_date: 1, link: 1, position: 1, mainPhoto: 1}
+            })
+        })
+        .then(res => res.json())
+        .then(res =>{
+            console.log(res);
+            if(res.success) return res.data
+        })
     }
   },
   components: {
@@ -168,7 +184,7 @@ export default {
       footerComponent,
       CalendarIcon
   },
-  created() {
+  async created() {
     let a = localStorage.getItem('activeButton')
     if (a == 'true' || a == undefined) {
         this.activeButton = true
@@ -177,7 +193,10 @@ export default {
         this.activeButton = false
         localStorage.setItem("activeButton", false);
     }
-    console.log(a)
+    this.news = await this.getAllPost("ru", "news")
+    this.updates = await this.getAllPost("ru", "updates")
+    console.log(this.news);
+    console.log(this.updates);
   }
 }
 </script>

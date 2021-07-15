@@ -2240,31 +2240,6 @@ input::-webkit-inner-spin-button {
     padding: 2% 0;
   }
 
-  /* snow */
-  /* .snow-roof1:before {
-    background-image: url('./img/snow/roof1.png');
-    background-size: 139px 23px;
-    display: inline-block;
-    width: 139px;
-    height: 23px;
-    content: "";
-    position: absolute;
-    top: -18px;
-    right: 0px;
-  } */
-
-  #hero-page .main-buttons a:nth-child(1):before {
-    background-image: url('./img/snow/roof1.png');
-    background-size: 250px 23px;
-    display: inline-block;
-    width: -webkit-fill-available;
-    height: 23px;
-    content: "";
-    position: absolute;
-    top: -17px;
-    left: 0px;
-}
-
 .update-text {
     color: #6f6f6f;
     padding-top: 20px;
