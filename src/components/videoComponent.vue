@@ -132,52 +132,95 @@ export default {
             },
             {
                 title:  this.translation.translate('videolessons', 'videopleer10'),
-                videoSource: "https://www.youtube-nocookie.com/embed/aR9p7RAkrKI",
-                isActiveLink: false,
-                duration: "2:25"
-            },
-            {
-                title:  this.translation.translate('videolessons', 'videopleer11'),
-                videoSource: "https://www.youtube-nocookie.com/embed/-7Z3F12M6y8",
-                isActiveLink: false,
-                duration: "2:01"
-            },
-            {
-                title:  "Синхронизация",
                 videoSource: "https://www.youtube-nocookie.com/embed/2yooH6PsYvs",
                 isActiveLink: false,
                 duration: "2:01"
             },
             {
-                title:  "Архивация документов",
+                title:  this.translation.translate('videolessons', 'videopleer11'),
                 videoSource: "https://www.youtube-nocookie.com/embed/2YJi3hKGGzk",
                 isActiveLink: false,
                 duration: "6:51"
             },
             {
-                title:  "Акт-сверка",
+                title:  this.translation.translate('videolessons', 'videopleer12'),
                 videoSource: "https://www.youtube-nocookie.com/embed/CjFvdcr79zw",
                 isActiveLink: false,
                 duration: "2:48"
             },
             {
-                title:  "Гибридная почта",
+                title:  this.translation.translate('videolessons', 'videopleer13'),
                 videoSource: "https://www.youtube-nocookie.com/embed/tFsJIt2rHqY",
                 isActiveLink: false,
                 duration: "1:21"
             },
             {
-                title:  "Создание договора",
+                title:  this.translation.translate('videolessons', 'videopleer14'),
                 videoSource: "https://www.youtube-nocookie.com/embed/-H9oVLRV6UU",
                 isActiveLink: false,
                 duration: "1:05"
             },
             {
-                title:  "Пополнение счёта и тарифы",
+                title:  this.translation.translate('videolessons', 'videopleer15'),
                 videoSource: "https://www.youtube-nocookie.com/embed/GD5Cn_uZZrc",
                 isActiveLink: false,
                 duration: "2:38"
             },
+            {
+                title:  this.translation.translate('videolessons', 'videopleer16'),
+                videoSource: "https://www.youtube-nocookie.com/embed/RzFrlnP-XyQ",
+                isActiveLink: false,
+                duration: "0:16"
+            },
+            {
+                title:  this.translation.translate('videolessons', 'videopleer17'),
+                videoSource: "https://www.youtube-nocookie.com/embed/JbtEQhfa_M8",
+                isActiveLink: false,
+                duration: "1:40"
+            },
+            {
+                title:  this.translation.translate('videolessons', 'videopleer18'),
+                videoSource: "https://www.youtube-nocookie.com/embed/cnCvaBCmSk8",
+                isActiveLink: false,
+                duration: "1:29"
+            }, 
+            {
+                title:  this.translation.translate('videolessons', 'videopleer19'),
+                videoSource: "https://www.youtube-nocookie.com/embed/OY9CvZ2_coQ",
+                isActiveLink: false,
+                duration: "1:07"
+            },
+            {
+                title:  this.translation.translate('videolessons', 'videopleer20'),
+                videoSource: "https://www.youtube-nocookie.com/embed/k2aQiaHdxIc",
+                isActiveLink: false,
+                duration: "2:52"
+            },
+            {
+                title:  this.translation.translate('videolessons', 'videopleer21'),
+                videoSource: "https://www.youtube-nocookie.com/embed/fihwW19V6_M",
+                isActiveLink: false,
+                duration: "1:53"
+            },
+            {
+                title:  this.translation.translate('videolessons', 'videopleer22'),
+                videoSource: "https://www.youtube-nocookie.com/embed/qIkGnyFvCSU",
+                isActiveLink: false,
+                duration: "0:48"
+            },
+            {
+                title:  this.translation.translate('videolessons', 'videopleer23'),
+                videoSource: "https://www.youtube-nocookie.com/embed/MWdhfXCkRh8",
+                isActiveLink: false,
+                duration: "3:38"
+            },
+            {
+                title:  this.translation.translate('videolessons', 'videopleer24'),
+                videoSource: "https://www.youtube-nocookie.com/embed/5nI4VmNIEec",
+                isActiveLink: false,
+                duration: "1:22"
+            },
+            
         ]
       }
   },
