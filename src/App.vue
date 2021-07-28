@@ -103,6 +103,11 @@ export default {
       smmFeaturesCondition: false
     }
   },
+   beforeCreate(){
+    if(!localStorage.getItem("translation")){
+      localStorage.setItem("translation", JSON.stringify({"localeName": "uz"}))
+    }
+  },
   methods: {
     toggleSmmfeatures() {
       this.smmFeaturesCondition = !this.smmFeaturesCondition

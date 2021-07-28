@@ -27,6 +27,11 @@ const router = new VueRouter({
             
         },
         { 
+            path: "/blog/*",
+            name: "universalBlog", 
+            component: () => import('../components/universalBlog')
+        },
+        { 
             path: "*",
             name: "404", 
             component: () => import('../components/404')
@@ -160,9 +165,9 @@ const router = new VueRouter({
             component: () => import('../components/facilities')
         },
         {
-            path: "/admin", 
-            name: "adminPanel",
-            component: () => import('../components/adminPanel')
+            path: "/1c-page",
+            name: "1cPage",
+            component: () => import('../components/1c')
         }
     ],
     scrollBehavior() {

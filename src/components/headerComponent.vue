@@ -90,6 +90,7 @@
                         <ul class="dropdown-item-1 universal-transition pl-0 bg-white universal-radius dark-brand-tx">
                             <li class="nav-item"><router-link class="t-n dark-brand-tx font-weight-bolder universal-transition" :to='{ name: "resources" }'>{{ translation.translate('landingPageHome','menuItem5') }}</router-link></li>
                             <li class="nav-item"><router-link class="t-n dark-brand-tx font-weight-bolder universal-transition" :to='{ name: "Видеоуроки" }'>{{ translation.translate('header','videolessons') }}</router-link></li>
+                            <li class="nav-item"><router-link class="t-n dark-brand-tx font-weight-bolder universal-transition" :to='{ name: "1cPage" }'>1C Модули</router-link></li>
                             <li class="nav-item"><router-link class="t-n dark-brand-tx font-weight-bolder universal-transition" :to='{ name: "Вопросы-ответы" }'>FAQ</router-link></li>
                             <li class="nav-item"><a class="t-n dark-brand-tx font-weight-bolder universal-transition" href="https://api.faktura.uz/help/" target="_blank" @click="callGtag('API переходы,api_href,click')">API</a></li>
                         </ul>

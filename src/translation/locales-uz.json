@@ -493,5 +493,9 @@
     "siteMap": {
         "aboutSystem": "Тизим ҳақида",
         "aboutUpdates": "Янгиланишлар ҳақида"
+    },
+    "CardPage1C": {
+        "CardPageTitle": "Номи:",
+        "CardPageDiscription": "Тавсив:"
     }
 }

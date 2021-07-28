@@ -9,107 +9,21 @@
                             <div class="main-slide-background">
                                 <div id="carouselExampleIndicators" data-interval="6500" class="carousel slide" data-ride="carousel">
                                     <ol class="carousel-indicators">
-                                        <li v-for="(sliderToggle, index) in sliderData" :key="index" data-target="#carouselExampleIndicators" :data-slide-to="index" class="active"></li>
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                                        <!-- <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="7"></li> -->
+                                       <li v-for="(sliderToggle, index) in sliderData" :key="index" data-target="#carouselExampleIndicators" :data-slide-to="index" class="active"></li>
                                     </ol>
                                     <div class="carousel-inner">
-                                        <!-- <div class="carousel-item desktop-slide"  v-for="(slider, index) in sliderData" :key="index" :class="{ 'active': index === 0 }">
-                                            <v-lazy-image :srcset="`http://localhost/uploads/` + slider.photo" use-picture alt="...">
-                                                <source :srcset="`http://localhost/uploads/` + slider.photo" /> 
+                                          <div class="carousel-item desktop-slide"  v-for="(slider, index) in sliderData" :key="index" :class="{ 'active': index === 0 }">
+                                            <v-lazy-image :srcset="`https://dev.faktura.uz/uploads/` + slider.photo" use-picture alt="...">
+                                                <source :srcset="`https://dev.faktura.uz/uploads/` + slider.photo" /> 
                                             </v-lazy-image>
                                             <div class="carousel-caption d-block">
                                                 <h2 class="slide-desc-title">{{ slider.title }}</h2>
                                                 <p class="slide-desc-description mt-3 month-free">{{ slider.description }}</p>
                                                 <div class="slide-button-group">
-                                                    <button v-if="slider.whiteButton.name != ''" class="take-a-link"><a target="_blank" :href="slider.whiteButton.link">{{ slider.whiteButton.name }}</a></button>
-                                                    <button class="take-an-action"><a target="_blank" :href="slider.greenButton.link">{{ slider.greenButton.name }}</a></button>
+                                                    <button v-if="slider.isCustomButton" class="take-a-link"><a target="_blank" :href="slider.whiteButton.link">{{ slider.whiteButton.name }}</a></button>
+                                                    <button class="take-an-action" :class="{ 'glow-big' : !slider.isCustomButton }" ><a target="_blank" :href="slider.greenButton.link">{{ slider.greenButton.name }}</a></button>
                                                 </div>
                                             </div>
-                                        </div> -->
-                                        <div class="carousel-item desktop-slide active">
-                                            <v-lazy-image srcset="./../assets/img/sldier/5555.png" src="" use-picture alt="...">
-                                                <source srcset="./../assets/img/sldier/5555.png" /> 
-                                            </v-lazy-image>
-                                            <div class="carousel-caption d-block">
-                                                <h2 class="slide-desc-title">{{ translation.translate('landingPageHome', 'freeMonthTitle') }}</h2>
-                                                <p class="slide-desc-description mt-3 month-free">{{ translation.translate('landingPageHome', 'freeMonthDesc') }}</p>
-                                                <div class="slide-button-group">
-                                                    <button class="take-an-action glow-big"><a target="_blank" href="https://account.faktura.uz/RegisterNew" @click='callGtag("Нажатие на регистрацию,log_in,click")'>{{ translation.translate('landingPageHome', 'slider3Button1') }}</a></button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- <div class="carousel-item desktop-slide">
-                                            <img src="./../assets/img/sldier/7777.png" alt="">
-                                            <div class="carousel-caption d-block">
-                                                <h2 class="slide-desc-title">{{ translation.translate('landingPageHome', 'dogovorTitle') }}</h2>
-                                                <p class="slide-desc-description mt-3">{{ translation.translate('landingPageHome', 'dogovorDescription') }}</p>
-                                                <div class="slide-button-group">
-                                                    <button class="take-an-action glow-big"><a target="_blank" href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3" @click='callGtag("Нажатие на регистрацию,log_in,click")'>{{ translation.translate('landingPageHome', 'slider3Button1') }}</a></button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                       <div class="carousel-item desktop-slide">
-                                            <img src="./../assets/img/sldier/6666.png" class="desktop-slide" alt="">
-                                            <div class="carousel-caption d-block">
-                                                <h2 class="slide-desc-title">{{ translation.translate('landingPageHome', 'kpkTitle') }}</h2>
-                                                <p class="slide-desc-description mt-3">{{ translation.translate('landingPageHome', 'kpkDescript') }}</p>
-                                                <div class="slide-button-group">
-                                                    <button class="take-an-action glow-big"><a target="_blank" href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3" @click='callGtag("Нажатие на регистрацию,log_in,click")'>{{ translation.translate('landingPageHome', 'slider3Button1') }}</a></button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                       <div class="carousel-item desktop-slide">
-                                            <img src="./../assets/img/sldier/3333.png" class="desktop-slide" alt="">
-                                            <div class="carousel-caption d-block">
-                                                <h1 class="slide-desc-title"> {{ translation.translate('landingPageHome', 'slider1Title') }}</h1>
-                                                <p class="slide-desc-description">{{ translation.translate('landingPageHome', 'slider1Desc') }}</p>
-                                                <div class="slide-button-group">
-                                                    <button class="take-an-action glow-big"><a target="_blank" href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3" @click='callGtag("Нажатие на регистрацию,log_in,click")'>{{ translation.translate('landingPageHome', 'slider3Button1') }}</a></button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item desktop-slide">
-                                            <v-lazy-image srcset="./../assets/img/sldier/1111.png" src="" use-picture alt="...">
-                                                <source srcset="../assets/img/sldier/1111.png" /> 
-                                            </v-lazy-image>
-                                            <div class="carousel-caption d-block">
-                                                <h2 class="slide-desc-title">{{ translation.translate('landingPageHome', 'slider3Title') }}</h2>
-                                                <p class="slide-desc-description">{{ translation.translate('landingPageHome', 'slider3Desc') }}</p>
-                                                <div class="slide-button-group">
-                                                    <button class="take-an-action glow-big"> <a target="_blank" href="https://account.faktura.uz/RegisterNew?ReturnUrl=http%3A%2F%2Faccount.faktura.uz%2FAuthorize%3Fresponse_type%3Dcode%26client_id%3D12379127389123%26redirect_uri%3Dhttps%253a%252f%252fapp.faktura.uz%252faccount%252fexternallogin%26state%3D%252f%26scope%3D0%252c1%252c2%252c3" @click='callGtag("Нажатие на регистрацию,log_in,click")'>{{ translation.translate('landingPageHome', 'slider3Button1') }}</a></button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item desktop-slide">
-                                            <v-lazy-image srcset="./../assets/img/sldier/4444.png" src="" use-picture alt="...">
-                                                <source srcset="../assets/img/sldier/4444.png" /> 
-                                            </v-lazy-image>
-                                            <div class="carousel-caption d-block">
-                                                <h3 class="slide-desc-title"> {{ translation.translate('landingPageHome', 'playMarketApp') }}</h3>
-                                                <p class="slide-desc-description">{{ translation.translate('landingPageHome', 'AppStoreApp') }}</p>
-                                                <div class="slide-button-group">
-                                                    <button class="take-a-link"><a target="_blank" href="https://apps.apple.com/us/app/faktura/id1454146398">App Store</a></button>
-                                                    <button class="take-an-action"><a target="_blank" href="https://play.google.com/store/apps/details?id=uz.faktura&hl=ru">Play Market</a></button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item desktop-slide">
-                                            <v-lazy-image srcset="./../assets/img/sldier/2222.png" src="" use-picture alt="...">
-                                                <source srcset="../assets/img/sldier/2222.png" /> 
-                                            </v-lazy-image>
-                                            <div class="carousel-caption d-block">
-                                                <h4 class="slide-desc-title">{{ translation.translate('landingPageHome', 'slider2Title') }}</h4>
-                                                <p class="slide-desc-description">{{ translation.translate('landingPageHome', 'slider2Desc') }}</p>
-                                                <div class="slide-button-group">
-                                                    <button class="take-an-action glow-big"><a target="_blank" href="https://t.me/fakturauz">{{ translation.translate('landingPageHome', 'slider2Button1') }}</a></button>
-                                                </div>
-                                            </div>
-                                        </div> -->
                                     </div>
                                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -123,10 +37,10 @@
                             </div>
                         </div>
                     </div>
+                    </div>
                 </div>
             </content>
         </section>
-
         <!-- 1-month free -->
         <section id="connect-page">
             <div class="page-title connect-title container traditional-page-width">
@@ -1603,13 +1517,11 @@ export default {
         }
     },
     methods: {
-        getAllSliders(find = {lang: "uz"}, need = {all: 0}) {
-            fetch("http://localhost/api/get/homePageSlider", {
+        getAllSliders(find = {lang: "uz", isActive: true}, need = {all: 0}) {
+            fetch("https://dev.faktura.uz/api/get/homePageSlider", {
                 method: "POST",
-                credentials: 'omit',
-                headers: {
-                    "content-type": "application/json"
-                },
+                credentials: "omit",
+                headers: {"Content-Type": "application/json"},
                 body: JSON.stringify({
                     find,
                     need
@@ -1815,8 +1727,8 @@ export default {
         this.stopTimer()
     },
     created() {
-        this.getAllSliders({lang: JSON.parse(localStorage.getItem("translation")).localeName});
-    },
+        this.getAllSliders({lang: JSON.parse(localStorage.getItem("translation")).localeName, isActive: true});
+    }
 }
 </script>
 

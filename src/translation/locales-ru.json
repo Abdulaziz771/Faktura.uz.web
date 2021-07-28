@@ -496,5 +496,9 @@
     },
     "loginPage": {
         "pageTitle": "Регистрация"
+    },
+    "CardPage1C": {
+        "CardPageTitle": "Название:",
+        "CardPageDiscription": "Описание:"
     }
 }

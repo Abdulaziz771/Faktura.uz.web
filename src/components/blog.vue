@@ -26,36 +26,35 @@
                 <div v-show="activeButton">
                     <div class="row">
                         <div class="col-12" >
-                            <div class="main-news">
+                            <div class="main-news main_post" v-for="(mainUpdate, index) in mainUpdates" :key="index">
                                 <div class="dark-curtain"></div>
-                                <router-link :to="{ name: mainUpdates[0].titleRoute }" class="main-link-to-article">
-                                    <img :src="mainUpdates[0].imgMain" style="width: 100%; height: fit-content;" alt="">
-                                </router-link>
-                                <div class="main-news-text">
-                                    <div class="main-news-text-cover">
-                                        <router-link :to="{ name: mainUpdates[0].titleRoute }" class="main-link-to-article">
-                                            <h2> {{ mainUpdates[0].title }}</h2>
+                                    <router-link :to="'/blog/' + mainUpdate.link" class="main-link-to-article">
+                                        <img :src="'https://dev.faktura.uz'+mainUpdate.mainPhoto" style="width: 100%; height: fit-content;" alt="">
+                                    </router-link>
+                                    <div class="main-news-text">
+                                        <div class="main-news-text-cover">
+                                        <router-link :to="'/blog/' + mainUpdate.link" class="main-link-to-article">
+                                            <h2> {{ mainUpdate.title }}</h2>
                                         </router-link>
                                         <div class="main-data-text">
-                                            <CalendarIcon/><span>{{ mainUpdates[0].data }}</span>
+                                            <CalendarIcon/><span>{{moment(mainUpdate.created_date).fromNow().replace("Бир неча ", "").replace("фурсат олдин", "Хозиргина")}}</span>
                                         </div>
                                     </div>    
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
                     <div class="row secondary-news">
                         <div class="col-12 col-lg-6 mt-3" v-for="update in updates" :key="update.index">
                             <div class="d-flex">
-                                <router-link :to="{ name: update.titleRoute }" class="link-to-article">
-                                    <img :src="update.imgSecondary" alt="">
+                                <router-link :to="'/blog/' + update.link" class="link-to-article">
+                                    <img style="width: 206px; height: 103px" :src="'https://dev.faktura.uz' + update.mainPhoto" alt="">
                                 </router-link>
                                 <div class="seccondary-block">
                                     <div class="seccondary-data-text">
-                                        <CalendarIcon/><span>{{ update.data }}</span>
+                                        <CalendarIcon stroke-width="3"/><span style="margin-left: 4px">{{moment(update.created_date).fromNow().replace("Бир неча ", "").replace("фурсат олдин", "Хозиргина")}}</span>
                                     </div>
-                                    <router-link :to="{ name: update.titleRoute }" class="link-to-article">
+                                    <router-link :to="'/blog/' + update.link" class="link-to-article">
                                         <h5 class="secondary-title">{{ update.title }}</h5>
                                     </router-link>
                                 </div>
@@ -66,18 +65,18 @@
                 <div v-show="!activeButton">
                     <div class="row">
                         <div class="col-12">
-                            <div class="main-news">
+                            <div class="main-news main_post" v-for="(mainNews, index) in mainNews" :key="index">
                                 <div class="dark-curtain"></div>
-                                 <router-link :to="{ name: mainNews[0].titleRoute }" class="main-link-to-article">
-                                    <img :src="mainNews[0].imgMain" style="width: 100%; height: fit-content;" alt="">
+                                 <router-link :to="'/blog/' + mainNews.link" class="main-link-to-article">
+                                    <img :src="'https://dev.faktura.uz'+ mainNews.mainPhoto" style="width: 100%; height: fit-content;" alt="">
                                  </router-link>
                                 <div class="main-news-text">
                                     <div class="main-news-text-cover">
-                                        <router-link :to="{ name: mainNews[0].titleRoute }" class="main-link-to-article">
-                                            <h2> {{ mainNews[0].title }}</h2>
+                                        <router-link :to="'/blog/' + mainNews.link" class="main-link-to-article">
+                                            <h2> {{ mainNews.title }}</h2>
                                         </router-link>
                                         <div class="main-data-text">
-                                            <CalendarIcon/><span>{{ mainNews[0].data }}</span>
+                                            <CalendarIcon/><span>{{moment(mainNews.created_date).fromNow().replace("Бир неча ", "").replace("фурсат олдин", "Хозиргина")}}</span>
                                         </div>
                                     </div>    
                                 </div>
@@ -85,16 +84,16 @@
                         </div>
                     </div>
                     <div class="row secondary-news">
-                        <div class="col-12 col-lg-6 mt-3" v-for="newsItem in news" :key="newsItem.index">
+                        <div class="col-12 col-lg-6 mt-3" v-for="newsItem in news" :key="newsItem._id">
                             <div class="d-flex">
-                                <router-link :to="{ name: newsItem.titleRoute }" class="link-to-article">
-                                    <img :src="newsItem.imgSecondary" alt="">
+                                <router-link :to="'/blog/' + newsItem.link" class="link-to-article">
+                                    <img style="width: 206px; height: 103px" :src="'https://dev.faktura.uz' + newsItem.mainPhoto" alt="">
                                 </router-link>
                                 <div class="seccondary-block">
                                     <div class="seccondary-data-text">
-                                        <CalendarIcon/><span>{{ newsItem.data }}</span>
+                                        <CalendarIcon stroke-width="3"/><span style="margin-left: 4px">{{moment(newsItem.created_date).fromNow().replace("Бир неча ", "").replace("фурсат олдин", "Хозиргина")}}</span>
                                     </div>
-                                    <router-link :to="{ name: newsItem.titleRoute }" class="link-to-article">
+                                    <router-link :to="'/blog/' + newsItem.link" class="link-to-article">
                                         <h5 class="secondary-title">{{ newsItem.title }}</h5>
                                     </router-link>
                                 </div>
@@ -109,49 +108,36 @@
 </template>
 
 <script>
-import headerComponent from "../components/headerComponent"
+import headerComponent from "../components/headerComponent.vue"
 import footerComponent from "../components/footerComponent"
-
-import { CalendarIcon } from 'vue-feather-icons'
-
 import translate from './../translation/translate'
+import { CalendarIcon } from 'vue-feather-icons'
+import moment from "moment"
 
-let news = require('../news').default
-let updates = require('../updates').default
 
 export default {
     /* eslint-disable no-debugger */
-
   name: 'blog',
   data() {
       return {
         translation: translate,
-        news,
-        updates,
+        news: [],
+        updates: [],
+        lang: JSON.parse(localStorage.getItem("translation")).localeName || "uz",
         activeButton: null,
-        mainNews: [
-            {
-                imgMain: require("./../assets/img/blog/Osnovnie Principi/osnovnie.png"), // 1052 x 372 разрешение
-                imgSecondary: require("../assets/img/blog/Osnovnie Principi/osnovnie-mini.png"), // 165 x 104 разрешение
-                title: "Основные принципы электронного документооборота",
-                titleRoute: "основные-принципы-электронного-документооборота",
-                data: "17:15 / 19.02.2021"
-            }
-        ],
-        mainUpdates: [
-            {
-                imgMain: require("./../assets/img/blog/Versiya1812/Main-Blog-Photho.jpg"), // 1052 x 372 разрешение
-                imgSecondary: require("./../assets/img/blog/Versiya1812/Mini-Blog-Photo.jpg"), // 165 x 104 разрешение
-                title: "Список изменений и улучшений в версии 1.8.12",
-                titleRoute: "Список изменений и улучшений в версии 1.8.12",
-                data: "20:10 / 12.03.2021"
-            }
-        ]
+        mainNews: [],
+        mainUpdates: []
+        
       }
   },
+  components: {
+        headerComponent,
+        footerComponent,
+        CalendarIcon
+    },
   methods: {
     _onChangeLanguage(value) {
-        translate.changeLocale(value);
+          translate.changeLocale(value);
     },
     switchPages(currentPage) {
         if (currentPage == 'updates') {
@@ -161,14 +147,37 @@ export default {
             this.activeButton = false
             localStorage.setItem("activeButton", false);
         }
+    },
+    moment(date){
+        moment.locale(this.lang)
+        return moment(date)
+    },
+    getAllPost(lang = "uz", category){
+        return fetch("https://dev.faktura.uz/api/get/newsAndUpdates", {
+            method: "POST",
+            credentials: "omit",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({
+                find: {lang, category, isActive: true},
+                need: {title: 1, created_date: 1, link: 1, position: 1, mainPhoto: 1, isMain: 1}
+            })
+        })
+        .then(res => res.json())
+        .then(async res =>{
+            let posts = res.data
+            if(res.success){
+                for(let index in posts){    
+                    if(posts[index].isMain){
+                        category == await "news" ? this.mainNews.push(posts[index])  : this.mainUpdates.push(posts[index]) 
+                        posts.splice(index, 1) 
+                    }
+                }
+                return posts 
+            } 
+        })
     }
   },
-  components: {
-      headerComponent,
-      footerComponent,
-      CalendarIcon
-  },
-  created() {
+  async created() {
     let a = localStorage.getItem('activeButton')
     if (a == 'true' || a == undefined) {
         this.activeButton = true
@@ -177,7 +186,10 @@ export default {
         this.activeButton = false
         localStorage.setItem("activeButton", false);
     }
-    console.log(a)
+    this.news = await this.getAllPost(this.lang, "news")
+    this.updates = await this.getAllPost(this.lang, "updates")
+    console.log(this.news);
+    console.log(this.updates);
   }
 }
 </script>
@@ -201,16 +213,20 @@ export default {
 .link-to-article:hover {
     text-decoration: none;
 }
-
+.main_post a img{
+    width: 1030px !important;
+    height: 515px !important;
+}
 .secondary-title {
     color: #666565;
     margin-top: 4px;
 }
-
 .secondary-news {
     margin-top: 20px; 
 }
-
+.secondary-news .seccondary-block{
+    width: 100%; 
+}
 .main-data-text {
     color: #979797;
     font-weight: 600;
