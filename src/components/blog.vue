@@ -29,7 +29,7 @@
                             <div class="main-news main_post" v-for="(mainUpdate, index) in mainUpdates" :key="index">
                                 <div class="dark-curtain"></div>
                                     <router-link :to="'/blog/' + mainUpdate.link" class="main-link-to-article">
-                                        <img :src="'https://dev.faktura.uz'+mainUpdate.mainPhoto" style="width: 100%; height: fit-content;" alt="">
+                                        <img :src="mainUpdate.mainPhoto" style="width: 100%; height: fit-content;" alt="">
                                     </router-link>
                                     <div class="main-news-text">
                                         <div class="main-news-text-cover">
@@ -48,7 +48,7 @@
                         <div class="col-12 col-lg-6 mt-3" v-for="update in updates" :key="update.index">
                             <div class="d-flex">
                                 <router-link :to="'/blog/' + update.link" class="link-to-article">
-                                    <img style="width: 206px; height: 103px" :src="'https://dev.faktura.uz' + update.mainPhoto" alt="">
+                                    <img style="width: 206px; height: 103px" :src="update.mainPhoto" alt="">
                                 </router-link>
                                 <div class="seccondary-block">
                                     <div class="seccondary-data-text">
@@ -68,7 +68,7 @@
                             <div class="main-news main_post" v-for="(mainNews, index) in mainNews" :key="index">
                                 <div class="dark-curtain"></div>
                                  <router-link :to="'/blog/' + mainNews.link" class="main-link-to-article">
-                                    <img :src="'https://dev.faktura.uz'+ mainNews.mainPhoto" style="width: 100%; height: fit-content;" alt="">
+                                    <img :src="mainNews.mainPhoto" style="width: 100%; height: fit-content;" alt="">
                                  </router-link>
                                 <div class="main-news-text">
                                     <div class="main-news-text-cover">
@@ -87,7 +87,7 @@
                         <div class="col-12 col-lg-6 mt-3" v-for="newsItem in news" :key="newsItem._id">
                             <div class="d-flex">
                                 <router-link :to="'/blog/' + newsItem.link" class="link-to-article">
-                                    <img style="width: 206px; height: 103px" :src="'https://dev.faktura.uz' + newsItem.mainPhoto" alt="">
+                                    <img style="width: 206px; height: 103px" :src="newsItem.mainPhoto" alt="">
                                 </router-link>
                                 <div class="seccondary-block">
                                     <div class="seccondary-data-text">
@@ -153,7 +153,7 @@ export default {
         return moment(date)
     },
     getAllPost(lang = "uz", category){
-        return fetch("https://dev.faktura.uz/api/get/newsAndUpdates", {
+        return fetch("/api/get/newsAndUpdates", {
             method: "POST",
             credentials: "omit",
             headers: {"Content-Type": "application/json"},
@@ -247,7 +247,9 @@ export default {
 }
 .main-news {
     position: relative;
-    margin-top: 30px;
+    width: 1030px !important;
+    height: 515px !important;
+    margin: 30px auto!important;
 }
 .main-news-text {
     position: absolute;

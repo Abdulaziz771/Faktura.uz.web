@@ -13,8 +13,8 @@
                                     </ol>
                                     <div class="carousel-inner">
                                           <div class="carousel-item desktop-slide"  v-for="(slider, index) in sliderData" :key="index" :class="{ 'active': index === 0 }">
-                                            <v-lazy-image :srcset="`https://dev.faktura.uz/uploads/` + slider.photo" use-picture alt="...">
-                                                <source :srcset="`https://dev.faktura.uz/uploads/` + slider.photo" /> 
+                                            <v-lazy-image :srcset="`/uploads/` + slider.photo" use-picture alt="...">
+                                                <source :srcset="`/uploads/` + slider.photo" /> 
                                             </v-lazy-image>
                                             <div class="carousel-caption d-block">
                                                 <h2 class="slide-desc-title">{{ slider.title }}</h2>
@@ -1518,7 +1518,7 @@ export default {
     },
     methods: {
         getAllSliders(find = {lang: "uz", isActive: true}, need = {all: 0}) {
-            fetch("https://dev.faktura.uz/api/get/homePageSlider", {
+            fetch("/api/get/homePageSlider", {
                 method: "POST",
                 credentials: "omit",
                 headers: {"Content-Type": "application/json"},

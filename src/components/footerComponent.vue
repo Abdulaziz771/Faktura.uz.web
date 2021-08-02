@@ -10,7 +10,7 @@
                                     <ul class="text-left">
                                         <li><router-link :to="{ name: 'Сравнение' }">{{ translation.translate('footer','compare') }}</router-link></li>
                                         <li class="mt-2"><a href="https://api.faktura.uz/help/" target="_blank" @click="callGtag('API переходы,api_href,click')">API</a></li>
-                                        <li class="mt-2"><router-link :to="{ name: 'Модули 1С' }">1C</router-link></li>
+                                        <li class="mt-2"><router-link :to="{ name: '1cPage' }">1C</router-link></li>
                                     </ul>
                                 </div>
                                 <div>
@@ -72,7 +72,7 @@
                                     <ul class="text-left">
                                         <li><router-link :to="{ name: 'Сравнение' }">{{ translation.translate('footer','compare') }}</router-link></li>
                                         <li class="mt-2"><a href="https://api.faktura.uz/help/" @click='callGtag("API переходы,api_href,clikc")' target="_blank">API</a></li>
-                                        <li class="mt-2"><router-link :to="{ name: 'Модули 1С' }">1C</router-link></li>
+                                        <li class="mt-2"><router-link :to="{ name: '1cPage' }">1C</router-link></li>
                                     </ul>
                                 </div>
                             </div>

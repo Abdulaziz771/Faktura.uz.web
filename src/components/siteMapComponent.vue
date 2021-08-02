@@ -20,7 +20,7 @@
                             <li><router-link :to="{ name: 'Видеоуроки' }">{{ translation.translate('header','videolessons') }}</router-link></li>
                             <li><router-link :to="{ name: 'Тарифы' }">{{ translation.translate('header','pricesItem') }}</router-link></li>
                             <li><router-link :to="{ name: 'Тех-поддержка' }">{{ translation.translate('header','tech') }}</router-link></li>
-                            <li><router-link :to="{ name: 'Модули 1С' }">1C {{ translation.translate('footer','compareServices') }}</router-link></li>
+                            <li><router-link :to="{ name: '1cPage' }">1C {{ translation.translate('footer','compareServices') }}</router-link></li>
                             <li><router-link :to="{ name: 'Сравнение' }">{{ translation.translate('header','compare') }}</router-link></li>
                             <li><router-link :to="{ name: 'Другие проэкты' }">{{ translation.translate('header','outOtherProjects') }}</router-link></li>
                             <li><router-link :to="{ name: 'Сравнение' }">{{ translation.translate('header','compare') }}</router-link></li>

@@ -84,11 +84,11 @@ const router = new VueRouter({
             name: 'Другие проэкты',
             component: () => import('../components/otherProjects')
         },
-        {
-            path: '/1c-modules',
-            name: 'Модули 1С',
-            component: () => import('../components/1cComponent')
-        },
+        // {
+        //     path: '/1c-modules',
+        //     name: 'Модули 1С',
+        //     component: () => import('../components/1cComponent')
+        // },
         {
             path: '/about-faktura',
             name: 'Системе',

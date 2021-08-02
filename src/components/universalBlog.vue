@@ -41,7 +41,7 @@ export default {
     methods: {
         getPost(link = window.location.pathname.slice(6)){
             console.log(link);
-            fetch("https://dev.faktura.uz/api/get/newsAndUpdates", {
+            fetch("/api/get/newsAndUpdates", {
                 method: "POST",
                 credentials: "omit",
                 headers: {"Content-Type": "application/json"},
@@ -54,8 +54,8 @@ export default {
             .then(res => {
                 console.log(res);
                 if(res.success) {
+                    document.title = res.data[0].title
                     this.post = res.data[0]
-                    document.title = this.post.title
                 }
                 else window.location = "/blog"
             })
@@ -69,10 +69,31 @@ export default {
         headerComponent,
         footerComponent,
     },
+    metaInfo() {
+        return { 
+            title: this.post.title,
+            meta: [
+                { name: 'title', content: this.post.title},
+                { name: 'descripton', content: this.post.metaTagKeyWords.slice(0, 150).replace(",", "")},
+                { name: 'keywords', content: this.post.metaTagKeyWords},
+                { name: 'image:secure_url', content: this.post.mainPhoto},
+                { name: 'image', content: "https://faktura.uz"+this.post.mainPhoto},
+                { name: 'image:width', content: "1030"},
+                { name: 'image:height', content: "515"},
+                { name: 'iamge:type', content: "image/jpeg, image/gif, image/jpg, image/png"},
+                { name: 'twitter:card', content: "summary_large_image"},
+                { name: 'twitter:image', content: "https://faktura.uz"+this.post.mainPhoto}
+            ]
+        }
+    },
+    beforeCreate(){
+        document.title = "- Faktura.uz"
+    },
     created(){
         this.getPost()
     }
 }
+
 </script>
 
 <style>
